@@ -1,0 +1,76 @@
+//styles.ts (login)
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+    container: { flex: 1, padding: 24, backgroundColor: '#ebececd8' },
+    backButton: { marginTop: 16, marginBottom: 16 },
+title: {
+  fontSize: 24,             // um pouco maior para destaque
+  color: '#004854',         // mantém a cor principal
+  fontWeight: '600',        // mais “negrito” para dar importância
+  textAlign: 'left',        // mantém alinhamento à esquerda
+  marginBottom: 16,         // espaçamento ajustado para fluxo natural
+  lineHeight: 30,           // melhora a leitura em múltiplas linhas
+},
+    label: { fontSize: 14, marginBottom: 4, color: '#333' },
+        logo: {
+  width: 70,
+  height: 70,
+  resizeMode: 'contain',
+  alignSelf: 'flex-end',
+  marginTop: 30,  // distância do topo
+  marginBottom: 20 // distância entre logo e título
+},
+
+    input: {
+        borderWidth: 1,
+        borderColor: '#ccc',
+        padding: 14,
+        borderRadius: 8,
+        marginBottom: 16,
+    },
+    passwordContainer: {
+        flexDirection: 'row',
+        borderWidth: 1,
+        borderColor: '#ccc',
+        paddingHorizontal: 14,
+        paddingVertical: 12,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: 10,
+    },
+    passwordInput: { flex: 1, fontSize: 16, color: '#000' },
+    loginButton: {
+        backgroundColor: '#1A3C40',
+        padding: 16,
+        borderRadius: 8,
+        alignItems: 'center',
+        marginBottom: 24,
+    },
+    forgotPasswordContainer: {
+        marginTop: 1,
+        marginBottom: 30,
+
+    },
+
+
+   resetButton: {
+  paddingVertical: 6,
+  paddingHorizontal: 12,
+  borderRadius: 6,
+  alignSelf: 'flex-start', // botão não ocupa a tela toda
+  marginBottom: 16,
+},
+resetButtonText: {
+  color: '#1A3C40',
+  fontWeight: '500',
+  fontSize: 13,
+},
+
+
+    loginButtonText: { color: '#f7f8fa', fontWeight: '600', fontSize: 16 },
+    footerText: { textAlign: 'center', color: '#333' },
+    linkText: { color: '#1A3C40', fontWeight: '600' },
+    error: { color: 'red', marginBottom: 8 },
+});

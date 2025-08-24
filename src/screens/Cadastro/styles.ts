@@ -1,0 +1,66 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+    container: { flex: 1, padding: 24, backgroundColor: '#f7f8fa' },
+    backButton: { marginTop: 16, marginBottom: 16 },
+    title: { fontSize: 22,color: '#004854', fontWeight: '400', textAlign: 'left', marginBottom: 20, },
+    subtitle: { textAlign: 'center', marginBottom: 32, color: '#444' },
+    label: { fontSize: 14, marginBottom: 4, color: '#333' },
+    input: {
+        borderWidth: 1,
+        borderColor: '#ccc',
+        padding: 14,
+        borderRadius: 8,
+        marginBottom: 16,
+    },
+    logo: {
+  width: 70,
+  height: 70,
+  resizeMode: 'contain',
+  alignSelf: 'flex-end',
+  marginTop: 30,  // distância do topo
+  marginBottom: 20 // distância entre logo e título
+},
+
+    passwordContainer: {
+        flexDirection: 'row',
+        borderWidth: 1,
+        borderColor: '#ccc',
+        paddingHorizontal: 14,
+        paddingVertical: 12,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: 24,
+    },
+    passwordInput: { flex: 1, fontSize: 16 },
+    loginButton: {
+        backgroundColor: '#1A3C40',
+        padding: 16,
+        borderRadius: 8,
+        alignItems: 'center',
+        marginBottom: 24,
+    },
+    loginButtonText: { color: '#f7f8fa', fontWeight: '600', fontSize: 16 },
+    error: { color: 'red', marginBottom: 8 },
+    checkboxContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: 16,
+        marginBottom: 12,
+    },
+    checkbox: {
+        marginRight: 8,
+    },
+    checkboxText: {
+        fontSize: 14,
+        color: '#333',
+        flexShrink: 1,
+    },
+    linkTextTerms: {
+        color: '#007BFF',
+        textDecorationLine: 'underline',
+    },
+    footerText: { textAlign: 'center', color: '#333' },
+    linkText: { color: '#1A3C40', fontWeight: '600' },
+});

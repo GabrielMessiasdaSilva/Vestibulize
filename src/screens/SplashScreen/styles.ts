@@ -1,0 +1,104 @@
+import { StyleSheet } from 'react-native';
+
+export const splashStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#233D4D',
+    },
+  
+
+    logo: {
+        width: 200,
+        height: 200,
+        resizeMode: 'contain',
+        marginBottom: 20,
+    },
+    text: {
+        fontSize: 32,
+        fontWeight: 'bold',
+        color: '#f7f8fa',
+    },
+});
+
+export const onboardingStyles = StyleSheet.create({
+      imageContainer: {
+  width: '100%',
+  height: '60%', // altura da imagem
+  overflow: 'hidden', // importante pra curva
+  position: 'relative',
+},
+image: {
+  width: '100%',
+  height: '100%',
+  resizeMode: 'cover',
+},
+bottomCurve: {
+  position: 'absolute',
+  bottom: -50, // ajusta a altura da curva
+  left: 0,
+  right: 0,
+  height: 100, // altura do “arco”
+  backgroundColor: '#fff', // cor do fundo da página
+  borderTopLeftRadius: 50,
+  borderTopRightRadius: 50,
+},
+    slide: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingHorizontal: 20,
+    },
+    slideImage: {
+        width: 200,
+        height: 200,
+        resizeMode: 'contain',
+        marginBottom: 40,
+    },
+    slideTitle: {
+        fontSize: 28,
+        fontWeight: 'bold',
+        color: '#333',
+        textAlign: 'center',
+        marginBottom: 15,
+    },
+    slideDescription: {
+        fontSize: 18,
+        color: '#333',
+        textAlign: 'center',
+        marginBottom: 40,
+    },
+    button: {
+        backgroundColor: '#233D4D',
+        paddingVertical: 15,
+        paddingHorizontal: 60,
+        borderRadius: 10,
+        marginTop: 20,
+    },
+    buttonText: {
+        color: '#f7f8fa',
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    dot: {
+        backgroundColor: 'rgba(255,255,255,.3)',
+        width: 8,
+        height: 8,
+        borderRadius: 4,
+        marginLeft: 3,
+        marginRight: 3,
+        marginTop: 10,
+        marginBottom: 10,
+    },
+    activeDot: {
+        backgroundColor: '#233D4D',
+        width: 8,
+        height: 8,
+        borderRadius: 10,
+        marginLeft: 3,
+        marginRight: 3,
+        marginTop: 3,
+        marginBottom: 30,
+    },
+});
