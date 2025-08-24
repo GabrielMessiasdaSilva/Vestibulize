@@ -1,66 +1,103 @@
-import { StyleSheet } from 'react-native';
+// styles.ts
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    container: { flex: 1, padding: 24, backgroundColor: '#f7f8fa' },
-    backButton: { marginTop: 16, marginBottom: 16 },
-    title: { fontSize: 22,color: '#004854', fontWeight: '400', textAlign: 'left', marginBottom: 20, },
-    subtitle: { textAlign: 'center', marginBottom: 32, color: '#444' },
-    label: { fontSize: 14, marginBottom: 4, color: '#333' },
-    input: {
-        borderWidth: 1,
-        borderColor: '#ccc',
-        padding: 14,
-        borderRadius: 8,
-        marginBottom: 16,
-    },
-    logo: {
-  width: 70,
-  height: 70,
-  resizeMode: 'contain',
-  alignSelf: 'flex-end',
-  marginTop: 30,  // distância do topo
-  marginBottom: 20 // distância entre logo e título
-},
+  container: {
+    flex: 1,
+    padding: 24,
+    backgroundColor: "#f8ececff",
+  },
+  logoContainer: {
+    alignItems: "flex-end",
 
-    passwordContainer: {
-        flexDirection: 'row',
-        borderWidth: 1,
-        borderColor: '#ccc',
-        paddingHorizontal: 14,
-        paddingVertical: 12,
-        borderRadius: 8,
-        alignItems: 'center',
-        justifyContent: 'space-between',
+  },
+    logo: {
+        marginTop: 50,
+        width: 100,
+        height: 100,
+        resizeMode: 'contain',
         marginBottom: 24,
+
     },
-    passwordInput: { flex: 1, fontSize: 16 },
-    loginButton: {
-        backgroundColor: '#1A3C40',
+  headerContent: {
+    marginBottom: 20,
+  },
+    title: {
+        fontSize: 26,
+        fontWeight: '100',
+        marginBottom: 30,
+        marginTop: 50,
+        textAlign: 'left',
+        color: '#005C6D',
+        fontFamily: 'Verdana',
+
+    },
+  inputContainer: {
+    marginBottom: 24,
+    position: "relative",
+  },
+  textInput: {
+    height: 40,
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+    paddingRight: 40, 
+    fontSize: 16,
+  },
+  underline: {
+    height: 2,
+    backgroundColor: "#004854",
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    width: "100%",
+    transform: [{ scaleX: 0 }],
+  },
+  showPasswordButton: {
+    position: "absolute",
+    right: 0,
+    bottom: 10,
+    height: 20,
+    width: 40,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  error: {
+    color: "red",
+    marginTop: 4,
+  },
+  buttonContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 10,
+  },
+ buttonPrimary: {
+        flex: 1,
+        backgroundColor: '#005C6D',
         padding: 16,
-        borderRadius: 8,
-        alignItems: 'center',
-        marginBottom: 24,
-    },
-    loginButtonText: { color: '#f7f8fa', fontWeight: '600', fontSize: 16 },
-    error: { color: 'red', marginBottom: 8 },
-    checkboxContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginTop: 16,
-        marginBottom: 12,
-    },
-    checkbox: {
+        borderRadius: 40,
         marginRight: 8,
+        alignItems: 'center',
     },
-    checkboxText: {
-        fontSize: 14,
-        color: '#333',
-        flexShrink: 1,
+    buttonSecondary: {
+        flex: 1,
+        borderColor: '#005C6D',
+        borderWidth: 1,
+        padding: 16,
+        borderRadius: 40,
+        marginLeft: 8,
+        alignItems: 'center',
     },
-    linkTextTerms: {
-        color: '#007BFF',
-        textDecorationLine: 'underline',
+    buttonTextPrimary: {
+        color: '#fff',
+        fontWeight: '600',
+        fontFamily: 'Verdana',
+
     },
-    footerText: { textAlign: 'center', color: '#333' },
-    linkText: { color: '#1A3C40', fontWeight: '600' },
+    buttonTextSecondary: {
+        color: '#004854',
+        fontWeight: '600',
+        fontFamily: 'Verdana',
+
+    },
+
 });

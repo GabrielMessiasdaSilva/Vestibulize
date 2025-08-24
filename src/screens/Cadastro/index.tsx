@@ -1,20 +1,31 @@
 // cadastro.tsx
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
-  View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, ScrollView, Platform,Image
-} from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { auth } from '../../services/firebaseConfig';
-import { doc, setDoc } from 'firebase/firestore';
-import { db } from '../../services/firebaseConfig';
-import { useTranslation } from 'react-i18next';
-import { useForm, Controller } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
-import { styles } from './styles';
+  View,
+  Text,
+  KeyboardAvoidingView,
+  ScrollView,
+  Platform,
+  Image,
+  TextInput,
+  TouchableOpacity,
+  Animated,
+  Dimensions,
+  StyleSheet,
+} from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
+import { auth, db } from "../../services/firebaseConfig";
+import { doc, setDoc } from "firebase/firestore";
+import { useTranslation } from "react-i18next";
+import { useForm, Controller } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import { showMessage } from "react-native-flash-message";
+import { styles } from "./styles";
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
+const { width, height } = Dimensions.get("window");
 
 type FormData = {
   username: string;
@@ -23,57 +34,183 @@ type FormData = {
   confirmPassword: string;
 };
 
+// Partículas suaves
+const Particle = ({ size, x, delay }: { size: number; x: number; delay: number }) => {
+  const anim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(anim, { toValue: 1, duration: 15000 + Math.random() * 5000, delay, useNativeDriver: true }),
+        Animated.timing(anim, { toValue: 0, duration: 15000 + Math.random() * 5000, useNativeDriver: true }),
+      ])
+    ).start();
+  }, []);
+
+  const translateY = anim.interpolate({ inputRange: [0, 1], outputRange: [height, -50] });
+
+  return (
+    <Animated.View
+      style={{
+        position: "absolute",
+        width: size,
+        height: size,
+        borderRadius: size / 2,
+        backgroundColor: "#b9b9b9ff",
+        left: x,
+        transform: [{ translateY }],
+        opacity: 0.1,
+      }}
+    />
+  );
+};
+
+// Gradiente animado
+const AnimatedGradient = () => {
+  const gradientAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(gradientAnim, { toValue: 1, duration: 10000, useNativeDriver: false }),
+        Animated.timing(gradientAnim, { toValue: 0, duration: 10000, useNativeDriver: false }),
+      ])
+    ).start();
+  }, []);
+
+  const backgroundColor = gradientAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: ["#ffffffff", "#ffffffff"],
+  });
+
+  return <Animated.View style={[StyleSheet.absoluteFillObject, { backgroundColor }]} />;
+};
+
+// Input animado com ícone de olho
+const AnimatedInput = ({
+  label,
+  value,
+  onChangeText,
+  secureTextEntryProp,
+  error,
+}: {
+  label: string;
+  value: string;
+  onChangeText: (text: string) => void;
+  secureTextEntryProp?: boolean;
+  error?: string;
+}) => {
+  const [isFocused, setIsFocused] = useState(false);
+  const [secureTextEntry, setSecureTextEntry] = useState(secureTextEntryProp ?? false);
+  const labelAnim = useRef(new Animated.Value(value ? 1 : 0)).current;
+  const underlineAnim = useRef(new Animated.Value(0)).current;
+
+  const handleFocus = () => {
+    setIsFocused(true);
+    Animated.timing(labelAnim, { toValue: 1, duration: 200, useNativeDriver: false }).start();
+    Animated.timing(underlineAnim, { toValue: 1, duration: 200, useNativeDriver: false }).start();
+  };
+
+  const handleBlur = () => {
+    setIsFocused(false);
+    if (!value) Animated.timing(labelAnim, { toValue: 0, duration: 200, useNativeDriver: false }).start();
+    Animated.timing(underlineAnim, { toValue: 0, duration: 200, useNativeDriver: false }).start();
+  };
+
+  const animatedLabelStyle = {
+    position: "absolute" as "absolute",
+    left: 0,
+    top: labelAnim.interpolate({ inputRange: [0, 1], outputRange: [18, -6] }),
+    fontSize: labelAnim.interpolate({ inputRange: [0, 1], outputRange: [16, 12] }),
+    color: isFocused ? "#004854" : "#3a3030ff",
+    paddingHorizontal: 4,
+  };
+
+  const animatedUnderlineStyle = {
+    ...styles.underline,
+    transform: [{ scaleX: underlineAnim }],
+  };
+
+  return (
+    <View style={styles.inputContainer}>
+      <Animated.Text style={animatedLabelStyle}>{label}</Animated.Text>
+      <TextInput
+        value={value}
+        onChangeText={onChangeText}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        secureTextEntry={secureTextEntry}
+        style={styles.textInput}
+      />
+      {secureTextEntryProp !== undefined && (
+        <TouchableOpacity
+          onPress={() => setSecureTextEntry(!secureTextEntry)}
+          style={styles.showPasswordButton}
+        >
+          <Icon
+            name={secureTextEntry ? "eye-off" : "eye"}
+            size={24}
+            color="#004854"
+          />
+        </TouchableOpacity>
+      )}
+      <Animated.View style={animatedUnderlineStyle} />
+      {error && <Text style={styles.error}>{error}</Text>}
+    </View>
+  );
+};
+
 export default function Cadastro() {
   const navigation = useNavigation();
+  const { t } = useTranslation();
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
-  const { t } = useTranslation();
-  const [termsAccepted, setTermsAccepted] = useState(false);
 
   const schema = yup.object({
     username: yup.string().required(t("usernameRequired")),
     email: yup.string().email(t("invalidEmail")).required(t("emailRequired")),
     password: yup.string().min(6, t("min6chars")).required(t("passwordRequired")),
-    confirmPassword: yup.string().oneOf([yup.ref("password")], t("passwordsDontMatch")).required(t("confirmPasswordRequired")),
+    confirmPassword: yup
+      .string()
+      .oneOf([yup.ref("password")], t("passwordsDontMatch"))
+      .required(t("confirmPasswordRequired")),
   });
 
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm<FormData>({
+  const { control, handleSubmit, formState: { errors }, reset, getValues } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
 
   const onSubmit = async (data: FormData) => {
+    // Bloqueio de campos vazios
+    if (!data.username || !data.email || !data.password || !data.confirmPassword) {
+      showMessage({
+        message: t("error"),
+        description: t("fillAllFields") || "Preencha todos os campos",
+        type: "danger",
+        icon: "danger",
+        duration: 4000,
+      });
+      return;
+    }
+
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, data.email, data.password);
       const user = userCredential.user;
 
-      // envia email de verificação
       await sendEmailVerification(user);
+      await setDoc(doc(db, "users", user.uid), { username: data.username, email: data.email });
 
-      // salva no Firestore
-      await setDoc(doc(db, "users", user.uid), {
-        username: data.username,
-        email: data.email,
-      });
-
-      // Flash message com explicação sobre spam
       showMessage({
         message: t("success"),
         description: t("accountCreatedCheckEmail"),
         type: "success",
         icon: "success",
-        duration: 7000
+        duration: 7000,
       });
 
       reset();
       navigation.navigate("Login" as never);
-
     } catch (error: any) {
-      console.log(error);
       let message = t("accountAlreadyInUse");
       if (error.code === "auth/email-already-in-use") message = t("accountAlreadyInUse");
       else if (error.code === "auth/invalid-email") message = t("invalidEmail");
@@ -83,113 +220,69 @@ export default function Cadastro() {
         description: message,
         type: "danger",
         icon: "danger",
-        duration: 4000
+        duration: 4000,
       });
     }
   };
 
   return (
-    <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+    <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === "ios" ? "padding" : "height"}>
+      {/* Fundo profissional */}
+      <AnimatedGradient />
+      {Array.from({ length: 15 }).map((_, i) => (
+        <Particle key={i} size={10 + Math.random() * 20} x={Math.random() * width} delay={Math.random() * 5000} />
+      ))}
+
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
-        <TouchableOpacity style={styles.backButton} onPress={() => navigation.navigate('Inicial' as never)}>
-        </TouchableOpacity>
-<Image
-  source={require('../../../assets/img/logoCPS.png')}
-  style={styles.logo}
-/>
-        <Text style={styles.title}>{t('register')}</Text>
-        
-
-        <Text style={styles.label}>{t('username')}</Text>
-        <Controller control={control} name="username" render={({ field: { onChange, value } }) => (
-          <TextInput style={[styles.input, { color: '#000' }]} placeholder={t('usernamePlaceholder')} value={value} onChangeText={onChange} />
-        )} />
-        {errors.username && <Text style={styles.error}>{errors.username.message}</Text>}
-
-        <Text style={styles.label}>Email</Text>
-        <Controller control={control} name="email" render={({ field: { onChange, value } }) => (
-          <TextInput
-            style={[styles.input, { color: '#000' }]}
-            placeholder={t('emailPlaceholder')}
-            placeholderTextColor="#999"
-            value={value}
-            onChangeText={onChange}
-            keyboardType="email-address"
-          />
-        )} />
-        {errors.email && <Text style={styles.error}>{errors.email.message}</Text>}
-
-        <Text style={styles.label}>Senha</Text>
-        <View style={styles.passwordContainer}>
-          <Controller control={control} name="password" render={({ field: { onChange, value } }) => (
-            <TextInput
-              style={[styles.passwordInput, { color: '#000' }]}
-              placeholder="***************"
-              placeholderTextColor="#999"
-              secureTextEntry={!showPassword}
-              value={value}
-              onChangeText={onChange}
-            />
-          )} />
-          <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
-          </TouchableOpacity>
-        </View>
-        {errors.password && <Text style={styles.error}>{errors.password.message}</Text>}
-
-        <Text style={styles.label}>{t('confirmPassword')}</Text>
-        <View style={styles.passwordContainer}>
-          <Controller control={control} name="confirmPassword" render={({ field: { onChange, value } }) => (
-            <TextInput
-              style={[styles.passwordInput, { color: '#000' }]}
-              placeholder="***************"
-              placeholderTextColor="#999"
-              secureTextEntry={!showConfirm}
-              value={value}
-              onChangeText={onChange}
-            />
-          )} />
-          <TouchableOpacity onPress={() => setShowConfirm(!showConfirm)}>
-          </TouchableOpacity>
-        </View>
-        {errors.confirmPassword && <Text style={styles.error}>{errors.confirmPassword.message}</Text>}
-
-        <View style={styles.checkboxContainer}>
-          <TouchableOpacity style={styles.checkbox} onPress={() => setTermsAccepted(!termsAccepted)}>
-          </TouchableOpacity>
-          <Text style={styles.checkboxText}>
-            {t('iAgreeToThe')}{' '}
-            <Text style={styles.linkTextTerms} onPress={() => navigation.navigate('Termos' as never)}>
-              {t('termsOfUse')}
-            </Text>
-          </Text>
+        <View style={styles.logoContainer}>
+          <Image source={require("../../../assets/img/logoCPS.png")} style={styles.logo} />
         </View>
 
-        <TouchableOpacity
-          style={[styles.loginButton, !termsAccepted && { opacity: 0.5 }]}
-          onPress={() => {
-            if (!termsAccepted) {
-              showMessage({
-                message: t('termsRequiredTitle'),
-                description: t('termsRequiredMessage'),
-                type: "warning",
-                icon: "warning",
-                duration: 4000
-              });
-              return;
-            }
-            handleSubmit(onSubmit)();
-          }}
-          disabled={!termsAccepted}
-        >
-          <Text style={styles.loginButtonText}>{t('register')}</Text>
-        </TouchableOpacity>
+        <View style={styles.headerContent}>
+          <Text style={styles.title}>Faça seu cadastro para começar a praticar.</Text>
+        </View>
 
-        <Text style={styles.footerText}>
-          {t('alreadyHaveAccount')}{' '}
-          <Text style={styles.linkText} onPress={() => navigation.navigate('Login' as never)}>
-            {t('loginHere')}
-          </Text>
-        </Text>
+        <Controller
+          control={control}
+          name="username"
+          render={({ field: { onChange, value } }) => <AnimatedInput label="Nome" value={value} onChangeText={onChange} error={errors.username?.message} />}
+        />
+
+        <Controller
+          control={control}
+          name="email"
+          render={({ field: { onChange, value } }) => <AnimatedInput label="Email" value={value} onChangeText={onChange} error={errors.email?.message} />}
+        />
+
+        <Controller
+          control={control}
+          name="password"
+          render={({ field: { onChange, value } }) => (
+            <AnimatedInput label="Senha" value={value} onChangeText={onChange} secureTextEntryProp={!showPassword} error={errors.password?.message} />
+          )}
+        />
+
+        <Controller
+          control={control}
+          name="confirmPassword"
+          render={({ field: { onChange, value } }) => (
+            <AnimatedInput label="Confirmar senha" value={value} onChangeText={onChange} secureTextEntryProp={!showConfirm} error={errors.confirmPassword?.message} />
+          )}
+        />
+
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity onPress={() => navigation.navigate("Login" as never)} style={styles.buttonPrimary}>
+            <Text style={styles.buttonTextPrimary}>Entrar</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={handleSubmit(onSubmit)}
+            style={styles.buttonSecondary}
+            disabled={Object.keys(errors).length > 0} // Bloqueia se houver erros
+          >
+            <Text style={styles.buttonTextSecondary}>Cadastrar</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );
