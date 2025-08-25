@@ -11,7 +11,7 @@ export default function Inicial() {
       <View style={styles.logoContainer}>
         <Image source={require('../../../assets/img/logoCPS.png')} style={styles.logo} />
       </View>
-      <Text style={styles.title}>Bem-vindo ao CPS!</Text>
+      <Text style={styles.title}>Bem-vindo ao APP oficial de simulados do CPS!</Text>
       <Text style={styles.subtitle}>Comece a praticar e evoluir agora mesmo.</Text>
       <View style={styles.buttonRow}>
         <TouchableOpacity

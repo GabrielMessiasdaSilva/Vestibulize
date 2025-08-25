@@ -38,7 +38,6 @@ const AnimatedInput = ({ label, value, onChangeText, secureTextEntry, error }: {
     top: labelAnim.interpolate({ inputRange: [0, 1], outputRange: [18, -6] }),
     fontSize: labelAnim.interpolate({ inputRange: [0, 1], outputRange: [16, 12] }),
     color: isFocused ? '#004854' : '#999',
-    backgroundColor: '#ebececd8',
     paddingHorizontal: 4,
   };
 
