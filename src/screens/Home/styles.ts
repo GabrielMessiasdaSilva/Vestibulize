@@ -1,0 +1,101 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        backgroundColor: '#f7f8fa',
+        width: '100%'
+    },
+    topHome: {
+        backgroundColor: '#005C6D',
+
+    },
+    logoContainer: {
+        alignItems: "flex-end",
+    },
+    logo: {
+        marginTop: 40,
+        width: 100,
+        height: 100,
+        resizeMode: "contain",
+        marginBottom: 24,
+    },
+    greeting: {
+        color: '#f7f8fa',
+        fontSize: 18,
+        marginBottom: 10,
+        marginRight: 24,
+        paddingHorizontal: 24,
+    },
+    title: {
+        color: '#f7f8fa',
+        fontSize: 32,
+        fontWeight: 'bold',
+        marginBottom: 24,
+        paddingHorizontal: 24,
+    },
+    subtitle: {
+        color: '#f7f8fa',
+        fontSize: 14,
+        marginBottom: 36,
+        marginRight: 14,
+        paddingHorizontal: 24,
+    },
+    buttonsLayer: {
+        flexDirection: "row",
+        paddingHorizontal: 16,
+        gap: 12,
+    },
+    button: {
+        backgroundColor: "#CEE7F0",
+        paddingVertical: 12,
+        paddingHorizontal: 20,
+        borderRadius: 20,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
+        marginRight: 12,
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    buttonText: {
+        fontSize: 16,
+        fontWeight: "600",
+        color: "#004854",
+    },
+    icon: {
+        width: 20,
+        height: 20,
+        marginRight: 8,
+        color: "#004854",
+        backgroundColor: "#004854",
+        borderRadius: 10,
+    },
+    searchContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: "space-between",
+        borderRadius: 28,
+        borderColor: '#D1D5D8',
+        borderWidth: 1,
+        backgroundColor: '#E4E9EB',
+        padding: 8,
+        paddingHorizontal: 16,
+        marginTop: 32,
+        marginBottom: 16,
+        width: '90%',
+        minHeight: 40,
+        alignSelf: 'center',
+        maxWidth: '100%',
+    },
+    searchText: {
+        color: '#000',
+        fontSize: 14,
+        flexShrink: 1,
+        flex: 1,
+    },
+});

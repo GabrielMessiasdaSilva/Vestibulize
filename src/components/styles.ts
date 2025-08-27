@@ -7,14 +7,17 @@ export const footer = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 10,
         paddingVertical: 10,
-        backgroundColor: '#f7f8fa',
+        backgroundColor: '#EAEFF1',
         borderTopWidth: 1,
-        borderTopColor: '#f7f8fa',
+        borderTopColor: '#EAEFF1',
     },
     iconContainer: {
         flex: 1,
         alignItems: 'center',
     },
+    footerText: {
+        fontSize: 14
+    }
 });
 
 export const timeModal = StyleSheet.create({
@@ -301,4 +304,45 @@ export const SuccessAlert = StyleSheet.create({
         height: 4,
         backgroundColor: '#1A3C40',
     },
-})
+});
+
+export const cards = StyleSheet.create({
+    card: {
+        backgroundColor: '#fff',
+        borderRadius: 12,
+        borderWidth: 0.5,
+        borderColor: '#01687D',
+        padding: 20,
+        marginBottom: 12,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'flex-start',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.05,
+        shadowRadius: 4,
+        elevation: 2,
+    },
+    semestre: {
+        fontSize: 24,
+        fontWeight: '600',
+        color: '#005C6D',
+    },
+    questoes: {
+        fontSize: 14,
+        color: '#004854',
+        marginTop: 4,
+    },
+    buttonIniciar: {
+        backgroundColor: '#01687D',
+        paddingVertical: 6,
+        paddingHorizontal: 12,
+        borderRadius: 20,
+        alignSelf: 'flex-end',
+        marginTop: 50,
+    },
+    buttonText: {
+        color: '#fff',
+        fontWeight: '600',
+    },
+});

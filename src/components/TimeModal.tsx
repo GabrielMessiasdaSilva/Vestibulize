@@ -39,7 +39,7 @@ const TimeModal: React.FC<TimeModalProps> = ({
         >
             <View style={timeModal.overlay}>
                 <View style={timeModal.modalContainer}>
-                    <Text style={timeModal.title}>{t('chooseAmount')}</Text>
+                    <Text style={timeModal.title}>{t('timeModal.chooseAmount')}</Text>
                     <TextInput
                         style={timeModal.input}
                         keyboardType="numeric"
@@ -49,21 +49,21 @@ const TimeModal: React.FC<TimeModalProps> = ({
                             if (num === '' || (Number(num) >= 1 && Number(num) <= 60)) setInputTime(num);
                         }}
                         maxLength={2}
-                        placeholder={t('placeholderMinutes')}
+                        placeholder={t('timeModal.placeholderMinutes')}
                     />
-                    <Text style={timeModal.label}>{t('minutes')}</Text>
+                    <Text style={timeModal.label}>{t('timeModal.minutes')}</Text>
                     <View style={timeModal.buttonRow}>
                         <TouchableOpacity
                             style={timeModal.activateButton}
                             onPress={onActivate}
                         >
-                            <Text style={timeModal.activateButtonText}>{t('activate')}</Text>
+                            <Text style={timeModal.activateButtonText}>{t('timeModal.activate')}</Text>
                         </TouchableOpacity>
                         <TouchableOpacity
                             style={timeModal.deactivateButton}
                             onPress={onDeactivate}
                         >
-                            <Text style={timeModal.deactivateButtonText}>{t('deactivate')}</Text>
+                            <Text style={timeModal.deactivateButtonText}>{t('timeModal.deactivate')}</Text>
                         </TouchableOpacity>
                     </View>
                 </View>

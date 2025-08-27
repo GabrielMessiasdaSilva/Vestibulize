@@ -31,7 +31,7 @@ const RedModal: React.FC<RedModalProps> = ({
                                 resizeMode="contain"
                             />
                             <Text style={redModal.balaoText}>
-                                {t('wrongMessage')}
+                                {t('redModal.wrongMessage')}
                             </Text>
                             <Image
                                 source={require('../../assets/img/raposa_coracao.png')}

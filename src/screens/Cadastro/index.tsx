@@ -167,13 +167,13 @@ export default function Cadastro() {
   const [showConfirm, setShowConfirm] = useState(false);
 
   const schema = yup.object({
-    username: yup.string().required(t("usernameRequired")),
-    email: yup.string().email(t("invalidEmail")).required(t("emailRequired")),
-    password: yup.string().min(6, t("min6chars")).required(t("passwordRequired")),
+    username: yup.string().required(t("Cadastro.usernameRequired")),
+    email: yup.string().email(t("Cadastro.invalidEmail")).required(t("Cadastro.emailRequired")),
+    password: yup.string().min(6, t("Cadastro.min6chars")).required(t("Cadastro.passwordRequired")),
     confirmPassword: yup
       .string()
-      .oneOf([yup.ref("password")], t("passwordsDontMatch"))
-      .required(t("confirmPasswordRequired")),
+      .oneOf([yup.ref("password")], t("Cadastro.passwordsDontMatch"))
+      .required(t("Cadastro.confirmPasswordRequired")),
   });
 
   const { control, handleSubmit, formState: { errors }, reset, getValues } = useForm<FormData>({
@@ -184,8 +184,8 @@ export default function Cadastro() {
     // Bloqueio de campos vazios
     if (!data.username || !data.email || !data.password || !data.confirmPassword) {
       showMessage({
-        message: t("error"),
-        description: t("fillAllFields") || "Preencha todos os campos",
+        message: t("Cadastro.error"),
+        description: t("Cadastro.fillAllFields") || "Preencha todos os campos",
         type: "danger",
         icon: "danger",
         duration: 4000,
@@ -201,8 +201,8 @@ export default function Cadastro() {
       await setDoc(doc(db, "users", user.uid), { username: data.username, email: data.email });
 
       showMessage({
-        message: t("success"),
-        description: t("accountCreatedCheckEmail"),
+        message: t("Cadastro.success"),
+        description: t("Cadastro.accountCreatedCheckEmail"),
         type: "success",
         icon: "success",
         duration: 7000,
@@ -211,12 +211,12 @@ export default function Cadastro() {
       reset();
       navigation.navigate("Login" as never);
     } catch (error: any) {
-      let message = t("accountAlreadyInUse");
-      if (error.code === "auth/email-already-in-use") message = t("accountAlreadyInUse");
-      else if (error.code === "auth/invalid-email") message = t("invalidEmail");
+      let message = t("Cadastro.accountAlreadyInUse");
+      if (error.code === "auth/email-already-in-use") message = t("Cadastro.accountAlreadyInUse");
+      else if (error.code === "auth/invalid-email") message = t("Cadastro.invalidEmail");
 
       showMessage({
-        message: t("error"),
+        message: t("Cadastro.error"),
         description: message,
         type: "danger",
         icon: "danger",

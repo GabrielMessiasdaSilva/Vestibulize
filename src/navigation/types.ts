@@ -10,7 +10,7 @@ export type RootStackParamList = {
   Conquista: { acertos: number, faseConcluida?: number };
   Perfil: undefined;
   Mapa: { faseConcluida?: number } | undefined;
-  Materia: undefined;
+  Materia: { nome: string; assuntos: string[] };
   Desafio: undefined;
   Quiz: { tempoTotal: number; tempoAtivado: boolean, faseAtual: number };
   Termos: undefined;

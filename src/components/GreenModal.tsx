@@ -28,7 +28,7 @@ const GreenModal: React.FC<GreenModalProps> = ({ visible, onContinue }) => {
                                 resizeMode="contain"
                             />
                             <Text style={greenModal.balaoText}>
-                                {t('correctMessage')}
+                                {t('greenModal.correctMessage')}
                             </Text>
                             <Image
                                 source={require('../../assets/img/raposa_estrela.png')}

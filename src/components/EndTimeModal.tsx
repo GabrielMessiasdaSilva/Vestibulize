@@ -15,10 +15,10 @@ const EndTimeModal: React.FC<{ visible: boolean; onNavigate: () => void; acertos
     >
       <View style={endTimeModal.overlay}>
         <View style={endTimeModal.modalContainer}>
-          <Text style={endTimeModal.title}>{t('timeUpTitle')}</Text>
-          <Text style={endTimeModal.modalText}>{t('correctUntilNow')}</Text>
+          <Text style={endTimeModal.title}>{t('endTimeModal.timeUpTitle')}</Text>
+          <Text style={endTimeModal.modalText}>{t('endTimeModal.correctUntilNow')}</Text>
           <Text style={endTimeModal.correctText}>{acertos}/10</Text>
-          <Text style={endTimeModal.modalText}>{t('encouragement')}</Text>
+          <Text style={endTimeModal.modalText}>{t('endTimeModal.encouragement')}</Text>
           <TouchableOpacity style={endTimeModal.activateButton} onPress={onNavigate}>
             <Text style={endTimeModal.activateButtonText}>{t('backToMap')}</Text>
           </TouchableOpacity>

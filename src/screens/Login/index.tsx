@@ -94,8 +94,8 @@ export default function Login() {
   };
 
   const schema = yup.object({
-    email: yup.string().email(t('emailInvalido')).required(t('emailObrigatorio')),
-    password: yup.string().required(t('senhaObrigatoria')),
+    email: yup.string().email(t('login.emailInvalido')).required(t('login.emailObrigatorio')),
+    password: yup.string().required(t('login.senhaObrigatoria')),
   });
 
   const { control, handleSubmit, formState: { errors } } = useForm<FormData>({
@@ -114,7 +114,7 @@ export default function Login() {
       const user = userCredential.user;
 
       if (!user.emailVerified) {
-        showMessage({ message: t('emailNaoVerificadoTitulo'), description: t('emailNaoVerificadoMensagem'), type: "warning", icon: "warning" });
+        showMessage({ message: t('login.emailNaoVerificadoTitulo'), description: t('login.emailNaoVerificadoMensagem'), type: "warning", icon: "warning" });
         await sendEmailVerification(user);
         return;
       }
@@ -127,7 +127,7 @@ export default function Login() {
       let message = t('login.erroGenerico');
       if (error.code === 'auth/user-not-found') message = t('login.usuarioNaoEncontrado');
       else if (error.code === 'auth/wrong-password') message = t('login.senhaIncorreta');
-      else if (error.code === 'auth/invalid-email') message = t('emailInvalido');
+      else if (error.code === 'auth/invalid-email') message = t('login.emailInvalido');
 
       const newAttempts = attempts + 1;
       if (newAttempts >= 7) {
@@ -143,11 +143,11 @@ export default function Login() {
 
   const handleForgotPassword = async () => {
     if (!emailValue) {
-      showMessage({ message: t('atencao'), description: t('digiteEmailParaRedefinir'), type: "warning", icon: "warning" });
+      showMessage({ message: t('login.atencao'), description: t('login.digiteEmailParaRedefinir'), type: "warning", icon: "warning" });
       return;
     }
     await sendPasswordResetEmail(auth, emailValue);
-    showMessage({ message: t('sucesso'), description: t('emailRedefinicaoEnviado'), type: "success", icon: "success" });
+    showMessage({ message: t('success'), description: t('login.emailRedefinicaoEnviado'), type: "success", icon: "success" });
   };
 
   return (
