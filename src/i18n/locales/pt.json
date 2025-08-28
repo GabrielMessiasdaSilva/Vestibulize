@@ -122,5 +122,8 @@
         "title": "Qual será o seu foco de hoje?",
         "subtitle": "Escolha uma matéria específica para reforçar seus pontos fracos e praticar com provas antigas para pegar o ritmo.",
         "searchPlaceholder": "Pesquisar provas"
+    },
+    "map": {
+        "title": "Acompanhe a sua evolução"
     }
 }

@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
         marginBottom: 10,
         marginRight: 24,
         paddingHorizontal: 24,
+        fontFamily: 'PlusJakartaSans_600SemiBold',
     },
     title: {
         color: '#f7f8fa',
@@ -35,6 +36,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 24,
         paddingHorizontal: 24,
+        fontFamily: 'PlusJakartaSans_700Bold',
     },
     subtitle: {
         color: '#f7f8fa',
@@ -42,6 +44,7 @@ export const styles = StyleSheet.create({
         marginBottom: 36,
         marginRight: 14,
         paddingHorizontal: 24,
+        fontFamily: 'PlusJakartaSans_400Regular',
     },
     buttonsLayer: {
         flexDirection: "row",
@@ -66,6 +69,7 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "600",
         color: "#004854",
+        fontFamily: 'PlusJakartaSans_600SemiBold',
     },
     icon: {
         width: 20,
@@ -97,5 +101,6 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         flexShrink: 1,
         flex: 1,
+        fontFamily: 'PlusJakartaSans_400Regular',
     },
 });

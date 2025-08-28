@@ -41,7 +41,7 @@ const TimeModal: React.FC<TimeModalProps> = ({
                 <View style={timeModal.modalContainer}>
                     <Text style={timeModal.title}>{t('timeModal.chooseAmount')}</Text>
                     <TextInput
-                        style={timeModal.input}
+                        style={[timeModal.input, {color: '#000'}]}
                         keyboardType="numeric"
                         value={inputTime}
                         onChangeText={text => {

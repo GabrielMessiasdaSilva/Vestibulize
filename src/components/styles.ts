@@ -16,7 +16,8 @@ export const footer = StyleSheet.create({
         alignItems: 'center',
     },
     footerText: {
-        fontSize: 14
+        fontSize: 14,
+        fontFamily: 'Roboto_400Regular',
     }
 });
 
@@ -344,5 +345,88 @@ export const cards = StyleSheet.create({
     buttonText: {
         color: '#fff',
         fontWeight: '600',
+    },
+});
+
+export const subjects = StyleSheet.create({
+    buttonsLayer: {
+        flexDirection: 'row',
+        paddingHorizontal: 16,
+        gap: 12,
+    },
+    button: {
+        backgroundColor: '#CEE7F0',
+        paddingVertical: 12,
+        paddingHorizontal: 20,
+        borderRadius: 20,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
+        marginRight: 12,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    buttonText: {
+        fontSize: 16,
+        fontWeight: '600',
+        color: '#004854',
+    },
+});
+
+export const timebutton = StyleSheet.create({
+    questionMark: {
+        position: "absolute",
+        top: -8,
+        right: -8,
+        backgroundColor: "#619B8A",
+        borderRadius: 10,
+        padding: 2,
+        zIndex: 10,
+    },
+    dropdownButton: {
+        borderWidth: 2,
+        borderColor: "#619B8A",
+        borderRadius: 24,
+        padding: 16,
+        justifyContent: "center",
+        alignItems: "center",
+        width: 72,
+        height: 72,
+        backgroundColor: "#fff",
+    },
+    tooltipContainer: {
+        flex: 1,
+        backgroundColor: "rgba(0,0,0,0.3)",
+        justifyContent: "center",
+        alignItems: "center",
+        paddingHorizontal: 20,
+    },
+
+    tooltipContent: {
+        backgroundColor: "#fff",
+        padding: 20,
+        borderRadius: 12,
+        maxWidth: 320,
+        elevation: 6,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+    },
+
+    tooltipText: {
+        fontSize: 16,
+        color: "#333"
+    },
+
+    buttonTitle: {
+        color: "#333",
+        fontWeight: "600",
+        marginTop: 6,
+        fontSize: 14,
+        textAlign: "center",
+        width: 80,
     },
 });
