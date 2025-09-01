@@ -13,6 +13,12 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 
+const provas = [
+  { semestre: '2° Semestre 2025', questoes: 64 },
+  { semestre: '1° Semestre 2025', questoes: 60 },
+  { semestre: '2° Semestre 2024', questoes: 62 },
+];
+
 export default function Home() {
   const { username } = useUser();
   const [busca, setBusca] = useState('');
@@ -20,6 +26,10 @@ export default function Home() {
   const inputRef = useRef<TextInput>(null);
   const { t } = useTranslation();
   const [isFocused, setIsFocused] = useState(false);
+
+  const provasFiltradas = provas.filter((p) =>
+    p.semestre.toLowerCase().includes(busca.toLowerCase())
+  );  
 
   useEffect(() => {
     const unsubscribe = navigation.addListener(
@@ -52,7 +62,7 @@ export default function Home() {
           <TextInput
             ref={inputRef}
             style={styles.searchText}
-            placeholder={isFocused ? '' : t('home.searchPlaceholder')}
+            placeholder={isFocused ? t('home.searchExample') : t('home.searchPlaceholder')}
             value={busca}
             onChangeText={text => setBusca(text.slice(0, 18))}
             maxLength={18}
@@ -63,7 +73,8 @@ export default function Home() {
           />
           <MaterialCommunityIcons name="magnify" size={24} color="#40484B" />
         </TouchableOpacity>
-        <Card />
+        <Text style={styles.examsText}>{t('home.examsText')}</Text>
+        <Card provas={provasFiltradas}/>
       </ScrollView>
       <Footer />
     </View>

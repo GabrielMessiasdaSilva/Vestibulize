@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { View, Text } from 'react-native';
 import { TouchableOpacity, Modal, Pressable, Image, Animated, Easing } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import type { RootStackParamList } from "../navigation/types";
-import { Alert } from "react-native";
-import type { StackNavigationProp } from "@react-navigation/stack";
+import { Dimensions } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import Svg, { Circle, Line } from "react-native-svg";
 import { useTranslation } from "react-i18next";
@@ -17,6 +14,7 @@ interface TimeButtonProps {
 
 export default function TimeButton({ selectedTime, onPress }: TimeButtonProps) {
     const { t } = useTranslation();
+    const { width, height } = Dimensions.get("window");
 
     interface AnimatedClockProps {
         active: boolean;
@@ -144,40 +142,38 @@ export default function TimeButton({ selectedTime, onPress }: TimeButtonProps) {
     >(null);
 
     return (
-        <View style={{ flex: 1, backgroundColor: "#f7f8fa" }}>
+        <View style={{ flex: 1, alignItems: 'flex-start' }}>
             {/* Ativar Tempo */}
-            <View style={{ alignItems: "center" }}>
-                <View style={{ position: "relative" }}>
-                    {/* Ícone ? posicionado no topo direito */}
-                    <TouchableOpacity
-                        onPress={() =>
-                            setTooltipVisible(
-                                tooltipVisible === "tempo" ? null : "tempo"
-                            )
-                        }
-                        style={timebutton.questionMark}
-                    >
-                        <Icon name="question-circle" size={18} color="#fff" />
-                    </TouchableOpacity>
 
-                    <TouchableOpacity
-                        onPress={onPress}
-                        activeOpacity={0.7}
-                        style={timebutton.dropdownButton}
-                    >
-                        <AnimatedClock
-                            active={selectedTime !== "none"}
-                            size={40}
-                            color={selectedTime !== "none" ? "#619B8A" : "#999"}
-                        />
-                    </TouchableOpacity>
-                </View>
+            <View style={{ paddingLeft: width * 0.05, paddingTop: height * 0.04 }}>
+                {/* Ícone ? posicionado no topo direito */}
+                <TouchableOpacity
+                    onPress={() =>
+                        setTooltipVisible(
+                            tooltipVisible === "tempo" ? null : "tempo"
+                        )
+                    }
+                    style={timebutton.questionMark}
+                >
+                    <Icon name="question-circle" size={18} color="#fff" />
+                </TouchableOpacity>
 
-                <Text style={timebutton.buttonTitle}>
-                    {selectedTime !== "none"
-                        ? t("map.tempoSelecionado", { tempo: selectedTime })
-                        : t("map.ativarTempo")}
-                </Text>
+                <TouchableOpacity
+                    onPress={onPress}
+                    activeOpacity={0.7}
+                    style={timebutton.dropdownButton}
+                >
+                    <AnimatedClock
+                        active={selectedTime !== "none"}
+                        size={30}
+                        color={selectedTime !== "none" ? "#f7f8fa" : "#f7f8fa"}
+                    />
+                    <Text style={timebutton.buttonTitle}>
+                        {selectedTime !== "none"
+                            ? t("map.tempoSelecionado", { tempo: selectedTime })
+                            : t("map.ativarTempo")}
+                    </Text>
+                </TouchableOpacity>
             </View>
 
             {/* Tooltips Modais */}

@@ -309,12 +309,12 @@ export const SuccessAlert = StyleSheet.create({
 
 export const cards = StyleSheet.create({
     card: {
-        backgroundColor: '#fff',
-        borderRadius: 12,
+        backgroundColor: '#F0F6F7',
+        borderRadius: 16,
         borderWidth: 0.5,
         borderColor: '#01687D',
         padding: 20,
-        marginBottom: 12,
+        marginBottom: 26,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'flex-start',
@@ -336,11 +336,11 @@ export const cards = StyleSheet.create({
     },
     buttonIniciar: {
         backgroundColor: '#01687D',
-        paddingVertical: 6,
+        paddingVertical: 10,
         paddingHorizontal: 12,
         borderRadius: 20,
-        alignSelf: 'flex-end',
-        marginTop: 50,
+        alignSelf: 'center',
+        marginTop: 60,
     },
     buttonText: {
         color: '#fff',
@@ -355,7 +355,7 @@ export const subjects = StyleSheet.create({
         gap: 12,
     },
     button: {
-        backgroundColor: '#CEE7F0',
+        backgroundColor: '#86D1EA',
         paddingVertical: 12,
         paddingHorizontal: 20,
         borderRadius: 20,
@@ -371,30 +371,27 @@ export const subjects = StyleSheet.create({
     buttonText: {
         fontSize: 16,
         fontWeight: '600',
-        color: '#004854',
+        color: '#003642',
     },
 });
 
 export const timebutton = StyleSheet.create({
     questionMark: {
         position: "absolute",
-        top: -8,
-        right: -8,
-        backgroundColor: "#619B8A",
+        top: 22,
+        right: -2,
+        backgroundColor: "#4C636A",
         borderRadius: 10,
         padding: 2,
         zIndex: 10,
     },
     dropdownButton: {
-        borderWidth: 2,
-        borderColor: "#619B8A",
-        borderRadius: 24,
-        padding: 16,
-        justifyContent: "center",
-        alignItems: "center",
-        width: 72,
-        height: 72,
-        backgroundColor: "#fff",
+        borderRadius: 34,
+        paddingHorizontal: 16,
+        paddingVertical: 10,
+        flexDirection: "row",
+        gap: 8,
+        backgroundColor: "#4C636A",
     },
     tooltipContainer: {
         flex: 1,
@@ -422,11 +419,9 @@ export const timebutton = StyleSheet.create({
     },
 
     buttonTitle: {
-        color: "#333",
+        color: "#f7f8fa",
         fontWeight: "600",
-        marginTop: 6,
+        marginTop: 2,
         fontSize: 14,
-        textAlign: "center",
-        width: 80,
     },
 });

@@ -107,7 +107,7 @@ export default function Subjects() {
             <MaterialCommunityIcons
               name={iconsMap[materia.nome]}
               size={20}
-              color="#233D4D"
+              color="#003642"
               style={{ marginRight: 8 }}
             />
             <Text style={subjects.buttonText}>{materia.nome}</Text>

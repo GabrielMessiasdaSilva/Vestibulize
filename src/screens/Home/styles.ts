@@ -5,12 +5,16 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        backgroundColor: '#f7f8fa',
+        backgroundColor: '#005C6D',
         width: '100%'
     },
     topHome: {
         backgroundColor: '#005C6D',
-
+        width: '100%',
+        marginBottom: 16,
+        paddingBottom: 16,
+        borderBottomRightRadius: 24,
+        borderBottomLeftRadius: 24,
     },
     logoContainer: {
         alignItems: "flex-end",
@@ -40,44 +44,11 @@ export const styles = StyleSheet.create({
     },
     subtitle: {
         color: '#f7f8fa',
-        fontSize: 14,
+        fontSize: 24,
         marginBottom: 36,
         marginRight: 14,
         paddingHorizontal: 24,
         fontFamily: 'PlusJakartaSans_400Regular',
-    },
-    buttonsLayer: {
-        flexDirection: "row",
-        paddingHorizontal: 16,
-        gap: 12,
-    },
-    button: {
-        backgroundColor: "#CEE7F0",
-        paddingVertical: 12,
-        paddingHorizontal: 20,
-        borderRadius: 20,
-        shadowColor: "#000",
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1,
-        shadowRadius: 4,
-        elevation: 3,
-        marginRight: 12,
-        flexDirection: "row",
-        alignItems: "center",
-    },
-    buttonText: {
-        fontSize: 16,
-        fontWeight: "600",
-        color: "#004854",
-        fontFamily: 'PlusJakartaSans_600SemiBold',
-    },
-    icon: {
-        width: 20,
-        height: 20,
-        marginRight: 8,
-        color: "#004854",
-        backgroundColor: "#004854",
-        borderRadius: 10,
     },
     searchContainer: {
         flexDirection: 'row',
@@ -89,7 +60,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#E4E9EB',
         padding: 8,
         paddingHorizontal: 16,
-        marginTop: 32,
+        marginTop: 42,
         marginBottom: 16,
         width: '90%',
         minHeight: 40,
@@ -103,4 +74,13 @@ export const styles = StyleSheet.create({
         flex: 1,
         fontFamily: 'PlusJakartaSans_400Regular',
     },
+    examsText:{
+        marginTop: 48,
+        marginBottom: 16,
+        marginLeft: 24,
+        alignSelf: 'flex-start',
+        color: '#666666',
+        fontSize: 16,
+        fontFamily: 'PlusJakartaSans_600SemiBold',
+    }
 });
