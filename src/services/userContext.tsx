@@ -13,7 +13,7 @@ type UserContextType = {
   uid: string | null;
 };
 
-const UserContext = createContext<UserContextType>({} as UserContextType);
+export const UserContext = createContext<UserContextType>({} as UserContextType);
 
 export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [username, setUsername] = useState("");

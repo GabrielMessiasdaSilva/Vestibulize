@@ -25,7 +25,7 @@
     "expo": "54.0.4",
     "expo-auth-session": "~6.2.1",
     "expo-font": "~13.3.2",
-    "expo-image-picker": "~16.1.4",
+    "expo-image-picker": "~17.0.8",
     "expo-react-native-toastify": "^1.0.19",
     "expo-status-bar": "~2.2.3",
     "expo-web-browser": "~14.2.0",
@@ -61,6 +61,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~19.0.10",
+    "@types/react-native-vector-icons": "^6.4.18",
     "typescript": "~5.8.3"
   },
   "private": true
