@@ -18,7 +18,20 @@ export const footer = StyleSheet.create({
     footerText: {
         fontSize: 14,
         fontFamily: 'Roboto_400Regular',
-    }
+    },
+    avatarFooterWrapper: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: '#B2EBF2',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    avatarFooter: {
+        width: 32,
+        height: 32,
+        borderRadius: 16,
+    },
 });
 
 export const timeModal = StyleSheet.create({

@@ -128,11 +128,9 @@ export default function Login() {
       if (error.code === 'auth/user-not-found') message = t('login.usuarioNaoEncontrado');
       else if (error.code === 'auth/wrong-password') message = t('login.senhaIncorreta');
       else if (error.code === 'auth/invalid-email') message = t('login.emailInvalido');
-
       const newAttempts = attempts + 1;
       if (newAttempts >= 7) {
         const blockTime = Date.now() + 15 * 60 * 1000;
-        await saveAttempts(newAttempts, blockTime);
         showMessage({ message: "Bloqueado", description: "Muitas tentativas inválidas. Tente novamente mais tarde.", type: "danger", icon: "danger" });
       } else {
         await saveAttempts(newAttempts);
@@ -194,13 +192,17 @@ export default function Login() {
           >
             <Text style={styles.buttonTextPrimary}>Entrar</Text>
           </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Cadastro' as never)}
-            style={styles.buttonSecondary}
-          >
-            <Text style={styles.buttonTextSecondary}>Cadastrar</Text>
-          </TouchableOpacity>
+        </View>
+        <View style={styles.cadastroContainer}>
+          <Text style={styles.cadastroText}>
+            Não tem uma conta?{' '}
+            <Text
+              style={styles.cadastroLink}
+              onPress={() => navigation.navigate('Cadastro' as never)}
+            >
+              Faça o cadastro
+            </Text>
+          </Text>
         </View>
       </ScrollView>
     </KeyboardAvoidingView>

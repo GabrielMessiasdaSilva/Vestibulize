@@ -3,7 +3,6 @@ import {
   SafeAreaView,
   View,
   Text,
-  StyleSheet,
   ScrollView,
   TouchableOpacity,
   StatusBar,
@@ -18,9 +17,10 @@ import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as ImagePicker from 'expo-image-picker';
 import { auth, db } from '../../../src/services/firebaseConfig';
 import { doc, getDoc, updateDoc, collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { updateProfile } from 'firebase/auth';
 import Footer from '../../components/Footer';
+import { useNavigation } from '@react-navigation/native';
+import styles from './styles';
 
 const bottomNavHeight = 80;
 
@@ -40,9 +40,11 @@ export default function ProfileScreen() {
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
+  const [termsVisible, setTermsVisible] = useState(false);
   const [newName, setNewName] = useState('');
   const [newPhoto, setNewPhoto] = useState<string | null>(null);
 
+  const navigation = useNavigation();
   const userId = auth.currentUser?.uid;
 
   useEffect(() => {
@@ -99,19 +101,8 @@ export default function ProfileScreen() {
     setUploading(true);
 
     try {
-      let photoURL = userData?.photoURL || '';
+      const photoURL = newPhoto || userData?.photoURL || '';
 
-      if (newPhoto && !newPhoto.startsWith('https://')) {
-        // Upload da nova foto
-        const response = await fetch(newPhoto);
-        const blob = await response.blob();
-        const storage = getStorage();
-        const storageRef = ref(storage, `avatars/${userId}.jpg`);
-        await uploadBytes(storageRef, blob);
-        photoURL = await getDownloadURL(storageRef);
-      }
-
-      // Atualiza no Firebase Auth
       if (auth.currentUser) {
         await updateProfile(auth.currentUser, {
           displayName: newName,
@@ -119,7 +110,6 @@ export default function ProfileScreen() {
         });
       }
 
-      // Atualiza no Firestore
       await updateDoc(doc(db, 'users', userId), {
         username: newName,
         photoURL,
@@ -133,6 +123,15 @@ export default function ProfileScreen() {
       Alert.alert('Erro', 'Não foi possível atualizar o perfil');
     } finally {
       setUploading(false);
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      await auth.signOut();
+      navigation.navigate('Inicial' as never);
+    } catch (error) {
+      Alert.alert('Erro', 'Não foi possível sair da conta');
     }
   };
 
@@ -151,44 +150,52 @@ export default function ProfileScreen() {
         contentContainerStyle={[styles.scrollContent, { paddingBottom: bottomNavHeight + 20 }]}
         showsVerticalScrollIndicator={false}
       >
-        {/* Cabeçalho */}
-        <View style={styles.header}>
-          <TouchableOpacity onPress={() => setModalVisible(true)}>
-            {uploading ? (
-              <View style={styles.avatar}>
-                <ActivityIndicator size="small" color="#004A5A" />
+        {/* Card fundo */}
+        <View style={styles.profileCard}>
+          <View style={styles.profileCardContent}>
+            {/* Botão Editar no topo direito */}
+            <TouchableOpacity
+              style={styles.editButton}
+              onPress={() => setModalVisible(true)}
+            >
+              <MaterialIcon name="pencil-outline" size={16} color="#000" />
+              <Text style={styles.editButtonText}>Editar</Text>
+            </TouchableOpacity>
+            {/* Avatar e nome */}
+            <View style={styles.avatarRow}>
+              <View style={styles.avatarWrapper}>
+                <TouchableOpacity onPress={() => setModalVisible(true)}>
+                  {uploading ? (
+                    <View style={styles.avatar}>
+                      <ActivityIndicator size="small" color="#004A5A" />
+                    </View>
+                  ) : userData?.photoURL ? (
+                    <Image source={{ uri: userData.photoURL }} style={styles.avatar} />
+                  ) : (
+                    <View style={styles.avatar}>
+                      <Icon name="person" size={40} color="#004A5A" />
+                    </View>
+                  )}
+                </TouchableOpacity>
               </View>
-            ) : userData?.photoURL ? (
-              <Image source={{ uri: userData.photoURL }} style={styles.avatar} />
-            ) : (
-              <View style={styles.avatar}>
-                <Icon name="person" size={40} color="#004A5A" />
-              </View>
-            )}
-          </TouchableOpacity>
-          <Text style={styles.name}>{userData?.username || 'Nome'}</Text>
-          <TouchableOpacity
-            style={styles.editButton}
-            onPress={() => setModalVisible(true)}
-          >
-            <MaterialIcon name="pencil-outline" size={16} color="#004A5A" />
-            <Text style={styles.editButtonText}>Editar</Text>
-          </TouchableOpacity>
+              <Text style={styles.name}>{userData?.username || 'Nome'}</Text>
+            </View>
+          </View>
         </View>
 
         {/* Card de Opções */}
         <View style={styles.optionsCard}>
-          <TouchableOpacity style={styles.optionRow}>
+          <TouchableOpacity style={styles.optionRow} onPress={() => setTermsVisible(true)}>
             <Text style={styles.optionText}>Termos e condições</Text>
-            <MaterialIcon name="arrow-top-right" size={24} color="#585858" />
+            <MaterialIcon name="arrow-top-right" size={24} color="#004A5A" />
           </TouchableOpacity>
           <View style={styles.divider} />
           <TouchableOpacity
             style={styles.optionRow}
-            onPress={() => auth.signOut()}
+            onPress={handleLogout}
           >
-            <Text style={styles.optionText}>Sair da conta</Text>
-            <MaterialIcon name="logout" size={24} color="#585858" />
+            <Text style={styles.logoutText}>Sair da conta</Text>
+            <MaterialIcon name="logout" size={24} color="#D32F2F" />
           </TouchableOpacity>
         </View>
 
@@ -249,41 +256,33 @@ export default function ProfileScreen() {
           </View>
         </View>
       </Modal>
+
+      {/* Modal de Termos e Condições */}
+      <Modal
+        visible={termsVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setTermsVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.termsContent}>
+            <Text style={styles.modalTitle}>Termos e Condições</Text>
+            <ScrollView style={{ maxHeight: 300 }}>
+              <Text style={styles.termsText}>
+                Estes são os termos e condições de uso do aplicativo Vestibulize. 
+                Ao utilizar o app, você concorda com nossas políticas de privacidade, uso de dados e regras de conduta. 
+                Não compartilhe informações pessoais sensíveis. O uso indevido pode resultar em suspensão da conta. 
+                Para dúvidas, entre em contato com o suporte.
+                {"\n\n"}
+                (Nossos termos de usos são : Primeiro termo, segundo termo, terceiro termo, quarto termo, quinto termo, sexto termo, sétimo termo, oitavo termo, nono termo, décimo termo e assim por diante... )
+              </Text>
+            </ScrollView>
+            <TouchableOpacity style={styles.saveButton} onPress={() => setTermsVisible(false)}>
+              <Text style={styles.saveButtonText}>Fechar</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: '#F4F8F7' },
-  scrollContent: { paddingHorizontal: 20 },
-  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 20 },
-  avatar: { width: 80, height: 80, borderRadius: 40, backgroundColor: '#B2EBF2', justifyContent: 'center', alignItems: 'center' },
-  name: { fontSize: 24, fontWeight: 'bold', color: '#333', flex: 1, marginLeft: 15 },
-  editButton: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#E0F7FA', paddingHorizontal: 15, paddingVertical: 8, borderRadius: 20 },
-  editButtonText: { marginLeft: 5, color: '#004A5A', fontWeight: 'bold' },
-  optionsCard: { backgroundColor: '#F0F0F0', borderRadius: 15, marginTop: 20, overflow: 'hidden' },
-  optionRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 20 },
-  optionText: { fontSize: 16, color: '#333' },
-  divider: { height: 1, backgroundColor: '#DDDDDD', marginHorizontal: 20 },
-  rankingSection: { marginTop: 30 },
-  rankingTitle: { fontSize: 28, fontWeight: 'bold', color: '#00839A' },
-  rankingDescription: { fontSize: 15, color: '#585858', marginTop: 10, lineHeight: 22 },
-  rankingList: { marginTop: 20 },
-  rankingItem: { flexDirection: 'row', alignItems: 'center', marginBottom: 15 },
-  rankingNumber: { width: 28, height: 28, borderRadius: 14, backgroundColor: '#004A5A', justifyContent: 'center', alignItems: 'center', marginRight: 15 },
-  rankingNumberText: { color: '#fff', fontWeight: 'bold' },
-  rankingItemText: { fontSize: 18, color: '#333', flex: 1 },
-  rankingAcertos: { fontSize: 16, color: '#004A5A', fontWeight: 'bold' },
-  bottomNav: { height: bottomNavHeight },
-
-  // Modal
-  modalContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' },
-  modalContent: { width: '85%', backgroundColor: '#fff', borderRadius: 15, padding: 20, alignItems: 'center' },
-  modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 20 },
-  modalAvatar: { width: 100, height: 100, borderRadius: 50, backgroundColor: '#B2EBF2', justifyContent: 'center', alignItems: 'center', marginBottom: 15 },
-  input: { width: '100%', borderWidth: 1, borderColor: '#ccc', borderRadius: 10, padding: 10, marginBottom: 20 },
-  saveButton: { backgroundColor: '#00839A', paddingVertical: 12, paddingHorizontal: 30, borderRadius: 10, marginBottom: 10 },
-  saveButtonText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
-  cancelButton: { backgroundColor: '#ccc', paddingVertical: 12, paddingHorizontal: 30, borderRadius: 10 },
-  cancelButtonText: { color: '#333', fontSize: 16, fontWeight: 'bold' },
-});

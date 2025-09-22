@@ -1,207 +1,116 @@
-
-
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#F4F8F7',
+const bottomNavHeight = 80;
+
+export default StyleSheet.create({
+  safeArea: { flex: 1, backgroundColor: '#F4F8F7' },
+  scrollContent: { paddingHorizontal: 0 },
+  profileCard: {
+   backgroundColor: '#005C6D',
+    borderRadius: 20,
+    paddingTop: 30,
+    paddingBottom: 40,
+    // marginTop: 20, // remova esta linha!
+    marginBottom: 10,
+    elevation: 3,
+    zIndex: 2,
+    position: 'relative',
+    overflow: 'visible',
+    width: '100%',
   },
-  container: {
-    flex: 1,
-  },
-  scrollContent: {
-    paddingBottom: 100, // Espaço para a navegação inferior
+  profileCardContent: {
     paddingHorizontal: 20,
-  },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: 20,
-  },
-  profileInfo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  avatar: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
-    backgroundColor: '#B2EBF2',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 15,
-  },
-  name: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
+    width: '100%',
   },
   editButton: {
+    position: 'absolute',
+    top: 18,
+    right: 18,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#E0F7FA',
+    backgroundColor: '#B2EBF2',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#fff',
+    zIndex: 4,
   },
-  editButtonText: {
-    marginLeft: 5,
-    color: '#004A5A',
-    fontWeight: 'bold',
+  editButtonText: { marginLeft: 5, color: '#020202ff', fontWeight: 'bold' },
+  avatarRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginTop: 40,
+    minHeight: 120,
+  },
+  avatarWrapper: {
+    position: 'absolute',
+    left: 5,
+    bottom: -70,
+    zIndex: 5,
+    elevation: 5,
+  },
+  avatar: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    backgroundColor: '#B2EBF2',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 3,
+    borderColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+  },
+  name: {
+    top:60,
+    marginLeft: 135,
+    fontSize: 24,
+    fontWeight: 'normal',
+    color: '#fff',
+    flex: 1,
+    alignSelf: 'center',
   },
   optionsCard: {
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#F4F8F7',
     borderRadius: 15,
-    marginTop: 20,
+    marginTop: 60,
     overflow: 'hidden',
+    elevation: 2,
+    zIndex: 1,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
-  optionRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 20,
-  },
-  optionText: {
-    fontSize: 16,
-    color: '#333',
-  },
-  divider: {
-    height: 1,
-    backgroundColor: '#DDDDDD',
-    marginHorizontal: 20,
-  },
-  rankingSection: {
-    marginTop: 30,
-  },
-  rankingTitle: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#00839A',
-  },
-  rankingDescription: {
-    fontSize: 15,
-    color: '#585858',
-    marginTop: 10,
-    lineHeight: 22,
-  },
-  rankingList: {
-    marginTop: 20,
-  },
-  rankingItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 15,
-  },
-  rankingNumber: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: '#004A5A',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 15,
-  },
-  rankingNumberText: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-  },
-  rankingItemText: {
-    fontSize: 18,
-    color: '#333',
-  },
-  chartContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'flex-end',
-    marginTop: 30,
-    height: 300,
-  },
-  chartBarWrapper: {
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    width: '30%',
-    height: '100%',
-  },
-  chartBar: {
-    width: 100,
-    borderRadius: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'relative',
-    paddingTop: 20, // Espaço para o círculo do ranking
-  },
-  barOne: {
-    backgroundColor: '#00839A',
-    height: '90%', // 80 Acertos (mais alto)
-  },
-  barTwo: {
-    backgroundColor: '#B2EBF2',
-    height: '75%', // 70 Acertos (médio)
-  },
-  barThree: {
-    backgroundColor: '#D1E3E6',
-    height: '65%', // 65 Acertos (mais baixo)
-  },
-  chartRankCircle: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    top: -16, // Metade para fora
-    borderWidth: 3,
-    borderColor: '#F4F8F7',
-  },
-  rankCircleOne: {
-    backgroundColor: '#00839A',
-  },
-  rankCircleTwo: {
-    backgroundColor: '#B2EBF2',
-  },
-  rankCircleThree: {
-    backgroundColor: '#D1E3E6',
-  },
-  chartRankText: {
-    color: '#004A5A',
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-  chartAcertosValue: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#004A5A',
-  },
-  chartAcertosLabel: {
-    fontSize: 16,
-    color: '#004A5A',
-  },
-  bottomNav: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    height: 80,
-    backgroundColor: '#FFFFFF',
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    borderTopWidth: 1,
-    borderTopColor: '#E0E0E0',
-  },
-  navItem: {
-    alignItems: 'center',
-  },
-  navText: {
-    fontSize: 12,
-    color: '#585858',
-    marginTop: 4,
-  },
-  navTextActive: {
-    color: '#00839A',
-  },
-});
+  optionRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 18 },
+  optionText: { fontSize: 16, color: '#004A5A', fontWeight: 'bold' },
+  logoutText: { fontSize: 16, color: '#D32F2F', fontWeight: 'bold' },
+  divider: { height: 1, backgroundColor: '#DDDDDD', marginHorizontal: 0 },
+  rankingSection: { marginTop: 30, paddingHorizontal: 20 },
+  rankingTitle: { fontSize: 28, fontWeight: 'bold', color: '#00839A' },
+  rankingDescription: { fontSize: 15, color: '#585858', marginTop: 10, lineHeight: 22 },
+  rankingList: { marginTop: 20 },
+  rankingItem: { flexDirection: 'row', alignItems: 'center', marginBottom: 15 },
+  rankingNumber: { width: 28, height: 28, borderRadius: 14, backgroundColor: '#004A5A', justifyContent: 'center', alignItems: 'center', marginRight: 15 },
+  rankingNumberText: { color: '#fff', fontWeight: 'bold' },
+  rankingItemText: { fontSize: 18, color: '#333', flex: 1 },
+  rankingAcertos: { fontSize: 16, color: '#004A5A', fontWeight: 'bold' },
+  bottomNav: { height: bottomNavHeight },
 
-export default styles;
+  // Modal
+  modalContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' },
+  modalContent: { width: '85%', backgroundColor: '#fff', borderRadius: 15, padding: 20, alignItems: 'center' },
+  modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 20 },
+  modalAvatar: { width: 100, height: 100, borderRadius: 50, backgroundColor: '#B2EBF2', justifyContent: 'center', alignItems: 'center', marginBottom: 15 },
+  input: { width: '100%', borderWidth: 1, borderColor: '#ccc', borderRadius: 10, padding: 10, marginBottom: 20 },
+  saveButton: { backgroundColor: '#00839A', paddingVertical: 12, paddingHorizontal: 30, borderRadius: 10, marginBottom: 10 },
+  saveButtonText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
+  cancelButton: { backgroundColor: '#ccc', paddingVertical: 12, paddingHorizontal: 30, borderRadius: 10 },
+  cancelButtonText: { color: '#333', fontSize: 16, fontWeight: 'bold' },
+
+  // Modal Termos
+  termsContent: { width: '85%', backgroundColor: '#fff', borderRadius: 15, padding: 20, alignItems: 'center' },
+  termsText: { fontSize: 15, color: '#333', marginBottom: 20, textAlign: 'justify' },
+});

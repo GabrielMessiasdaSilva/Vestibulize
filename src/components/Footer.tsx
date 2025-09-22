@@ -1,6 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import { View, TouchableOpacity, Image, Animated, Text } from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { footer } from './styles';
 import { useNavigation, useRoute } from '@react-navigation/native';
@@ -8,7 +7,7 @@ import type { StackNavigationProp } from '@react-navigation/stack';
 import type { RootStackParamList } from '../navigation/types';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from "react-i18next";
-import { useUser } from "../services/userContext";
+import { UserContext } from '../services/userContext';
 
 const mapScreens = ['Mapa', 'Quiz', 'Vida', 'Conquista', 'Ranking', 'Desafio'];
 const homeScreens = ['Home', 'Materia'];
@@ -20,7 +19,7 @@ const Footer = () => {
     const isMapScreen = mapScreens.includes(route.name);
     const isHomeScreen = homeScreens.includes(route.name);
     const fadeAnim = useRef(new Animated.Value(isMapScreen ? 1 : 0)).current;
-    const { photoURL } = useUser();
+    const { user } = useContext(UserContext) as { user?: { photoURL?: string } };
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -52,11 +51,14 @@ const Footer = () => {
                 </Animated.View>
                 <Text style={[footer.footerText, { color: isHomeScreen ? '#4C636A' : '#40484B' }]}>{t('footer.track')}</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate('Perfil')} style={footer.iconContainer}>
-                <Image
-                    source={photoURL ? { uri: photoURL } : require('../../assets/img/perfil.png')}
-                    style={{ width: 30, height: 30, borderRadius: 18 }}
-                />
+            <TouchableOpacity onPress={() => navigation.navigate('Perfil' as never)} style={footer.iconContainer}>
+                <View style={footer.avatarFooterWrapper}>
+                    {user?.photoURL ? (
+                        <Image source={{ uri: user.photoURL }} style={footer.avatarFooter} />
+                    ) : (
+                        <MaterialCommunityIcons name="account" size={32} color="#004A5A" style={footer.avatarFooter} />
+                    )}
+                </View>
                 <Text style={[footer.footerText, { color: isHomeScreen ? '#4C636A' : '#40484B' }]}>{t('footer.profile')}</Text>
             </TouchableOpacity>
         </View>
