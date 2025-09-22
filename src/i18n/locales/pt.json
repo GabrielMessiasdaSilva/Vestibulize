@@ -90,11 +90,12 @@
         "wrongMessage": "Ops! Essa não foi...\nVocê perdeu uma\nvida, mas o Vest\nconfia em você."
     },
     "timeModal": {
-        "chooseAmount": "Escolher quantidade",
+        "chooseAmount": "Determine o tempo",
         "placeholderMinutes": "0 - 60",
         "minutes": "Minutos",
-        "activate": "Ativar",
-        "deactivate": "Desativar"
+        "seconds": "Segundos",
+        "ok": "Ok",
+        "cancel": "Cancelar"
     },
     "backToMap": "Voltar ao mapa",
     "continue": "Continuar",
@@ -127,7 +128,7 @@
     },
     "map": {
         "title": "Acompanhe a sua evolução",
-        "ativarTempo": "Ativar tempo",
+        "tempo": "Tempo",
         "tempoSelecionado": "Tempo: {{tempo}} Minutos",
         "tooltipTempo": "Ative o tempo para controlar o limite durante as fases do quiz.",
         "alertTempoAtivadoTitulo": "⏰ Tempo ativado",
@@ -139,7 +140,8 @@
         "matematica": "Matemática",
         "linguagens": "Linguagens",
         "ciencias_natureza": "Ciências da Natureza",
-        "ciencias_humanas": "Ciências Humanas"
+        "ciencias_humanas": "Ciências Humanas",
+        "concluido": "Concluído"
     },
     "materia": {
         "Matematica": "Matemática",

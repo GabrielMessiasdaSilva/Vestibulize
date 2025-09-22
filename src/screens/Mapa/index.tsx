@@ -1,10 +1,8 @@
-import { View, Text, ScrollView, Alert, TouchableOpacity, Animated, Image } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Alert } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from './styles';
 import { useTranslation } from 'react-i18next';
 import TimeModal from '../../components/TimeModal';
-import TimeButton from '../../components/TimeButton';
-import AnimatedPhaseCircle from "../../components/AnimatedPhaseCircle";
 import Footer from '../../components/Footer';
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -52,8 +50,8 @@ export default function Mapa() {
   const [fases, setFases] = useState([
     { numero: 1, status: "disponivel", nome: "matematica" },
     { numero: 2, status: "bloqueada", nome: "linguagens" },
-    { numero: 3, status: "bloqueada", nome: "ciencias_natureza" },
-    {
+    { numero: 3, status: "bloqueada", nome: "ciencias_humanas" },
+        {
       numero: 4,
       status: "bloqueada",
       nome: "ciencias_humanas",
@@ -100,42 +98,53 @@ export default function Mapa() {
 
   return (
     <View style={styles.container}>
-      <ScrollView contentContainerStyle={{ flexGrow: 1, paddingBottom: 80, backgroundColor: '#f7f8fa' }} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Título */}
         <Text style={styles.title}>{t('map.title')}</Text>
-        <TimeButton
-          selectedTime={selectedTime}
-          onPress={() => setModalVisible(true)}
-        />
+
+        {/* Botão Tempo */}
+        <View style={styles.topButtons}>
+          <TouchableOpacity
+            style={styles.secondaryButton}
+            onPress={() => setModalVisible(true)}
+          >
+            <MaterialCommunityIcons name="clock-outline" size={20} color="#005C6D" />
+            <Text style={styles.secondaryButtonText}>{t("map.tempo")}</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Fases */}
         <View style={styles.phaseMapContainer}>
           {fases.map((fase, index) => {
             const faseStatus = fase.status;
+
             const borderColor =
               faseStatus === "concluida"
                 ? "#4CAF50"
                 : faseStatus === "disponivel"
-                  ? "#005C6D"
-                  : "#bbb";
+                ? "#FEC946"
+                : "#bbb";
 
             return (
-              <View key={fase.numero} style={styles.phaseItem}>
+              <View key={fase.numero} style={styles.phaseRow}>
+                {/* Linha vertical */}
+                {index > 0 && <View style={styles.verticalLine} />}
+
+                {/* Círculo da fase */}
                 <TouchableOpacity
                   disabled={faseStatus !== "disponivel"}
                   onPress={() => iniciarFase(fase.numero)}
                   activeOpacity={0.7}
                 >
-                  <AnimatedPhaseCircle
-                    isActive={faseStatus === "disponivel"}
+                  <View
                     style={[
                       styles.phaseCircle,
                       {
-                        backgroundColor:
-                          faseStatus === "concluida" ? "#4CAF50" : "#fff",
                         borderColor,
-                        shadowColor:
-                          faseStatus === "disponivel"
-                            ? "#FEC946"
-                            : "transparent",
-                        elevation: faseStatus === "disponivel" ? 10 : 0,
+                        backgroundColor: faseStatus === "concluida" ? "#E6F4EA" : "#fff",
                       },
                     ]}
                   >
@@ -143,7 +152,10 @@ export default function Mapa() {
                       style={[
                         styles.phaseNumber,
                         {
-                          color: faseStatus === "concluida" ? "#fff" : "#333",
+                          color:
+                            faseStatus === "concluida"
+                              ? "#4CAF50"
+                              : "#333",
                         },
                       ]}
                     >
@@ -151,66 +163,38 @@ export default function Mapa() {
                     </Text>
 
                     {faseStatus === "bloqueada" && (
-                      <MaterialCommunityIcons name="lock" size={28} color="#bbb" style={styles.iconBlocked} />
+                      <MaterialCommunityIcons
+                        name="lock"
+                        size={28}
+                        color="#bbb"
+                        style={styles.lockIcon}
+                      />
                     )}
-                  </AnimatedPhaseCircle>
+                  </View>
                 </TouchableOpacity>
 
-                <Text
-                  style={[
-                    styles.subjectTitle,
-                    { color: faseStatus === "bloqueada" ? "#aaa" : "#444" },
-                  ]}
-                >
-                  {t(`map.${fase.nome}`)}
-                </Text>
+                {/* Título da fase */}
+                <View style={styles.phaseInfo}>
+                  <Text
+                    style={[
+                      styles.subjectTitle,
+                      { color: faseStatus === "bloqueada" ? "#aaa" : "#005C6D" },
+                    ]}
+                  >
+                    {t(`map.${fase.nome}`)}
+                  </Text>
 
-                {index < fases.length - 1 && (
-                  <View style={styles.lineContainer}>
-                    {/* Linha vertical entre as fases */}
-                    <View
-                      style={{
-                        width: 4,
-                        height:
-                          fases[index].status === "concluida"
-                            ? 70 // linha maior se fase concluída
-                            : 40, // linha padrão caso contrário
-                        backgroundColor:
-                          fases[index].status === "concluida" &&
-                            fases[index + 1].status !== "bloqueada"
-                            ? "#4CAF50"
-                            : "#ccc",
-                        borderRadius: 2,
-                      }}
-                    />
-                    {/* Círculo indicador no meio da linha */}
-                    <View
-                      style={{
-                        position: "absolute",
-                        top:
-                          fases[index].status === "concluida"
-                            ? 58 // posicionado perto do fim da linha maior
-                            : 18, // no meio da linha menor
-                        width: 12,
-                        height: 12,
-                        borderRadius: 6,
-                        backgroundColor:
-                          fases[index].status === "concluida" &&
-                            fases[index + 1].status !== "bloqueada"
-                            ? "#4CAF50"
-                            : "#ccc",
-                        borderWidth: 2,
-                        borderColor: "#fff",
-                        elevation: 3,
-                      }}
-                    />
-                  </View>
-                )}
+                  {faseStatus === "concluida" && (
+                    <Text style={styles.completedText}>{t("map.concluido")} ✓</Text>
+                  )}
+                </View>
               </View>
             );
           })}
         </View>
-      </ScrollView >
+      </ScrollView>
+
+      {/* Modal de tempo */}
       <TimeModal
         visible={modalVisible}
         inputTime={inputTime}
@@ -219,7 +203,9 @@ export default function Mapa() {
         onDeactivate={handleDeactivateTime}
         onClose={() => setModalVisible(false)}
       />
+
+      {/* Footer fixo */}
       <Footer />
-    </View >
+    </View>
   );
 }
