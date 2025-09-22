@@ -1,14 +1,14 @@
-import { View, Text, ScrollView, TouchableOpacity, Alert } from 'react-native';
-import React, { useState } from 'react';
-import { styles } from './styles';
-import { useTranslation } from 'react-i18next';
-import TimeModal from '../../components/TimeModal';
-import Footer from '../../components/Footer';
+import { View, Text, ScrollView, TouchableOpacity, Alert } from "react-native";
+import React, { useState } from "react";
+import { styles } from "./styles";
+import { useTranslation } from "react-i18next";
+import TimeModal from "../../components/TimeModal";
+import Footer from "../../components/Footer";
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import type { StackNavigationProp } from '@react-navigation/stack';
-import type { RootStackParamList } from '../../navigation/types';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import type { StackNavigationProp } from "@react-navigation/stack";
+import type { RootStackParamList } from "../../navigation/types";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function Mapa() {
   const { t } = useTranslation();
@@ -51,10 +51,10 @@ export default function Mapa() {
     { numero: 1, status: "disponivel", nome: "matematica" },
     { numero: 2, status: "bloqueada", nome: "linguagens" },
     { numero: 3, status: "bloqueada", nome: "ciencias_humanas" },
-        {
+    {
       numero: 4,
       status: "bloqueada",
-      nome: "ciencias_humanas",
+      nome: "ciencias_natureza",
     },
   ]);
 
@@ -103,7 +103,7 @@ export default function Mapa() {
         showsVerticalScrollIndicator={false}
       >
         {/* Título */}
-        <Text style={styles.title}>{t('map.title')}</Text>
+        <Text style={styles.title}>{t("map.title")}</Text>
 
         {/* Botão Tempo */}
         <View style={styles.topButtons}>
@@ -111,7 +111,11 @@ export default function Mapa() {
             style={styles.secondaryButton}
             onPress={() => setModalVisible(true)}
           >
-            <MaterialCommunityIcons name="clock-outline" size={20} color="#005C6D" />
+            <MaterialCommunityIcons
+              name="clock-outline"
+              size={20}
+              color="#005C6D"
+            />
             <Text style={styles.secondaryButtonText}>{t("map.tempo")}</Text>
           </TouchableOpacity>
         </View>
@@ -131,7 +135,13 @@ export default function Mapa() {
             return (
               <View key={fase.numero} style={styles.phaseRow}>
                 {/* Linha vertical */}
-                {index > 0 && <View style={styles.verticalLine} />}
+                {index > 0 && (
+                  <View style={styles.verticalLine}>
+                    {fase.status !== "concluida" && (
+                      <View style={styles.progressDot} />
+                    )}
+                  </View>
+                )}
 
                 {/* Círculo da fase */}
                 <TouchableOpacity
@@ -144,7 +154,8 @@ export default function Mapa() {
                       styles.phaseCircle,
                       {
                         borderColor,
-                        backgroundColor: faseStatus === "concluida" ? "#E6F4EA" : "#fff",
+                        backgroundColor:
+                          faseStatus === "concluida" ? "#E6F4EA" : "#fff",
                       },
                     ]}
                   >
@@ -153,9 +164,7 @@ export default function Mapa() {
                         styles.phaseNumber,
                         {
                           color:
-                            faseStatus === "concluida"
-                              ? "#4CAF50"
-                              : "#333",
+                            faseStatus === "concluida" ? "#4CAF50" : "#333",
                         },
                       ]}
                     >
@@ -178,14 +187,18 @@ export default function Mapa() {
                   <Text
                     style={[
                       styles.subjectTitle,
-                      { color: faseStatus === "bloqueada" ? "#aaa" : "#005C6D" },
+                      {
+                        color: faseStatus === "bloqueada" ? "#aaa" : "#005C6D",
+                      },
                     ]}
                   >
                     {t(`map.${fase.nome}`)}
                   </Text>
 
                   {faseStatus === "concluida" && (
-                    <Text style={styles.completedText}>{t("map.concluido")} ✓</Text>
+                    <Text style={styles.completedText}>
+                      {t("map.concluido")} ✓
+                    </Text>
                   )}
                 </View>
               </View>

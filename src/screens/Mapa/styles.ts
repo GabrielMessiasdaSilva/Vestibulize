@@ -1,9 +1,9 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f7f8fa',
+    backgroundColor: "#f7f8fa",
   },
   scrollContent: {
     paddingHorizontal: 20,
@@ -11,29 +11,29 @@ export const styles = StyleSheet.create({
     paddingTop: 70,
   },
   title: {
-    color: '#005C6D',
+    color: "#005C6D",
     fontSize: 28,
-    fontWeight: '700',
+    fontWeight: "700",
     marginTop: 20,
     marginBottom: 24,
-    fontFamily: 'PlusJakartaSans_700Bold',
+    fontFamily: "PlusJakartaSans_700Bold",
   },
   topButtons: {
-    flexDirection: 'row',
+    flexDirection: "row",
     marginBottom: 40,
   },
   secondaryButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderColor: '#005c6dff',
+    flexDirection: "row",
+    alignItems: "center",
+    borderColor: "#005c6dff",
     borderWidth: 1.5,
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 24,
   },
   secondaryButtonText: {
-    color: '#005C6D',
-    fontWeight: '600',
+    color: "#005C6D",
+    fontWeight: "600",
     marginLeft: 8,
     fontSize: 16,
   },
@@ -41,33 +41,49 @@ export const styles = StyleSheet.create({
     marginTop: 10,
   },
   phaseRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: 40,
-    position: 'relative',
+    position: "relative",
   },
   verticalLine: {
-    position: 'absolute',
+    position: "absolute",
     left: 59,
     top: -40,
     width: 5,
     height: 40,
-    backgroundColor: '#979797ff',
+    backgroundColor: "#979797ff",
+    alignItems: "center", // centraliza a bolinha
+  },
+  progressDot: {
+    width: 14,
+    height: 14,
+    borderRadius: 7,
+    backgroundColor: "#ceccccff", // cinza claro no centro
+    borderWidth: 2, // borda grossa
+    borderColor: "#f7f3f3ff", // borda branca
+    position: "absolute",
+    top: "50%",
+    transform: [{ translateY: -7 }], // centraliza
+    shadowColor: "#000", // dá um leve relevo
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 3, // Android sombra
   },
   phaseCircle: {
     width: 120,
     height: 120,
     borderRadius: 60,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderWidth: 3,
   },
   phaseNumber: {
     fontSize: 45,
-    fontWeight: '300',
+    fontWeight: "300",
   },
   lockIcon: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 8,
     right: 8,
   },
@@ -76,12 +92,16 @@ export const styles = StyleSheet.create({
   },
   subjectTitle: {
     fontSize: 30,
-    fontWeight: '400',
+    fontWeight: "500",
+    flexShrink: 1, // evita cortar texto
+    flexWrap: "wrap", // permite quebra de linha
+    maxWidth: 200, // limita largura do texto
   },
+
   completedText: {
     fontSize: 16,
-    color: '#016273ff',
-    fontWeight: '600',
+    color: "#016273ff",
+    fontWeight: "400",
     marginTop: 2,
   },
 });
