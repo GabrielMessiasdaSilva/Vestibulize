@@ -53,22 +53,22 @@ export const styles = StyleSheet.create({
     width: 5,
     height: 40,
     backgroundColor: "#979797ff",
-    alignItems: "center", // centraliza a bolinha
+    alignItems: "center",
   },
   progressDot: {
     width: 14,
     height: 14,
     borderRadius: 7,
-    backgroundColor: "#ceccccff", // cinza claro no centro
-    borderWidth: 2, // borda grossa
-    borderColor: "#f7f3f3ff", // borda branca
+    backgroundColor: "#ceccccff",
+    borderWidth: 2,
+    borderColor: "#f7f3f3ff",
     position: "absolute",
     top: "50%",
-    transform: [{ translateY: -7 }], // centraliza
-    shadowColor: "#000", // dá um leve relevo
+    transform: [{ translateY: -7 }],
+    shadowColor: "#000",
     shadowOpacity: 0.2,
     shadowRadius: 2,
-    elevation: 3, // Android sombra
+    elevation: 3,
   },
   phaseCircle: {
     width: 120,
@@ -93,9 +93,9 @@ export const styles = StyleSheet.create({
   subjectTitle: {
     fontSize: 30,
     fontWeight: "500",
-    flexShrink: 1, // evita cortar texto
-    flexWrap: "wrap", // permite quebra de linha
-    maxWidth: 200, // limita largura do texto
+    flexShrink: 1,
+    flexWrap: "wrap",
+    maxWidth: 200,
   },
 
   completedText: {
@@ -104,4 +104,9 @@ export const styles = StyleSheet.create({
     fontWeight: "400",
     marginTop: 2,
   },
+
+  desativar:{
+    color: "#f7f8fa",
+    fontFamily: 'PlusJakartaSans_600SemiBold',
+  }
 });

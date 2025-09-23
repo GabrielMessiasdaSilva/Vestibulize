@@ -20,8 +20,8 @@ export const footer = StyleSheet.create({
         fontFamily: 'Roboto_400Regular',
     },
     avatarFooterWrapper: {
-        width: 40,
-        height: 40,
+        width: 35,
+        height: 35,
         borderRadius: 20,
         backgroundColor: '#B2EBF2',
         justifyContent: 'center',
@@ -56,7 +56,7 @@ export const timeModal = StyleSheet.create({
         marginBottom: 20,
         alignSelf: 'flex-start',
         paddingLeft: 12,
-        
+
     },
     timeRow: {
         flexDirection: 'row',
@@ -121,130 +121,68 @@ export const timeModal = StyleSheet.create({
         left: 35,
         tintColor: '#444',
     },
-      iconWrapper: {
-    position: 'absolute',
-    left: 0,
-    bottom: 0,
-    padding: 8,
-  },    
+    iconWrapper: {
+        position: 'absolute',
+        left: 0,
+        bottom: 0,
+        padding: 8,
+    },
 });
 
 
 export const greenModal = StyleSheet.create({
-    overlay: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'rgba(0,0,0,0.4)',
+    container: {
+        position: "absolute",
+        bottom: 40,
+        left: 20,
+        right: 20,
+        alignItems: "center",
     },
-    modalContainer: {
-        backgroundColor: '#DEEAD3',
-        borderRadius: 16,
-        borderColor: '#000000',
-        borderWidth: 3,
-        padding: 24,
-        width: 300,
-        alignItems: 'center',
+    content: {
+        backgroundColor: "#9AE5FD",
+        borderRadius: 36,
+        paddingVertical: 14,
+        paddingHorizontal: 20,
+        shadowColor: "#000",
+        shadowOpacity: 0.2,
+        shadowRadius: 6,
+        elevation: 5,
+        width: "100%",
     },
-    activateButton: {
-        backgroundColor: '#233D4D',
-        paddingVertical: 16,
-        paddingHorizontal: 30,
-        borderRadius: 16,
-        minWidth: 80,
-        alignItems: 'center',
-    },
-    activateButtonText: {
-        color: '#f7f8fa',
-        fontWeight: '300',
-        fontSize: 15,
-    },
-    balaoContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 18,
-    },
-    balaoInner: {
-        alignItems: 'center',
-    },
-    balaoImg: {
-        width: 190,
-        height: 130,
-        top: 20,
-        left: 50,
-    },
-    balaoText: {
-        position: 'absolute',
-        top: 55,
-        right: 16,
-        color: '#000000',
-        fontSize: 13,
-        fontWeight: 'bold',
-        transform: [{ rotate: '4.91deg' }],
-        textAlign: 'center',
-    },
-    raposaImg: {
-        width: 280,
-        height: 250,
+    text: {
+        color: "#004854",
+        fontSize: 20,
+        fontFamily: 'PlusJakartaSans_600SemiBold',
+        textAlign: "center",
+        marginBottom: 6,
     },
 });
 
 export const redModal = StyleSheet.create({
-    overlay: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'rgba(0,0,0,0.4)',
+    container: {
+        position: "absolute",
+        bottom: 40,
+        left: 20,
+        right: 20,
+        alignItems: "center",
     },
-    modalContainer: {
-        backgroundColor: '#E9CDCD',
-        borderRadius: 16,
-        borderColor: '#000000',
-        borderWidth: 3,
-        padding: 24,
-        width: 300,
-        alignItems: 'center',
+    content: {
+        backgroundColor: "#F3DCDB",
+        borderRadius: 36,
+        paddingVertical: 14,
+        paddingHorizontal: 20,
+        shadowColor: "#000",
+        shadowOpacity: 0.2,
+        shadowRadius: 6,
+        elevation: 5,
+        width: "100%",
     },
-    activateButton: {
-        backgroundColor: '#233D4D',
-        paddingVertical: 16,
-        paddingHorizontal: 30,
-        borderRadius: 16,
-        minWidth: 80,
-        alignItems: 'center',
-    },
-    activateButtonText: {
-        color: '#f7f8fa',
-        fontWeight: '300',
-        fontSize: 15,
-    },
-    balaoContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 18,
-    },
-    balaoInner: {
-        alignItems: 'center',
-    },
-    balaoImg: {
-        width: 200,
-        height: 140,
-        top: 20,
-        left: 50,
-    },
-    balaoText: {
-        position: 'absolute',
-        top: 45,
-        right: 22,
-        color: '#f7f8fa',
-        fontSize: 13,
-        fontWeight: 'bold',
-        transform: [{ rotate: '4.91deg' }],
-        textAlign: 'justify',
-    },
-    raposaImg: {
-        width: 280,
-        height: 250,
+    text: {
+        color: "#852221",
+        fontSize: 20,
+        fontFamily: 'PlusJakartaSans_600SemiBold',
+        textAlign: "center",
+        marginBottom: 6,
     },
 });
 

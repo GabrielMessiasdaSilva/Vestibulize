@@ -1,5 +1,5 @@
 import { View, Text, ScrollView, TouchableOpacity, Alert } from "react-native";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { styles } from "./styles";
 import { useTranslation } from "react-i18next";
 import TimeModal from "../../components/TimeModal";
@@ -16,36 +16,42 @@ export default function Mapa() {
   const [selectedTime, setSelectedTime] = useState("none");
   const [modalVisible, setModalVisible] = useState(false);
   const [inputTime, setInputTime] = useState("");
+  const [resetTimeFlag, setResetTimeFlag] = useState(false);
 
   const showCustomAlert = (title: string, message: string) => {
     Alert.alert(title, message, [{ text: "OK" }]);
   };
 
-  const handleActivateTime = () => {
-    if (inputTime && Number(inputTime) >= 1 && Number(inputTime) <= 60) {
-      setSelectedTime(inputTime);
-      setModalVisible(false);
-      showCustomAlert(
-        t("map.alertTempoAtivadoTitulo"),
-        t("map.alertTempoAtivadoMensagem", { tempo: inputTime })
-      );
-    } else {
-      showCustomAlert(
-        t("map.alertAtençãoTitulo"),
-        t("map.alertAtençãoMensagem")
-      );
+  const handleActivateTime = (tempo: string) => {
+    const [m, s] = tempo.split(':').map(Number);
+    if ((m || 0) + (s || 0) <= 0) {
+      Alert.alert(t("map.alertAtençãoTitulo"), t("map.alertAtençãoMensagem"));
+      return;
     }
+
+    setSelectedTime(tempo);
+    setModalVisible(false);
+
+    Alert.alert(
+      t("map.alertTempoAtivadoTitulo"),
+      t("map.alertTempoAtivadoMensagem", { tempo })
+    );
   };
 
   const handleDeactivateTime = () => {
     setSelectedTime("none");
     setInputTime("");
+    setResetTimeFlag(true);
     setModalVisible(false);
-    showCustomAlert(
-      t("map.alertTempoDesativadoTitulo"),
-      t("map.alertTempoDesativadoMensagem")
-    );
+    // showCustomAlert(
+    //   t("map.alertTempoDesativadoTitulo"),
+    //   t("map.alertTempoDesativadoMensagem")
+    // );
   };
+
+  useEffect(() => {
+    if (modalVisible) setResetTimeFlag(false);
+  }, [modalVisible]);
 
   const [fases, setFases] = useState([
     { numero: 1, status: "disponivel", nome: "matematica" },
@@ -89,8 +95,14 @@ export default function Mapa() {
   );
 
   const iniciarFase = (faseNumero: number) => {
+    let totalSegundos = 0;
+    if (selectedTime !== "none") {
+      const [m, s] = selectedTime.split(":").map(Number);
+      totalSegundos = m * 60 + s;
+    }
+
     navigation.navigate("Quiz", {
-      tempoTotal: selectedTime !== "none" ? Number(selectedTime) * 60 : 0,
+      tempoTotal: totalSegundos,
       tempoAtivado: selectedTime !== "none",
       faseAtual: faseNumero,
     });
@@ -107,17 +119,28 @@ export default function Mapa() {
 
         {/* Botão Tempo */}
         <View style={styles.topButtons}>
-          <TouchableOpacity
-            style={styles.secondaryButton}
-            onPress={() => setModalVisible(true)}
-          >
-            <MaterialCommunityIcons
-              name="clock-outline"
-              size={20}
-              color="#005C6D"
-            />
-            <Text style={styles.secondaryButtonText}>{t("map.tempo")}</Text>
-          </TouchableOpacity>
+          {selectedTime === "none" ? (
+            <TouchableOpacity
+              style={styles.secondaryButton}
+              onPress={() => setModalVisible(true)}
+            >
+              <MaterialCommunityIcons name="clock-outline" size={20} color="#005C6D" />
+              <Text style={styles.secondaryButtonText}>{t("map.tempo")}</Text>
+            </TouchableOpacity>
+          ) : (
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <TouchableOpacity style={[styles.secondaryButton, { opacity: 0.7 }]} disabled>
+                <MaterialCommunityIcons name="clock-check-outline" size={20} color="#4CAF50" />
+                <Text style={styles.secondaryButtonText}>{selectedTime}</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.secondaryButton, { marginLeft: 10, backgroundColor: '#E57373' }]}
+                onPress={handleDeactivateTime}
+              >
+                <Text style={styles.desativar}>Desativar</Text>
+              </TouchableOpacity>
+            </View>
+          )}
         </View>
 
         {/* Fases */}
@@ -129,8 +152,8 @@ export default function Mapa() {
               faseStatus === "concluida"
                 ? "#4CAF50"
                 : faseStatus === "disponivel"
-                ? "#FEC946"
-                : "#bbb";
+                  ? "#FEC946"
+                  : "#bbb";
 
             return (
               <View key={fase.numero} style={styles.phaseRow}>
@@ -215,6 +238,7 @@ export default function Mapa() {
         onActivate={handleActivateTime}
         onDeactivate={handleDeactivateTime}
         onClose={() => setModalVisible(false)}
+        resetTime={resetTimeFlag}
       />
 
       {/* Footer fixo */}

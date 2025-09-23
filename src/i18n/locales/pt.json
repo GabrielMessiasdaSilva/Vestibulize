@@ -91,11 +91,13 @@
     },
     "timeModal": {
         "chooseAmount": "Determine o tempo",
-        "placeholderMinutes": "0 - 60",
         "minutes": "Minutos",
         "seconds": "Segundos",
         "ok": "Ok",
-        "cancel": "Cancelar"
+        "cancel": "Cancelar",
+        "alertAtençãoTitulo": "⚠️ Atenção",
+        "alertAtençãoMensagem": "Escolha um valor entre 1 e 60 minutos e segundos entre 0 e 59.",
+        "alertTempoAtivadoTitulo": "⏰ Tempo ativado"
     },
     "backToMap": "Voltar ao mapa",
     "continue": "Continuar",
@@ -538,6 +540,23 @@
                     "correct": 1
                 }
             }
+        }
+    },
+    "quiz": {
+        "correctAnswer": "Parabéns, você acertou!",
+        "wrongAnswer": "Ops, você errou!",
+        "remaining": "Faltam:",
+        "alert": {
+            "title": "⚠️ Aviso",
+            "message": "Tem certeza que deseja sair do quiz?",
+            "cancel": "Cancelar",
+            "exit": "Sair"
+        },
+        "leaveAlert": {
+            "title": "↔️ Quiz em andamento",
+            "message": "Você confirma que deseja sair do quiz?",
+            "stay": "Ficar",
+            "confirm": "Confirmar"
         }
     }
 }

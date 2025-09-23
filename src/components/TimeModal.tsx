@@ -6,7 +6,6 @@ import {
   TextInput,
   TouchableOpacity,
   BackHandler,
-  Image,
   Platform,
   TouchableWithoutFeedback,
   Keyboard,
@@ -20,9 +19,10 @@ interface TimeModalProps {
   visible: boolean;
   inputTime: string; // current minutes value from parent
   setInputTime: (value: string) => void;
-  onActivate: () => void; // parent handler (keeps existing behavior)
+  onActivate: (tempo: string) => void; // parent handler (keeps existing behavior)
   onDeactivate: () => void;
   onClose: () => void;
+  resetTime?: boolean;
 }
 
 const TimeModal: React.FC<TimeModalProps> = ({
@@ -30,31 +30,34 @@ const TimeModal: React.FC<TimeModalProps> = ({
   inputTime,
   setInputTime,
   onActivate,
-  onDeactivate,
   onClose,
+  resetTime,
 }) => {
   const { t } = useTranslation();
 
   // Local state for minutes/seconds and which box is selected
-  const [minutes, setMinutes] = useState<string>(inputTime || '10');
-  const [seconds, setSeconds] = useState<string>('00');
+  const [minutes, setMinutes] = useState<string>('');
+  const [seconds, setSeconds] = useState<string>('');
   const [selected, setSelected] = useState<'minutes' | 'seconds' | null>('minutes');
 
   useEffect(() => {
     if (visible) {
-      const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
-        // block hardware back when modal is visible (same behavior as before)
-        return true;
-      });
+      const backHandler = BackHandler.addEventListener('hardwareBackPress', () => true);
 
-      // initialize fields from parent inputTime when modal opens
-      setMinutes(inputTime && inputTime !== 'none' ? String(inputTime) : '10');
-      setSeconds('00');
+      if (!inputTime || inputTime === 'none' || resetTime) {
+        setMinutes('00');
+        setSeconds('00');
+      } else {
+        const [m, s] = inputTime.split(':');
+        setMinutes(m ? m.padStart(2, '0') : '00');
+        setSeconds(s ? s.padStart(2, '0') : '00');
+      }
+
       setSelected('minutes');
 
       return () => backHandler.remove();
     }
-  }, [visible, inputTime]);
+  }, [visible, inputTime, resetTime]);
 
   // sanitize numeric inputs: allow only digits and limit length
   const handleMinutesChange = (text: string) => {
@@ -78,17 +81,23 @@ const TimeModal: React.FC<TimeModalProps> = ({
   };
 
   const handleOk = () => {
-    // Validate minutes to keep compatibility with backend (1..60)
     const m = minutes === '' ? 0 : Number(minutes);
-    if (!m || m < 1 || m > 60) {
-      Alert.alert(t('timeModal.invalidTitle') ?? 'Atenção', t('timeModal.invalidMessage') ?? 'Insira um valor entre 1 e 60 minutos.');
+    const s = seconds === '' ? 0 : Number(seconds);
+    const totalSeconds = m * 60 + s;
+
+    if (totalSeconds <= 0 || m > 60 || s > 59) {
+      Alert.alert(
+        t('timeModal.alertAtençãoTitulo') ?? 'Atenção',
+        t('timeModal.alertAtençãoMensagem') ?? 'Insira um valor válido (até 60 minutos e no mínimo 1 segundo).'
+      );
       return;
     }
 
-    // Keep behavior: store minutes string in parent and call onActivate
-    setInputTime(String(m));
-    // close modal (parent's onActivate usually closes it) — call parent's onActivate
-    onActivate();
+    const tempo = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    setInputTime(tempo);
+
+    // passe o tempo atual para o parent
+    onActivate(tempo);
   };
 
   const handleCancel = () => {
@@ -173,7 +182,7 @@ const TimeModal: React.FC<TimeModalProps> = ({
             {/* Clock SVG icon bottom-left */}
             <View style={timeModal.iconWrapper}>
               <Svg width={26} height={26} viewBox="0 0 24 24" fill="none" style={timeModal.iconClock}>
-                <Circle cx="12" cy="12" r="9" fill="#4C636A" /> 
+                <Circle cx="12" cy="12" r="9" fill="#4C636A" />
                 <Circle cx="12" cy="12" r="9" stroke="#4C636A" strokeWidth="1.4" />
                 <Path d="M12 7v6l4 2" stroke="#ffffffff" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
               </Svg>

@@ -17,10 +17,10 @@ export const styles = StyleSheet.create({
     height: 100,
     resizeMode: 'contain',
     alignSelf: 'flex-end',
-    bottom:150
+    bottom:100
   },
   title: {
-     fontSize: 28,
+     fontSize: 26,
     fontWeight: "bold",
     marginBottom: 50,
     textAlign: 'left',

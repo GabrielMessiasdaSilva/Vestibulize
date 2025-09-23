@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     height: 100,
     resizeMode: 'contain',
     alignSelf: 'flex-end',
-    bottom:150
+    bottom:100
   },
   title: {
      fontSize: 25,
@@ -59,8 +59,6 @@ export const styles = StyleSheet.create({
     color: '#005C6D',
     fontWeight: 'bold',
     marginBottom: 40,
-  right:115,
-    //como deixar para esquerda?
      
   },
   buttonContainer: {

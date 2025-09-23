@@ -1,7 +1,7 @@
-import React from 'react';
-import { Modal, View, Text, Image, TouchableOpacity } from 'react-native';
+import React, { useEffect, useRef } from "react";
+import { Animated, View, Text } from "react-native";
 import { greenModal } from './styles';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 interface GreenModalProps {
     visible: boolean;
@@ -10,39 +10,41 @@ interface GreenModalProps {
 
 const GreenModal: React.FC<GreenModalProps> = ({ visible, onContinue }) => {
     const { t } = useTranslation();
+    const slideAnim = useRef(new Animated.Value(200)).current;
+
+    useEffect(() => {
+        if (visible) {
+            Animated.timing(slideAnim, {
+                toValue: 0,
+                duration: 400,
+                useNativeDriver: true,
+            }).start();
+
+            const timer = setTimeout(() => {
+                Animated.timing(slideAnim, {
+                    toValue: 200,
+                    duration: 400,
+                    useNativeDriver: true,
+                }).start(() => onContinue());
+            }, 5000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [visible]);
+
+    if (!visible) return null;
 
     return (
-        <Modal
-            visible={visible}
-            transparent
-            animationType="fade"
-            onRequestClose={onContinue}
+        <Animated.View
+            style={[
+                greenModal.container,
+                { transform: [{ translateY: slideAnim }] },
+            ]}
         >
-            <View style={greenModal.overlay}>
-                <View style={greenModal.modalContainer}>
-                    <View style={greenModal.balaoContainer}>
-                        <View style={greenModal.balaoInner}>
-                            <Image
-                                source={require('../../assets/img/balao_conversa_verde.png')}
-                                style={greenModal.balaoImg}
-                                resizeMode="contain"
-                            />
-                            <Text style={greenModal.balaoText}>
-                                {t('greenModal.correctMessage')}
-                            </Text>
-                            <Image
-                                source={require('../../assets/img/raposa_estrela.png')}
-                                style={greenModal.raposaImg}
-                                resizeMode="contain"
-                            />
-                        </View>
-                    </View>
-                    <TouchableOpacity style={greenModal.activateButton} onPress={onContinue}>
-                        <Text style={greenModal.activateButtonText}>{t('continue')}</Text>
-                    </TouchableOpacity>
-                </View>
+            <View style={greenModal.content}>
+                <Text style={greenModal.text}>{t("quiz.correctAnswer")}</Text>
             </View>
-        </Modal>
+        </Animated.View>
     );
 };
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Modal, View, Text, Image, TouchableOpacity } from 'react-native';
+import React, { useEffect, useRef } from "react";
+import { Animated, View, Text } from "react-native";
 import { redModal } from './styles';
 import { useTranslation } from 'react-i18next';
 
@@ -13,39 +13,41 @@ const RedModal: React.FC<RedModalProps> = ({
     onContinue
 }) => {
     const { t } = useTranslation();
+    const slideAnim = useRef(new Animated.Value(200)).current;
+
+    useEffect(() => {
+        if (visible) {
+            Animated.timing(slideAnim, {
+                toValue: 0,
+                duration: 400,
+                useNativeDriver: true,
+            }).start();
+
+            const timer = setTimeout(() => {
+                Animated.timing(slideAnim, {
+                    toValue: 200,
+                    duration: 400,
+                    useNativeDriver: true,
+                }).start(() => onContinue());
+            }, 5000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [visible]);
+
+    if (!visible) return null;
 
     return (
-        <Modal
-            visible={visible}
-            transparent
-            animationType="fade"
-            onRequestClose={onContinue}
+        <Animated.View
+            style={[
+                redModal.container,
+                { transform: [{ translateY: slideAnim }] },
+            ]}
         >
-            <View style={redModal.overlay}>
-                <View style={redModal.modalContainer}>
-                    <View style={redModal.balaoContainer}>
-                        <View style={redModal.balaoInner}>
-                            <Image
-                                source={require('../../assets/img/balao_conversa_vermelho.png')}
-                                style={redModal.balaoImg}
-                                resizeMode="contain"
-                            />
-                            <Text style={redModal.balaoText}>
-                                {t('redModal.wrongMessage')}
-                            </Text>
-                            <Image
-                                source={require('../../assets/img/raposa_coracao.png')}
-                                style={redModal.raposaImg}
-                                resizeMode="contain"
-                            />
-                        </View>
-                    </View>
-                    <TouchableOpacity style={redModal.activateButton} onPress={onContinue}>
-                        <Text style={redModal.activateButtonText}>{t('continue')}</Text>
-                    </TouchableOpacity>
-                </View>
+            <View style={redModal.content}>
+                <Text style={redModal.text}>{t("quiz.wrongAnswer")}</Text>
             </View>
-        </Modal>
+        </Animated.View>
     );
 };
 

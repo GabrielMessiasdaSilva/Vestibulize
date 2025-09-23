@@ -181,7 +181,7 @@ export default function Login() {
           )}
         />
 
-        <TouchableOpacity onPress={handleForgotPassword}>
+        <TouchableOpacity onPress={handleForgotPassword} style={{ alignSelf: 'flex-start', marginTop: 8 }}>
           <Text style={styles.forgotPassword}>Esqueceu a senha?</Text>
         </TouchableOpacity>
 

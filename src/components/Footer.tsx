@@ -56,7 +56,7 @@ const Footer = () => {
                     {user?.photoURL ? (
                         <Image source={{ uri: user.photoURL }} style={footer.avatarFooter} />
                     ) : (
-                        <MaterialCommunityIcons name="account" size={32} color="#004A5A" style={footer.avatarFooter} />
+                        <MaterialCommunityIcons name="account" size={30} color="#004A5A" style={footer.avatarFooter} />
                     )}
                 </View>
                 <Text style={[footer.footerText, { color: isHomeScreen ? '#4C636A' : '#40484B' }]}>{t('footer.profile')}</Text>
