@@ -18,6 +18,7 @@ import Desafio from '../screens/Desafio';
 import Quiz from '../screens/Quiz';
 import Terms from '../screens/Termos';
 import Exames from '../screens/Exames';
+import DecidirTempo from '../screens/DecidirTempo';
 import type { RootStackParamList } from './types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -42,6 +43,7 @@ export default function AppRoutes() {
         <Stack.Screen name="Quiz" component={Quiz} />
         <Stack.Screen name="Termos" component={Terms}/>
         <Stack.Screen name="Exames" component={Exames}/>
+        <Stack.Screen name="DecidirTempo" component={DecidirTempo}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

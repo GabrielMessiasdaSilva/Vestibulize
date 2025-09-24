@@ -195,7 +195,6 @@ export default function Quiz() {
       // Previne botão físico (Android)
       const onBackPress = () => {
         pausarTempo();
-        // Se quiser permitir com confirmação:
         Alert.alert(t("quiz.alert.title"), t("quiz.alert.message"), [
           {
             text: t("quiz.alert.cancel"),
@@ -224,7 +223,6 @@ export default function Quiz() {
         (e: EventArg<"beforeRemove", true, any>) => {
           e.preventDefault();
           pausarTempo();
-          // Mostra alerta se quiser confirmar saída:
           Alert.alert(t("quiz.leaveAlert.title"), t("quiz.leaveAlert.message"), [
             {
               text: t("quiz.leaveAlert.stay"),
@@ -291,10 +289,28 @@ export default function Quiz() {
         </View>
 
         <Text style={styles.instructions}>Responda as questões abaixo</Text>
-        <Text style={styles.questionCounter}>
-          {perguntaExibida}/{totalPerguntas} Questões
-        </Text>
-
+        <View style={styles.faseBox}>
+          <Text style={styles.questionCounter}>
+            {perguntaExibida}/{totalPerguntas} Questões
+          </Text>
+          <View style={styles.timerContainer}>
+            {tempoAtivado ? (
+              <>
+                <MaterialCommunityIcons
+                  name="timer-outline"
+                  size={20}
+                  color="#233D4D"
+                  style={{ marginRight: 4 }}
+                />
+                <Text style={styles.timerText}>
+                  {`${minutos}:${segundos.toString().padStart(2, "0")}`}
+                </Text>
+              </>
+            ) : (
+              <View style={{ width: 48 }} />
+            )}
+          </View>
+        </View>
         <View style={styles.question}>
           {pergunta && (
             <View>

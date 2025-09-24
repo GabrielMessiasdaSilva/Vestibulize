@@ -558,5 +558,22 @@
             "stay": "Ficar",
             "confirm": "Confirmar"
         }
+    },
+    "exames": {
+        "correctAnswer": "Parabéns, você acertou!",
+        "wrongAnswer": "Ops, você errou!",
+        "remaining": "Faltam:",
+        "alert": {
+            "title": "⚠️ Aviso",
+            "message": "Tem certeza que deseja sair do exame?",
+            "cancel": "Cancelar",
+            "exit": "Sair"
+        },
+        "leaveAlert": {
+            "title": "↔️ Exame em andamento",
+            "message": "Você confirma que deseja sair do exame?",
+            "stay": "Ficar",
+            "confirm": "Confirmar"
+        }
     }
 }

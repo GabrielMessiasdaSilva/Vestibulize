@@ -17,9 +17,9 @@ import Svg, { Circle, Path } from 'react-native-svg';
 
 interface TimeModalProps {
   visible: boolean;
-  inputTime: string; // current minutes value from parent
+  inputTime: string;
   setInputTime: (value: string) => void;
-  onActivate: (tempo: string) => void; // parent handler (keeps existing behavior)
+  onActivate: (tempo: string) => void;
   onDeactivate: () => void;
   onClose: () => void;
   resetTime?: boolean;
@@ -35,7 +35,6 @@ const TimeModal: React.FC<TimeModalProps> = ({
 }) => {
   const { t } = useTranslation();
 
-  // Local state for minutes/seconds and which box is selected
   const [minutes, setMinutes] = useState<string>('');
   const [seconds, setSeconds] = useState<string>('');
   const [selected, setSelected] = useState<'minutes' | 'seconds' | null>('minutes');
@@ -59,7 +58,6 @@ const TimeModal: React.FC<TimeModalProps> = ({
     }
   }, [visible, inputTime, resetTime]);
 
-  // sanitize numeric inputs: allow only digits and limit length
   const handleMinutesChange = (text: string) => {
     const num = text.replace(/[^0-9]/g, '');
     // allow up to 2 digits
@@ -70,7 +68,6 @@ const TimeModal: React.FC<TimeModalProps> = ({
   const handleSecondsChange = (text: string) => {
     const num = text.replace(/[^0-9]/g, '');
     const truncated = num.slice(0, 2);
-    // seconds must be 0-59; adjust if user types >59
     if (truncated === '') {
       setSeconds('00');
     } else {
@@ -96,12 +93,10 @@ const TimeModal: React.FC<TimeModalProps> = ({
     const tempo = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
     setInputTime(tempo);
 
-    // passe o tempo atual para o parent
     onActivate(tempo);
   };
 
   const handleCancel = () => {
-    // simply close modal, do not change parent input
     onClose();
   };
 
@@ -117,7 +112,6 @@ const TimeModal: React.FC<TimeModalProps> = ({
           <View style={timeModal.modalContainer}>
             <Text style={timeModal.title}>{t('timeModal.chooseAmount') ?? 'Determine o tempo'}</Text>
 
-            {/* Time inputs */}
             <View style={timeModal.timeRow}>
               <TouchableOpacity
                 activeOpacity={1}
@@ -162,13 +156,11 @@ const TimeModal: React.FC<TimeModalProps> = ({
               </TouchableOpacity>
             </View>
 
-            {/* Labels under inputs */}
             <View style={timeModal.labelRow}>
               <Text style={timeModal.label}>{t('timeModal.minutes') ?? 'Minutos'}</Text>
               <Text style={timeModal.label}>{t('timeModal.seconds') ?? 'Segundos'}</Text>
             </View>
 
-            {/* Buttons: Cancel / OK */}
             <View style={timeModal.buttonRow}>
               <TouchableOpacity onPress={handleCancel}>
                 <Text style={timeModal.cancelButton}>{t('timeModal.cancel') ?? 'Cancelar'}</Text>
@@ -179,7 +171,6 @@ const TimeModal: React.FC<TimeModalProps> = ({
               </TouchableOpacity>
             </View>
 
-            {/* Clock SVG icon bottom-left */}
             <View style={timeModal.iconWrapper}>
               <Svg width={26} height={26} viewBox="0 0 24 24" fill="none" style={timeModal.iconClock}>
                 <Circle cx="12" cy="12" r="9" fill="#4C636A" />

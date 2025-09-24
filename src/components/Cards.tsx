@@ -10,7 +10,7 @@ type Prova = { semestre: string; questoes: number };
 
 export default function Card({ provas }: { provas: Prova[] }) {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, 'Home'>>();
-  
+
   const renderItem = ({ item }: { item: { semestre: string; questoes: number } }) => (
     <View style={cards.card}>
       <View style={{ flex: 1 }}>
@@ -25,10 +25,14 @@ export default function Card({ provas }: { provas: Prova[] }) {
           <Text style={cards.questoes}>{item.questoes} Questões</Text>
         </View>
       </View>
-      <TouchableOpacity style={cards.buttonIniciar}
+      <TouchableOpacity
+        style={cards.buttonIniciar}
         onPress={() =>
-          navigation.navigate("Exames")
-        }>
+          navigation.navigate("DecidirTempo", {
+            semestre: item.semestre,
+          })
+        }
+      >
         <Text style={cards.buttonText}>Iniciar</Text>
       </TouchableOpacity>
     </View>

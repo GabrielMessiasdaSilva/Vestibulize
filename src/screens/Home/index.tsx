@@ -14,9 +14,9 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 
 const provas = [
-  { semestre: '2° Semestre 2025', questoes: 64 },
-  { semestre: '1° Semestre 2025', questoes: 60 },
-  { semestre: '2° Semestre 2024', questoes: 62 },
+  { semestre: '2° Semestre 2025', questoes: 54 },
+  { semestre: '1° Semestre 2025', questoes: 54 },
+  { semestre: '2° Semestre 2024', questoes: 54 },
 ];
 
 export default function Home() {

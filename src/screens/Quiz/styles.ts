@@ -18,23 +18,6 @@ export const styles = StyleSheet.create({
         marginTop: 16,
     },
 
-    title: {
-        fontSize: 20,
-        fontWeight: '600',
-        color: '#000000',
-        marginTop: 52,
-        textAlign: 'center',
-        width: '80%',
-        alignSelf: 'center',
-        maxWidth: '90%',
-    },
-
-    arrow: {
-        marginTop: 22,
-        marginLeft: 16,
-        alignSelf: 'flex-start',
-    },
-
     exitButton: {
         flexDirection: "row",
         alignItems: "center",
@@ -72,7 +55,7 @@ export const styles = StyleSheet.create({
 
     questionCounter: {
         marginTop: 6,
-        marginHorizontal: 16,
+        marginHorizontal: 18,
         fontSize: 20,
         fontFamily: "PlusJakartaSans_400Regular",
         color: "#909496",
@@ -85,8 +68,7 @@ export const styles = StyleSheet.create({
 
     timerContainer: {
         flexDirection: 'row',
-        alignItems: 'center',
-        flex: 1,
+        marginTop: 14,
     },
 
     timerIcon: {
@@ -94,18 +76,6 @@ export const styles = StyleSheet.create({
         height: 24,
         marginRight: 4,
         resizeMode: 'contain',
-    },
-
-    timerTextContainer: {
-        flexDirection: 'column',
-        justifyContent: 'center',
-        minWidth: 80,
-    },
-
-    timerLabel: {
-        fontSize: 12,
-        color: '#233D4D',
-        marginBottom: 2,
     },
 
     timerText: {
@@ -119,11 +89,6 @@ export const styles = StyleSheet.create({
         textAlign: 'justify',
         fontFamily: 'PlusJakartaSans_400Regular',
         marginBottom: 18,
-    },
-
-    optionsContainer: {
-        width: '100%',
-        paddingHorizontal: 16,
     },
 
     optionButton: {
@@ -143,18 +108,7 @@ export const styles = StyleSheet.create({
         color: '#FFFFFF',
         textAlign: 'center',
     },
-    questionTextContainer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        paddingHorizontal: 16,
-        marginBottom: 18,
-    },
-    timerRow: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 12,
-    },
+
     floatingPencil: {
         position: 'absolute',
         bottom: 20,
@@ -171,21 +125,10 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.3,
         shadowRadius: 3,
     },
-    floatingBoard: {
-        position: 'absolute',
-        bottom: 20,
-        left: 20,
-        width: 56,
-        height: 56,
-        borderRadius: 28,
-        backgroundColor: '#FFF',
-        alignItems: 'center',
-        justifyContent: 'center',
-        elevation: 5,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.3,
-        shadowRadius: 3,
+    
+    faseBox: {
+        flexDirection: "row",
+        alignItems: "center",
     },
 
 });
