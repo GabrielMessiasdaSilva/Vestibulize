@@ -19,7 +19,7 @@ const Footer = () => {
     const isMapScreen = mapScreens.includes(route.name);
     const isHomeScreen = homeScreens.includes(route.name);
     const fadeAnim = useRef(new Animated.Value(isMapScreen ? 1 : 0)).current;
-    const { user } = useContext(UserContext) as { user?: { photoURL?: string } };
+    const { photoURL } = useContext(UserContext);
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -53,8 +53,8 @@ const Footer = () => {
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('Perfil' as never)} style={footer.iconContainer}>
                 <View style={footer.avatarFooterWrapper}>
-                    {user?.photoURL ? (
-                        <Image source={{ uri: user.photoURL }} style={footer.avatarFooter} />
+                    {photoURL ? (
+                        <Image source={{ uri: photoURL }} style={footer.avatarFooter} />
                     ) : (
                         <MaterialCommunityIcons name="account" size={30} color="#004A5A" style={footer.avatarFooter} />
                     )}
