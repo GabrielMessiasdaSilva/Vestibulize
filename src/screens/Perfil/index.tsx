@@ -134,7 +134,7 @@ export default function ProfileScreen() {
       }
 
       const updatedData: UserData = { username: newName, photoURL };
-      await updateDoc(doc(db, 'users', userId), updatedData);
+      await updateDoc(doc(db, 'users', userId), { username: newName, photoURL });
       setUserData(updatedData);
 
       // Salva localmente
