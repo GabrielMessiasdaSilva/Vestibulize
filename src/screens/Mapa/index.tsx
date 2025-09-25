@@ -130,7 +130,7 @@ export default function Mapa() {
           ) : (
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <TouchableOpacity style={[styles.secondaryButton, { opacity: 0.7 }]} disabled>
-                <MaterialCommunityIcons name="clock-check-outline" size={20} color="#4CAF50" />
+                <MaterialCommunityIcons name="clock-check-outline" size={20} color="#005C6D" />
                 <Text style={styles.secondaryButtonText}>{selectedTime}</Text>
               </TouchableOpacity>
               <TouchableOpacity
@@ -150,7 +150,7 @@ export default function Mapa() {
 
             const borderColor =
               faseStatus === "concluida"
-                ? "#4CAF50"
+                ? "#005C6D"
                 : faseStatus === "disponivel"
                   ? "#FEC946"
                   : "#bbb";
@@ -187,7 +187,7 @@ export default function Mapa() {
                         styles.phaseNumber,
                         {
                           color:
-                            faseStatus === "concluida" ? "#4CAF50" : "#333",
+                            faseStatus === "concluida" ? "#005C6D" : "#333",
                         },
                       ]}
                     >
