@@ -1,32 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import {
-  SafeAreaView,
-  View,
-  Text,
-  ScrollView,
-  TouchableOpacity,
-  StatusBar,
-  ActivityIndicator,
-  Alert,
-  Image,
-  TextInput,
-  Modal,
+  SafeAreaView, View, Text, ScrollView, TouchableOpacity, StatusBar,
+  ActivityIndicator, Alert, Image, TextInput, Modal,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as ImagePicker from 'expo-image-picker';
 import { auth, db } from '../../../src/services/firebaseConfig';
-import { doc, getDoc, updateDoc, collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
+import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
 import Footer from '../../components/Footer';
 import { useNavigation } from '@react-navigation/native';
 import styles from './styles';
+import { StackActions } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const bottomNavHeight = 80;
 
 interface UserData {
   username: string;
   photoURL?: string;
+  quizResults?: { [key: string]: number };
 }
 
 interface RankingItem {
@@ -47,36 +41,65 @@ export default function ProfileScreen() {
   const navigation = useNavigation();
   const userId = auth.currentUser?.uid;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      if (!userId) return;
+  // Carrega dados locais do AsyncStorage se existirem
+  const loadLocalUserData = async () => {
+    try {
+      const storedData = await AsyncStorage.getItem('@userData');
+      if (storedData) {
+        const parsedData: UserData = JSON.parse(storedData);
+        setUserData(parsedData);
+        setNewName(parsedData.username);
+        setNewPhoto(parsedData.photoURL || null);
 
-      try {
-        const userDoc = await getDoc(doc(db, 'users', userId));
-        if (userDoc.exists()) {
-          const data = userDoc.data() as UserData;
-          setUserData(data);
-          setNewName(data.username);
-          setNewPhoto(data.photoURL || null);
+        // Ranking
+        if (parsedData.quizResults) {
+          const ranking: RankingItem[] = Object.entries(parsedData.quizResults)
+            .map(([materia, acertos]) => ({ materia, acertos }))
+            .sort((a, b) => b.acertos - a.acertos)
+            .slice(0, 3);
+          setRankingData(ranking);
         }
-
-        const rankingQuery = query(
-          collection(db, 'users', userId, 'ranking'),
-          orderBy('acertos', 'desc'),
-          limit(3)
-        );
-        const rankingSnapshot = await getDocs(rankingQuery);
-        const ranking = rankingSnapshot.docs.map(doc => doc.data() as RankingItem);
-        setRankingData(ranking);
-      } catch (error) {
-        console.error(error);
-        Alert.alert('Erro', 'Não foi possível carregar os dados do perfil');
-      } finally {
-        setLoading(false);
       }
-    };
+    } catch (error) {
+      console.error('Erro ao carregar dados locais:', error);
+    }
+  };
 
-    fetchData();
+  // Escuta os dados do usuário em tempo real
+  useEffect(() => {
+    loadLocalUserData();
+
+    if (!userId) {
+      setLoading(false);
+      return;
+    }
+
+    const userDocRef = doc(db, 'users', userId);
+    const unsubscribe = onSnapshot(userDocRef, (snapshot) => {
+      if (!snapshot.exists()) {
+        setLoading(false);
+        return;
+      }
+      const data = snapshot.data() as UserData;
+      setUserData(data);
+      setNewName(data.username);
+      setNewPhoto(data.photoURL || null);
+
+      // Ranking: top 3 matérias com mais acertos
+      if (data.quizResults) {
+        const ranking: RankingItem[] = Object.entries(data.quizResults)
+          .map(([materia, acertos]) => ({ materia, acertos }))
+          .sort((a, b) => b.acertos - a.acertos)
+          .slice(0, 3);
+        setRankingData(ranking);
+      }
+      setLoading(false);
+
+      // Atualiza AsyncStorage com os dados mais recentes
+      AsyncStorage.setItem('@userData', JSON.stringify(data)).catch(err => console.error(err));
+    });
+
+    return () => unsubscribe();
   }, [userId]);
 
   const pickImage = async () => {
@@ -110,12 +133,13 @@ export default function ProfileScreen() {
         });
       }
 
-      await updateDoc(doc(db, 'users', userId), {
-        username: newName,
-        photoURL,
-      });
+      const updatedData: UserData = { username: newName, photoURL };
+      await updateDoc(doc(db, 'users', userId), updatedData);
+      setUserData(updatedData);
 
-      setUserData({ username: newName, photoURL });
+      // Salva localmente
+      await AsyncStorage.setItem('@userData', JSON.stringify(updatedData));
+
       Alert.alert('Sucesso', 'Perfil atualizado!');
       setModalVisible(false);
     } catch (error) {
@@ -129,9 +153,11 @@ export default function ProfileScreen() {
   const handleLogout = async () => {
     try {
       await auth.signOut();
-      navigation.navigate('Inicial' as never);
+      await AsyncStorage.clear(); // Limpa todos os dados locais
+      navigation.dispatch(StackActions.replace('Onboarding'));
     } catch (error) {
-      Alert.alert('Erro', 'Não foi possível sair da conta');
+      console.error('Erro ao deslogar:', error);
+      Alert.alert('Erro', 'Não foi possível sair da conta.');
     }
   };
 
@@ -199,12 +225,13 @@ export default function ProfileScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Ranking */}
         <View style={styles.rankingSection}>
           <Text style={styles.rankingTitle}>Ranking</Text>
           <Text style={styles.rankingDescription}>
-            Analisamos seu desempenho e este é o ranking das suas 3 matérias com maior número de acertos.
+            Analisamos seu desempenho e este é o ranking das suas 3 matérias com maior
+            número de acertos. Elas são seus maiores aliados na busca pela aprovação.
           </Text>
+          {/* Lista de matérias abaixo do gráfico */}
           <View style={styles.rankingList}>
             {rankingData.map((item, index) => (
               <View key={index} style={styles.rankingItem}>
@@ -212,13 +239,53 @@ export default function ProfileScreen() {
                   <Text style={styles.rankingNumberText}>{index + 1}</Text>
                 </View>
                 <Text style={styles.rankingItemText}>{item.materia}</Text>
-                <Text style={styles.rankingAcertos}>{item.acertos} acertos</Text>
               </View>
             ))}
           </View>
+          {/* Verificação para garantir que há dados para exibir */}
+          {rankingData.length > 0 && (
+            <>
+              {/* Container do gráfico de barras */}
+              <View style={styles.rankingChartContainer}>
+                {/* Barra Esquerda (2º Lugar) */}
+                {rankingData[1] && (
+                  <View style={[styles.rankingBar, styles.rankingBarSide]}>
+                    <View style={styles.rankCircle}>
+                      <Text style={styles.rankCircleTextSide}>2</Text>
+                    </View>
+                    <Text style={styles.barText}>{rankingData[1].acertos}</Text>
+                    <Text style={styles.barSubText}>Acertos</Text>
+                  </View>
+                )}
+
+                {/* Barra Central (1º Lugar) */}
+                {rankingData[0] && (
+                  <View style={[styles.rankingBar, styles.rankingBarCenter]}>
+                    <View style={[styles.rankCircle, styles.rankCircleCenter]}>
+                      <Text style={styles.rankCircleTextCenter}>1</Text>
+                    </View>
+                    <Text style={[styles.barText, { color: '#FFFFFF' }]}>{rankingData[0].acertos}</Text>
+                    <Text style={[styles.barSubText, { color: '#FFFFFF' }]}>Acertos</Text>
+                  </View>
+                )}
+
+                {/* Barra Direita (3º Lugar) */}
+                {rankingData[2] && (
+                  <View style={[styles.rankingBar, styles.rankingBarSide]}>
+                    <View style={styles.rankCircle}>
+                      <Text style={styles.rankCircleTextSide}>3</Text>
+                    </View>
+                    <Text style={styles.barText}>{rankingData[2].acertos}</Text>
+                    <Text style={styles.barSubText}>Acertos</Text>
+                  </View>
+                )}
+              </View>
+
+
+            </>
+          )}
         </View>
       </ScrollView>
-
       {/* Footer */}
       <Footer />
 
@@ -269,9 +336,9 @@ export default function ProfileScreen() {
             <Text style={styles.modalTitle}>Termos e Condições</Text>
             <ScrollView style={{ maxHeight: 300 }}>
               <Text style={styles.termsText}>
-                Estes são os termos e condições de uso do aplicativo Vestibulize. 
-                Ao utilizar o app, você concorda com nossas políticas de privacidade, uso de dados e regras de conduta. 
-                Não compartilhe informações pessoais sensíveis. O uso indevido pode resultar em suspensão da conta. 
+                Estes são os termos e condições de uso do aplicativo Vestibulize.
+                Ao utilizar o app, você concorda com nossas políticas de privacidade, uso de dados e regras de conduta.
+                Não compartilhe informações pessoais sensíveis. O uso indevido pode resultar em suspensão da conta.
                 Para dúvidas, entre em contato com o suporte.
                 {"\n\n"}
                 (Nossos termos de usos são : Primeiro termo, segundo termo, terceiro termo, quarto termo, quinto termo, sexto termo, sétimo termo, oitavo termo, nono termo, décimo termo e assim por diante... )

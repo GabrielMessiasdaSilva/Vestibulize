@@ -1,4 +1,3 @@
-// login.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, Image, KeyboardAvoidingView, ScrollView, Platform, TextInput, TouchableOpacity, Animated } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -6,15 +5,18 @@ import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail } from 'firebase/auth';
-import { auth } from '../../services/firebaseConfig';
+import { auth, db } from '../../services/firebaseConfig';
 import { useTranslation } from 'react-i18next';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { showMessage } from "react-native-flash-message";
+import { doc, getDoc } from 'firebase/firestore';
 import { styles } from './styles';
 
 type FormData = { email: string; password: string };
 
-// Input animado com linha inferior
+const MAX_ATTEMPTS = 7;
+const BLOCK_TIME_MS = 15 * 60 * 1000;
+
 const AnimatedInput = ({ label, value, onChangeText, secureTextEntry, error }: { label: string; value: string; onChangeText: (text: string) => void; secureTextEntry?: boolean; error?: string }) => {
   const [isFocused, setIsFocused] = useState(false);
   const labelAnim = useRef(new Animated.Value(value ? 1 : 0)).current;
@@ -119,8 +121,23 @@ export default function Login() {
         return;
       }
 
+      // Reset de tentativas
       await saveAttempts(0);
+
+      // Buscar dados completos do Firestore
+      const userDoc = await getDoc(doc(db, 'users', user.uid));
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        await AsyncStorage.setItem('@userData', JSON.stringify(userData));
+        if (userData.quizResults) {
+          await AsyncStorage.setItem('@userRanking', JSON.stringify(userData.quizResults));
+        }
+      }
+
+      // Salvar token
       await AsyncStorage.setItem('userToken', user.uid);
+
+      // Navegar
       navigation.navigate('Home' as never);
 
     } catch (error: any) {
@@ -128,9 +145,11 @@ export default function Login() {
       if (error.code === 'auth/user-not-found') message = t('login.usuarioNaoEncontrado');
       else if (error.code === 'auth/wrong-password') message = t('login.senhaIncorreta');
       else if (error.code === 'auth/invalid-email') message = t('login.emailInvalido');
+
       const newAttempts = attempts + 1;
-      if (newAttempts >= 7) {
-        const blockTime = Date.now() + 15 * 60 * 1000;
+      if (newAttempts >= MAX_ATTEMPTS) {
+        const blockTime = Date.now() + BLOCK_TIME_MS;
+        await saveAttempts(newAttempts, blockTime);
         showMessage({ message: "Bloqueado", description: "Muitas tentativas inválidas. Tente novamente mais tarde.", type: "danger", icon: "danger" });
       } else {
         await saveAttempts(newAttempts);

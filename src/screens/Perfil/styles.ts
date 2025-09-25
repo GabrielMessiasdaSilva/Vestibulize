@@ -3,14 +3,19 @@ import { StyleSheet } from 'react-native';
 const bottomNavHeight = 80;
 
 export default StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: '#F4F8F7' },
-  scrollContent: { paddingHorizontal: 0 },
+  // Estilos Gerais e do Perfil
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#F4F8F7'
+  },
+  scrollContent: {
+    paddingHorizontal: 0
+  },
   profileCard: {
-   backgroundColor: '#005C6D',
+    backgroundColor: '#005C6D',
     borderRadius: 20,
     paddingTop: 30,
     paddingBottom: 40,
-    // marginTop: 20, // remova esta linha!
     marginBottom: 10,
     elevation: 3,
     zIndex: 2,
@@ -36,7 +41,11 @@ export default StyleSheet.create({
     borderColor: '#fff',
     zIndex: 4,
   },
-  editButtonText: { marginLeft: 5, color: '#020202ff', fontWeight: 'bold' },
+  editButtonText: {
+    marginLeft: 5,
+    color: '#020202ff',
+    fontWeight: 'bold'
+  },
   avatarRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -66,7 +75,7 @@ export default StyleSheet.create({
     shadowRadius: 4,
   },
   name: {
-    top:60,
+    top: 60,
     marginLeft: 135,
     fontSize: 24,
     fontWeight: 'normal',
@@ -84,33 +93,209 @@ export default StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
-  optionRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 18 },
-  optionText: { fontSize: 16, color: '#004A5A', fontWeight: 'bold' },
-  logoutText: { fontSize: 16, color: '#D32F2F', fontWeight: 'bold' },
-  divider: { height: 1, backgroundColor: '#DDDDDD', marginHorizontal: 0 },
-  rankingSection: { marginTop: 30, paddingHorizontal: 20 },
-  rankingTitle: { fontSize: 28, fontWeight: 'bold', color: '#00839A' },
-  rankingDescription: { fontSize: 15, color: '#585858', marginTop: 10, lineHeight: 22 },
-  rankingList: { marginTop: 20 },
-  rankingItem: { flexDirection: 'row', alignItems: 'center', marginBottom: 15 },
-  rankingNumber: { width: 28, height: 28, borderRadius: 14, backgroundColor: '#004A5A', justifyContent: 'center', alignItems: 'center', marginRight: 15 },
-  rankingNumberText: { color: '#fff', fontWeight: 'bold' },
-  rankingItemText: { fontSize: 18, color: '#333', flex: 1 },
-  rankingAcertos: { fontSize: 16, color: '#004A5A', fontWeight: 'bold' },
-  bottomNav: { height: bottomNavHeight },
+  optionRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 18
+  },
+  optionText: {
+    fontSize: 16,
+    color: '#004A5A',
+    fontWeight: 'bold'
+  },
+  logoutText: {
+    fontSize: 16,
+    color: '#D32F2F',
+    fontWeight: 'bold'
+  },
+  divider: {
+    height: 1,
+    backgroundColor: '#DDDDDD',
+    marginHorizontal: 0
+  },
 
-  // Modal
-  modalContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' },
-  modalContent: { width: '85%', backgroundColor: '#fff', borderRadius: 15, padding: 20, alignItems: 'center' },
-  modalTitle: { fontSize: 22, fontWeight: 'bold', marginBottom: 20 },
-  modalAvatar: { width: 100, height: 100, borderRadius: 50, backgroundColor: '#B2EBF2', justifyContent: 'center', alignItems: 'center', marginBottom: 15 },
-  input: { width: '100%', borderWidth: 1, borderColor: '#ccc', borderRadius: 10, padding: 10, marginBottom: 20 },
-  saveButton: { backgroundColor: '#00839A', paddingVertical: 12, paddingHorizontal: 30, borderRadius: 10, marginBottom: 10 },
-  saveButtonText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
-  cancelButton: { backgroundColor: '#ccc', paddingVertical: 12, paddingHorizontal: 30, borderRadius: 10 },
-  cancelButtonText: { color: '#333', fontSize: 16, fontWeight: 'bold' },
+  // --- SEÇÃO COMPLETA DE ESTILOS DO RANKING ---
+  rankingSection: {
+    marginTop: 30,
+    paddingHorizontal: 20
+  },
+  rankingTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#005C6D' // Cor principal do tema
+  },
+  rankingDescription: {
+    fontSize: 15,
+    color: '#585858',
+    marginTop: 10,
+    lineHeight: 22,
+    textAlign: 'left', // Alinhado como na imagem original do prompt
+    marginBottom: 20
+  },
+  rankingChartContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center', // Centraliza as barras
+    alignItems: 'flex-end', // Alinha as barras pela base
+    height: 300, // Altura fixa para o container do gráfico
+    marginBottom: 5,
+    gap: 15, // Espaço entre as barras
+  },
+  rankingBar: {
+    width: '28%', // Largura de cada barra
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative', // Para posicionar o círculo do rank
+    paddingTop: 40, // Espaço no topo para o círculo não sobrepor
+    paddingBottom: 10,
+    
+  },
+  rankingBarCenter: {
+    backgroundColor: '#005C6D',
+    height: '100%', // Barra central é a mais alta
+    width: '32%', // Ligeiramente mais larga para destaque
+  },
+  rankingBarSide: {
+    backgroundColor: '#B2EBF2',
+    height: '80%', // Barras laterais mais baixas
+  },
+  rankCircle: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    top: 10, // Metade para fora da barra
+  },
+  rankCircleCenter: {
+    backgroundColor: '#FFFFFF',
+    borderWidth: 2,
+    borderColor: '#005C6D',
+  },
+  rankCircleTextSide: {
+    color: '#005C6D', // Letra escura no fundo claro
+    fontWeight: 'bold',
+  },
+  rankCircleTextCenter: {
+    color: '#005C6D',
+    fontWeight: 'bold',
+  },
+  barText: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#004A5A',
+  },
+  barSubText: {
+    fontSize: 14,
+    color: '#004A5A',
+  },
+  rankingList: {
+    marginTop: 20
+  },
+  rankingItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 35,
+  },
+  rankingNumber: {
+    width: 28,
+    height: 28,
+    borderRadius: 50,
+    backgroundColor: '#004A5A',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 15
+  },
+  rankingNumberText: {
+    color: '#fff',
+    fontWeight: 'bold'
+  },
+  rankingItemText: {
+    fontSize: 18,
+    color: '#333',
+    flex: 1,
+    fontWeight: '500'
+  },
 
-  // Modal Termos
-  termsContent: { width: '85%', backgroundColor: '#fff', borderRadius: 15, padding: 20, alignItems: 'center' },
-  termsText: { fontSize: 15, color: '#333', marginBottom: 20, textAlign: 'justify' },
+  bottomNav: {
+    height: bottomNavHeight
+  },
+
+  // Estilos dos Modais
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)'
+  },
+  modalContent: {
+    width: '85%',
+    backgroundColor: '#fff',
+    borderRadius: 15,
+    padding: 20,
+    alignItems: 'center'
+  },
+  modalTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 20
+  },
+  modalAvatar: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    backgroundColor: '#B2EBF2',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 15
+  },
+  input: {
+    width: '100%',
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 10,
+    padding: 10,
+    marginBottom: 20
+  },
+  saveButton: {
+    backgroundColor: '#00839A',
+    paddingVertical: 12,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    marginBottom: 10
+  },
+  saveButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold'
+  },
+  cancelButton: {
+    backgroundColor: '#ccc',
+    paddingVertical: 12,
+    paddingHorizontal: 30,
+    borderRadius: 10
+  },
+  cancelButtonText: {
+    color: '#333',
+    fontSize: 16,
+    fontWeight: 'bold'
+  },
+  termsContent: {
+    width: '85%',
+    backgroundColor: '#fff',
+    borderRadius: 15,
+    padding: 20,
+    alignItems: 'center'
+  },
+  termsText: {
+    fontSize: 15,
+    color: '#333',
+    marginBottom: 20,
+    textAlign: 'justify'
+  },
 });
