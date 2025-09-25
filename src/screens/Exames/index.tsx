@@ -165,8 +165,9 @@ export default function Exames() {
     }
   }
 
-  // Calcula minutos e segundos
-  const minutos = Math.floor(tempoRestante / 60);
+  // Calcula horas, minutos e segundos
+  const horas = Math.floor(tempoRestante / 3600);
+  const minutos = Math.floor((tempoRestante % 3600) / 60);
   const segundos = tempoRestante % 60;
 
   function voltarAoMapa() {
@@ -281,7 +282,7 @@ export default function Exames() {
                   style={{ marginRight: 4 }}
                 />
                 <Text style={styles.timerText}>
-                  {`${minutos}:${segundos.toString().padStart(2, "0")}`}
+                  {`${horas}:${minutos}:${segundos.toString().padStart(2, "0")}`}
                 </Text>
               </>
             ) : (
