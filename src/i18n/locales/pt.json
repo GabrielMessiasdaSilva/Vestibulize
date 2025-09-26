@@ -121,7 +121,7 @@
         "profile": "Perfil"
     },
     "home": {
-        "greeting": "Olá {{nome}}!",
+        "greeting": "Olá, {{nome}}!",
         "title": "Qual será o seu foco de hoje?",
         "subtitle": "Materiais de apoio para estudos",
         "searchPlaceholder": "Pesquisar provas",
@@ -129,7 +129,7 @@
         "examsText": "Provas para simulado"
     },
     "map": {
-        "title": "Acompanhe a sua evolução",
+        "title": "Treino Diário: Acompanhe a sua evolução",
         "tempo": "Tempo",
         "tempoSelecionado": "Tempo: {{tempo}} Minutos",
         "tooltipTempo": "Ative o tempo para controlar o limite durante as fases do quiz.",

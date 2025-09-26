@@ -8,6 +8,7 @@ export type RootStackParamList = {
   Vida: undefined;
   Ranking: undefined;
   Conquista: { acertos: number, faseConcluida?: number };
+  ExameConquista: { acertos: number};
   Perfil: undefined;
   Mapa: { faseConcluida?: number } | undefined;
   Materia: { nome: string; assuntos: string[] };

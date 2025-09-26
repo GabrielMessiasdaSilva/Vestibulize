@@ -1,24 +1,22 @@
 import React, { useEffect } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from "react-native";
-import { useNavigation, RouteProp, useRoute, EventArg } from "@react-navigation/native";
+import { useNavigation, useRoute, EventArg } from "@react-navigation/native";
 import type { StackNavigationProp } from "@react-navigation/stack";
 import type { RootStackParamList } from "../../navigation/types";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { auth, db } from "../../services/firebaseConfig";
 import { doc, updateDoc, getDoc } from "firebase/firestore";
-import AsyncStorage from "@react-native-async-storage/async-storage"; // <--- import AsyncStorage
 
 const { width } = Dimensions.get("window");
 
-export default function ResultadoQuiz() {
+export default function ExameConquista() {
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
-  const route = useRoute<RouteProp<RootStackParamList, "Conquista">>();
+  const route = useRoute<any>();
   const acertos = route.params?.acertos ?? 0;
-  const total = 10;
-  const porcentagem = Math.round((acertos / total) * 100);
+  const total = 54; // total de questões do exame
 
-  // Função para salvar resultado no Firebase
-  async function salvarResultadoNoFirebase(fase: number, acertos: number) {
+  // Salva resultado do exame no Firebase
+  async function salvarResultadoExame(acertos: number) {
     try {
       const uid = auth.currentUser?.uid;
       if (!uid) return;
@@ -26,59 +24,29 @@ export default function ResultadoQuiz() {
       const userDocRef = doc(db, "users", uid);
       const userDocSnap = await getDoc(userDocRef);
 
-      let quizResults: { [key: string]: number } = {};
+      let exameResults: { exame?: number } = {};
       if (userDocSnap.exists()) {
         const data = userDocSnap.data();
-        quizResults = data.quizResults || {};
+        exameResults = data.exameResults || {};
       }
 
-      const faseToCategoria: { [key: number]: string } = {
-        1: "Matemática",
-        2: "Linguagens",
-        3: "Ciências da Natureza",
-        4: "Ciências Humanas",
-      };
-
-      const categoria = faseToCategoria[fase];
-      if (!categoria) return;
-
-      quizResults[categoria] = acertos;
-      await updateDoc(userDocRef, { quizResults });
+      exameResults["Exame"] = acertos;
+      await updateDoc(userDocRef, { exameResults });
     } catch (error) {
-      console.error("Erro ao salvar resultado no Firebase:", error);
+      console.error("Erro ao salvar resultado do exame no Firebase:", error);
     }
   }
 
-  // Nova função: salvar fase concluída no AsyncStorage
-  async function salvarProgressoLocal(fase: number) {
-    try {
-      const salvo = await AsyncStorage.getItem("fasesConcluidas");
-      const fasesConcluidas: number[] = salvo ? JSON.parse(salvo) : [];
-
-      if (!fasesConcluidas.includes(fase)) {
-        fasesConcluidas.push(fase);
-        await AsyncStorage.setItem("fasesConcluidas", JSON.stringify(fasesConcluidas));
-      }
-    } catch (error) {
-      console.error("Erro ao salvar progresso local:", error);
-    }
-  }
-
-  // Protege botão de voltar e salva resultado
   useEffect(() => {
-    const fase = route.params?.faseConcluida;
-    if (fase != null) {
-      salvarResultadoNoFirebase(fase, acertos);
-      salvarProgressoLocal(fase); // <--- salva localmente para desbloquear próximas fases
-    }
+    salvarResultadoExame(acertos);
 
+    // Bloqueia botão de voltar físico
     const unsubscribe = navigation.addListener(
       "beforeRemove",
       (e: EventArg<"beforeRemove", true, any>) => {
-        e.preventDefault(); // impede que o swipe ou botão físico volte
+        e.preventDefault();
       }
     );
-
     return unsubscribe;
   }, [navigation]);
 
@@ -89,16 +57,16 @@ export default function ResultadoQuiz() {
       </View>
 
       <View style={styles.bottomContent}>
-        <Text style={styles.title}>Quiz finalizado!</Text>
+        <Text style={styles.title}>Exame finalizado!</Text>
         <Text style={styles.subtitle}>
-          Acertou {porcentagem}% das questões do simulado.
+          Acertou {acertos}/{total} questões.
         </Text>
 
         <TouchableOpacity
-          onPress={() => navigation.navigate("Mapa", { faseConcluida: route.params?.faseConcluida })}
+          onPress={() => navigation.navigate("Home")}
           style={styles.backButton}
         >
-          <Text style={styles.backText}>← Voltar ao Mapa</Text>
+          <Text style={styles.backText}>← Tela Inicial</Text>
         </TouchableOpacity>
       </View>
     </View>

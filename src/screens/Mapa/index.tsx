@@ -116,6 +116,7 @@ export default function Mapa() {
       >
         {/* Título */}
         <Text style={styles.title}>{t("map.title")}</Text>
+        
 
         {/* Botão Tempo */}
         <View style={styles.topButtons}>
@@ -158,13 +159,23 @@ export default function Mapa() {
             return (
               <View key={fase.numero} style={styles.phaseRow}>
                 {/* Linha vertical */}
-                {index > 0 && (
-                  <View style={styles.verticalLine}>
-                    {fase.status !== "concluida" && (
-                      <View style={styles.progressDot} />
-                    )}
-                  </View>
-                )}
+{index > 0 && (
+  <View
+    style={[
+      styles.verticalLine,
+      {
+        backgroundColor: 
+          fases[index - 1].status === "concluida" ? "#005C6D" : "#bbb", // linha azul se fase anterior concluída
+      },
+    ]}
+  >
+    {/* Mostra bolinha apenas se a fase anterior não estiver concluída */}
+    {fases[index - 1].status !== "concluida" && (
+      <View style={styles.progressDot} />
+    )}
+  </View>
+)}
+
 
                 {/* Círculo da fase */}
                 <TouchableOpacity
