@@ -1,53 +1,54 @@
 import { StyleSheet } from "react-native";
-
+import { Dimensions } from "react-native";
+const { width } = Dimensions.get("window");
+ 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f7f8fa",
-    paddingHorizontal: 24,
+    backgroundColor: "#fff",
+  },
+  iconContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+    paddingTop: 40
+  },
+  bottomContent: {
+    width: width*1.5,
+    flex: 1,
+    backgroundColor: "#B71C1C",
+    borderTopLeftRadius: width,
+    borderTopRightRadius: width,
     justifyContent: "center",
     alignItems: "center",
-  },
-  image: {
-    width: 250,
-    height: 250,
-    marginBottom: 24,
+    alignSelf: "center",
+    paddingHorizontal: 30,
+    paddingVertical: 10,
   },
   title: {
-    fontSize: 18,
+    fontSize: 28,
+    color: "#fff",
     fontWeight: "bold",
     marginBottom: 12,
-    textAlign: "center",
+    textAlign: "left",
   },
   subtitle: {
-    fontSize: 14,
-    color: "#555",
+    fontSize: 18,
+    color: "#fff",
     textAlign: "center",
-    marginBottom: 24,
+    marginBottom: 20,
   },
-  button: {
-    backgroundColor: '#233D4D',
-    paddingVertical: 17,
-    paddingHorizontal: 60,
-    borderRadius: 16,
-    minWidth: 80,
-    alignItems: 'center',
+  backButton: {
+    marginTop: 20,
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    backgroundColor: "#fff",
+    borderRadius: 30,
   },
-  buttonText: {
-    color: '#f7f8fa',
-    fontWeight: '600',
+  backText: {
+    color: "#B71C1C",
     fontSize: 16,
-  },
-  bottomMenu: {
-    position: "absolute",
-    bottom: 12,
-    flexDirection: "row",
-    justifyContent: "space-around",
-    width: "100%",
-    paddingHorizontal: 40,
-  },
-  icon: {
-    width: 28,
-    height: 28,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });

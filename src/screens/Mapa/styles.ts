@@ -108,5 +108,6 @@ export const styles = StyleSheet.create({
   desativar:{
     color: "#f7f8fa",
     fontFamily: 'PlusJakartaSans_600SemiBold',
-  }
+  },
+  
 });
