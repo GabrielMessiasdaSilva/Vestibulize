@@ -50,6 +50,14 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 24,
         fontFamily: 'PlusJakartaSans_400Regular',
     },
+    fatecButtonText: {
+        color: '#005C6D',
+        fontSize: 14,
+        marginTop: 8,
+        marginRight: 24,
+        paddingHorizontal: 24,
+        fontFamily: 'PlusJakartaSans_400Regular',
+    },
     searchContainer: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -74,7 +82,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         fontFamily: 'PlusJakartaSans_400Regular',
     },
-    examsText:{
+    examsText: {
         marginTop: 48,
         marginBottom: 16,
         marginLeft: 24,

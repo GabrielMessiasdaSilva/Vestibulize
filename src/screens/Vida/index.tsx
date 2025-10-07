@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, EventArg } from "@react-navigation/native";
 import type { StackNavigationProp } from '@react-navigation/stack';
 import { useTranslation } from 'react-i18next';
 
@@ -12,7 +12,12 @@ export default function Vida() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const unsubscribe = navigation.addListener("beforeRemove", (e) => e.preventDefault());
+const unsubscribe = navigation.addListener(
+      "beforeRemove",
+      (e: EventArg<"beforeRemove", true, any>) => {
+        e.preventDefault();
+      }
+    );
     return unsubscribe;
   }, [navigation]);
 

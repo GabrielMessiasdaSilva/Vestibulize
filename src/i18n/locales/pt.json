@@ -575,5 +575,10 @@
             "stay": "Ficar",
             "confirm": "Confirmar"
         }
+    },
+    "fatecs":{
+        "title":"Busque a FATEC mais próxima de você!",
+        "text":"FATECs próximas de você",
+        "knowMore":"Saiba mais"
     }
 }

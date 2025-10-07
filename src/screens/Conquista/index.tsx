@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import * as Progress from "react-native-progress";
 import Footer from "../../components/Footer";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
+import type { EventArg, RouteProp } from "@react-navigation/native";
 import type { StackNavigationProp } from "@react-navigation/stack";
-import { useRoute, RouteProp } from "@react-navigation/native";
 import type { RootStackParamList } from "../../navigation/types";
 import { useTranslation } from "react-i18next";
 import { auth, db } from "../../services/firebaseConfig";
@@ -57,7 +57,12 @@ export default function ResultadoQuiz() {
       salvarResultadoNoFirebase(fase, acertos);
     }
 
-    const unsubscribe = navigation.addListener("beforeRemove", (e) => e.preventDefault());
+    const unsubscribe = navigation.addListener(
+      "beforeRemove",
+      (e: EventArg<"beforeRemove", true, any>) => {
+        e.preventDefault();
+      }
+    );
     return unsubscribe;
   }, [navigation]);
 

@@ -18,4 +18,5 @@ export type RootStackParamList = {
   Exames: { semestre: string; tempoAtivado: boolean; tempoTotal: number }; 
   Prova: { semestre: string; questoes: number };
   Main: undefined;
+  Fatecs: undefined;
 };
