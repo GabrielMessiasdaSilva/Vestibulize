@@ -29,7 +29,7 @@ export default function Home() {
 
   const provasFiltradas = provas.filter((p) =>
     p.semestre.toLowerCase().includes(busca.toLowerCase())
-  );  
+  );
 
   useEffect(() => {
     const unsubscribe = navigation.addListener(
@@ -54,6 +54,15 @@ export default function Home() {
           <Text style={styles.subtitle}>{t('home.subtitle')}</Text>
           <Subjects />
         </View>
+        <Text style={styles.fatecButtonText}>
+          Gostaria de saber qual a FATEC mais próxima da sua região?{" "}
+          <Text
+            style={{ textDecorationLine: "underline", color: "#86D1EA" }}
+            onPress={() => navigation.navigate("Fatecs")}
+          >
+            Confira aqui
+          </Text>
+        </Text>
         <TouchableOpacity
           activeOpacity={1}
           style={styles.searchContainer}
@@ -74,7 +83,7 @@ export default function Home() {
           <MaterialCommunityIcons name="magnify" size={24} color="#40484B" />
         </TouchableOpacity>
         <Text style={styles.examsText}>{t('home.examsText')}</Text>
-        <Card provas={provasFiltradas}/>
+        <Card provas={provasFiltradas} />
       </ScrollView>
       <Footer />
     </View>

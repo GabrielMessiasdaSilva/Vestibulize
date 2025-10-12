@@ -8,7 +8,7 @@ export type RootStackParamList = {
   Vida: undefined;
   Ranking: undefined;
   Conquista: { acertos: number, faseConcluida?: number };
-  ExameConquista: { acertos: number};
+  ExameConquista: { acertos: number };
   Perfil: undefined;
   Mapa: { faseConcluida?: number } | undefined;
   Materia: { nome: string; assuntos: string[] };
@@ -16,7 +16,8 @@ export type RootStackParamList = {
   Quiz: { tempoTotal: number; tempoAtivado: boolean, faseAtual: number };
   Termos: undefined;
   DecidirTempo: { semestre: string };
-  Exames: { semestre: string; tempoAtivado: boolean; tempoTotal: number }; 
+  Exames: { semestre: string; tempoAtivado: boolean; tempoTotal: number };
   Prova: { semestre: string; questoes: number };
   Main: undefined;
+  Fatecs: undefined;
 };

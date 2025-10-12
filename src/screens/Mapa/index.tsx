@@ -114,11 +114,9 @@ export default function Mapa() {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        {/* Título */}
-        <Text style={styles.title}>{t("map.title")}</Text>
-        
 
-        {/* Botão Tempo */}
+        <Text style={styles.title}>{t("map.title")}</Text>
+
         <View style={styles.topButtons}>
           {selectedTime === "none" ? (
             <TouchableOpacity
@@ -144,7 +142,6 @@ export default function Mapa() {
           )}
         </View>
 
-        {/* Fases */}
         <View style={styles.phaseMapContainer}>
           {fases.map((fase, index) => {
             const faseStatus = fase.status;
@@ -158,26 +155,22 @@ export default function Mapa() {
 
             return (
               <View key={fase.numero} style={styles.phaseRow}>
-                {/* Linha vertical */}
-{index > 0 && (
-  <View
-    style={[
-      styles.verticalLine,
-      {
-        backgroundColor: 
-          fases[index - 1].status === "concluida" ? "#005C6D" : "#bbb", // linha azul se fase anterior concluída
-      },
-    ]}
-  >
-    {/* Mostra bolinha apenas se a fase anterior não estiver concluída */}
-    {fases[index - 1].status !== "concluida" && (
-      <View style={styles.progressDot} />
-    )}
-  </View>
-)}
+                {index > 0 && (
+                  <View
+                    style={[
+                      styles.verticalLine,
+                      {
+                        backgroundColor:
+                          fases[index - 1].status === "concluida" ? "#005C6D" : "#bbb",
+                      },
+                    ]}
+                  >
+                    {fases[index - 1].status !== "concluida" && (
+                      <View style={styles.progressDot} />
+                    )}
+                  </View>
+                )}
 
-
-                {/* Círculo da fase */}
                 <TouchableOpacity
                   disabled={faseStatus !== "disponivel"}
                   onPress={() => iniciarFase(fase.numero)}
@@ -216,7 +209,6 @@ export default function Mapa() {
                   </View>
                 </TouchableOpacity>
 
-                {/* Título da fase */}
                 <View style={styles.phaseInfo}>
                   <Text
                     style={[
@@ -241,7 +233,6 @@ export default function Mapa() {
         </View>
       </ScrollView>
 
-      {/* Modal de tempo */}
       <TimeModal
         visible={modalVisible}
         inputTime={inputTime}
@@ -252,7 +243,6 @@ export default function Mapa() {
         resetTime={resetTimeFlag}
       />
 
-      {/* Footer fixo */}
       <Footer />
     </View>
   );

@@ -1,32 +1,16 @@
 {
   "expo": {
-    "name": "vestibulize",
-    "slug": "vestibulize",
+    "name": "Vestibulize",
+    "slug": "Vestibulize",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/img/logo_Vestibulize.jpg",
-    "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/img/logo_Vestibulize.jpg",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/img/logo_Vestibulize.jpg",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
-    },
     "web": {
-      "favicon": "./assets/img/logo_Vestibulize.jpg"
+      "favicon": "./assets/img/logo_Vestibulize.png"
     },
-    "plugins": [
-      "expo-font"
-    ]
+    "extra": {
+      "eas": {
+        "projectId": "1107899d-8086-40c2-9ce0-5710ab0ec94e"
+      }
+    }
   }
 }
