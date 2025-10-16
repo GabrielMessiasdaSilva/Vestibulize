@@ -153,7 +153,7 @@ export default function ProfileScreen() {
   const handleLogout = async () => {
     try {
       await auth.signOut();
-      await AsyncStorage.clear(); // Limpa todos os dados locais
+      await AsyncStorage.clear();
       navigation.dispatch(StackActions.replace('Onboarding'));
     } catch (error) {
       console.error('Erro ao deslogar:', error);

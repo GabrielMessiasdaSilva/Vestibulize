@@ -100,8 +100,11 @@ export default function Login() {
     password: yup.string().required(t('login.senhaObrigatoria')),
   });
 
+
+  type FormData = yup.InferType<typeof schema>;
+
   const { control, handleSubmit, formState: { errors } } = useForm<FormData>({
-    resolver: yupResolver(schema),
+    resolver: yupResolver(schema as any),
   });
 
   const onSubmit = async (data: FormData) => {

@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { View, Text, TouchableOpacity, Image, ImageBackground, Dimensions } from 'react-native';
+import React, { useRef, useEffect } from 'react';
+import { View, Text, TouchableOpacity, Image, ImageBackground, Dimensions, BackHandler } from 'react-native';
 import Swiper from 'react-native-swiper';
 import { StackScreenProps } from '@react-navigation/stack';
 import type { RootStackParamList } from '../../navigation/types';
@@ -14,8 +14,25 @@ const { height } = Dimensions.get('window');
 const IMAGE_HEIGHT = height * 0.6;
 
 const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ navigation }) => {
-  const swiperRef = useRef<Swiper>(null);
+  const swiperRef = useRef<any>(null);
   const { t } = useTranslation();
+
+  // Bloqueia o botão de voltar do Android nesta tela
+  useEffect(() => {
+    const backAction = () => {
+      // Retornar 'true' impede a ação padrão de voltar.
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      backAction
+    );
+
+    // Função de limpeza: remove o listener quando a tela é desmontada.
+    // Isso é MUITO importante para não afetar outras telas.
+    return () => backHandler.remove();
+  }, []); // O array vazio garante que o efeito rode apenas uma vez.
 
   const handleFinishOnboarding = async () => {
     await AsyncStorage.setItem('hasSeenOnboarding', 'true');
