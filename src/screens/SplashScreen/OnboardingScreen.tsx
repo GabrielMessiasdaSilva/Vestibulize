@@ -14,7 +14,7 @@ const { height } = Dimensions.get('window');
 const IMAGE_HEIGHT = height * 0.6;
 
 const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ navigation }) => {
-  const swiperRef = useRef<Swiper>(null);
+  const swiperRef = useRef<any>(null);
   const { t } = useTranslation();
 
   // Bloqueia o botão de voltar do Android nesta tela

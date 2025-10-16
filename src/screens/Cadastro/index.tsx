@@ -124,8 +124,10 @@ export default function Cadastro() {
       .required("Confirme a senha"),
   });
 
+  type FormData = yup.InferType<typeof schema>;
+
   const { control, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
-    resolver: yupResolver(schema),
+    resolver: yupResolver(schema as any),
   });
 
   const onSubmit = async (data: FormData) => {
