@@ -1,8 +1,12 @@
 export type Pergunta = {
-    id: number;
-    texto: string;
-    alternativas: { [letra: string]: string };
-    correta: string;
-    categoria: 'ciencias_natureza' | 'linguagens' | 'matematica' | 'ciencias_humanas';
-    ano: number;
+  id: number;
+  texto: string;
+  imagem_url?: string | null;
+  alternativas: { [letra: string]: string };
+  correta: string;
+  categoria: string;
+  origem: 'enem' | 'FATEC';
+  exame_id: string;
+  exame_questao_num?: number;
+  ano?: number;
 };

@@ -1,0 +1,920 @@
+[
+  {
+    "id": 242001,
+    "texto": "A leitura do mapa permite concluir, corretamente, que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q01.png",
+    "alternativas": {
+      "A": "os povoadores da América do Norte tiveram sua origem na Oceania, passaram pela Polinésia e seguiram\nviagem por mar, utilizando embarcações primitivas.",
+      "B": "os primeiros povoadores da América partiram de um ponto de origem comum e realizaram diferentes\nrotas em direção aos territórios da atual América Latina.",
+      "C": "a rota dos primeiros habitantes da América se originou na Europa e, desse continente, rumou para a Ásia,\nde onde foi possível finalizar a travessia por terra.",
+      "D": "os territórios da atual América Latina foram tanto destino quanto origem de parte dos fluxos\nmigratórios pré-históricos.",
+      "E": "a impossibilidade de realizar os percursos por terra forçou o desenvolvimento de viagens marítimas como\núnica forma de alcançar o Continente Americano."
+    },
+    "correta": "B",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 1
+  },
+  {
+    "id": 242002,
+    "texto": "Leia o texto para responder às questões 02 e 03.\n\nA expressão América Latina está mais associada a questões econômicas e sociais dos países que a\ncompõem do que a um aspecto meramente territorial. Não se trata de um continente, mas, sim, de uma\nalusão aos 20 países da América colonizados, principalmente, por Espanha e Portugal. Territorialmente,\ncompreende quase toda a América do Sul e Central, mais especificamente: Argentina, Bolívia, Brasil,\nChile, Colômbia, Costa Rica, Cuba, El Salvador, Equador, Guatemala, Haiti, Honduras, Nicarágua,\nPanamá, Paraguai, Peru, República Dominicana, Uruguai e Venezuela. O México, localizado na América\ndo Norte, também a integra. Países como Guiana, Suriname, Jamaica e Belize não a integram.\n\nQuestão 02\nAssinale a alternativa em que é apresentado um país da América Latina cujo nome tem o maior número de\nanagramas.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Canadá",
+      "B": "Guiana",
+      "C": "Jamaica",
+      "D": "México",
+      "E": "Panamá"
+    },
+    "correta": "D",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 2
+  },
+  {
+    "id": 242003,
+    "texto": "Leia o texto para responder às questões 02 e 03.\n\nA expressão América Latina está mais associada a questões econômicas e sociais dos países que a\ncompõem do que a um aspecto meramente territorial. Não se trata de um continente, mas, sim, de uma\nalusão aos 20 países da América colonizados, principalmente, por Espanha e Portugal. Territorialmente,\ncompreende quase toda a América do Sul e Central, mais especificamente: Argentina, Bolívia, Brasil,\nChile, Colômbia, Costa Rica, Cuba, El Salvador, Equador, Guatemala, Haiti, Honduras, Nicarágua,\nPanamá, Paraguai, Peru, República Dominicana, Uruguai e Venezuela. O México, localizado na América\ndo Norte, também a integra. Países como Guiana, Suriname, Jamaica e Belize não a integram.\n\nQuestão 03\nConsidere os conjuntos:\n• $X = \\{x | x \\text{ é um país da América Latina}\\}$;\n• $Y = \\{y | y \\text{ é um país cujo idioma oficial não é o espanhol}\\}$\nSe um país pertence ao conjunto $C = Y - X$ então, geograficamente, esse país",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "não existe, uma vez que o conjunto C é vazio.",
+      "B": "está localizado na América Latina e o idioma oficial é o espanhol.",
+      "C": "não está localizado na América Latina e o idioma oficial é o espanhol.",
+      "D": "está localizado na América Latina e o idioma oficial não é o espanhol.",
+      "E": "não está localizado na América Latina e o idioma oficial não é o espanhol."
+    },
+    "correta": "E",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 3
+  },
+  {
+    "id": 242004,
+    "texto": "A América Latina é uma região rica em biodiversidade, abrigando uma grande variedade de espécies de\nmamíferos, como as capivaras (Hydrochoerus hydrochaeris), maiores roedores vivos do mundo.\nEntre as características que pertencem exclusivamente a classe dos animais citados no texto, destaca-se\ncorretamente a presença de",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "escamas, coração com quatro cavidades e ectotermia.",
+      "B": "escamas, coração com três cavidades e diafragma.",
+      "C": "pelos, coração com três cavidades e diafragma.",
+      "D": "pelos, glândulas mamárias e ectotermia.",
+      "E": "pelos, glândulas mamárias e diafragma."
+    },
+    "correta": "E",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 4
+  },
+  {
+    "id": 242005,
+    "texto": "Colônia espanhola até o final do século XIX, o país conquistou a independência em 1898, com a intervenção dos\nEstados Unidos, país do qual passou a ser praticamente um quintal.\nA influência de empresas estadunidenses\nali cresceu consideravelmente ao longo do século XX.\nA ascensão de Fulgêncio Batista ao poder e a instalação\nde uma ditadura, que perseguiu opositores e implantou a censura para atender aos interesses estadunidenses,\nforam responsáveis por iniciar um movimento revolucionário de oposição.\nO texto faz referência à",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Independência do Haiti.",
+      "B": "Revolta de Demerara.",
+      "C": "Revolução Francesa.",
+      "D": "Revolução Cubana.",
+      "E": "Revolução Russa."
+    },
+    "correta": "D",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 5
+  },
+  {
+    "id": 242006,
+    "texto": "Leia o texto para responder às questões de 06 a 08.\n\nO Canal do Panamá é uma construção de aproximadamente 82 km de comprimento, criado para facilitar o\ncomércio marítimo mundial pela ligação dos oceanos Pacífico e Atlântico. O canal permite que os navios evitem\na longa rota de, aproximadamente, 19000 km, que passa pelo Cabo Horn. Essa trajetória ocorre em torno\nda ponta mais meridional do continente americano, onde ventos fortes, correntes marítimas frias e icebergs\nfazem dessas águas uma das mais difíceis do mundo para navegação. Durante a realização da obra do canal,\ndevido a uma diferença de nível entre o continente e os oceanos mencionados, foi necessária a construção\nde diversas eclusas e comportas. Para atravessar esse canal, um navio pode levar entre 6 e 10 horas.\nA França iniciou a construção do canal em 1881, e a abandonou em 1889. Entretanto, para alcançar seus\ninteresses geopolíticos e econômicos, os Estados Unidos incentivaram a independência do Panamá em\nrelação à Colômbia. Após esse evento, de 1903 a 1914, os Estados Unidos concluíram a obra e controlaram o\ncanal até 1999, quando a administração foi transferida para o Panamá.\n\nQuestão 06\nSegundo o texto, é possível afirmar corretamente que a mencionada obra de engenharia atingiu seu propósito por\nmeio de construções de eclusas e comportas, que se baseiam",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "no princípio de Pascal e no conceito da termodinâmica.",
+      "B": "no princípio da Inércia e no conceito de força da gravidade.",
+      "C": "no princípio de Arquimedes e no conceito de vasos comunicantes.",
+      "D": "no princípio da Conservação da Energia e no conceito de momento linear.",
+      "E": "no princípio da Reversibilidade da Luz e no conceito de decomposição luminosa."
+    },
+    "correta": "C",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 6
+  },
+  {
+    "id": 242007,
+    "texto": "Leia o texto para responder às questões de 06 a 08.\n\n(Texto do Canal do Panamá omitido por brevidade)\n\nQuestão 07\nCom base no texto, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a independência colombiana ocorreu em função da pressão estadunidense sobre o Panamá, que não\naceitava a construção do Canal na América do Sul.",
+      "B": "a França transferiu a administração do Canal do Panamá para os Estados Unidos em 1999, uma vez que\neste país assumiu a construção das eclusas, parte mais onerosa que compõe a obra.",
+      "C": "a diferença de nível entre os oceanos Atlântico e Pacífico foi resolvida com a construção de eclusas no\noceano Índico, com o intuito de permitir uma travessia sem sobressaltos do Canal do Panamá.",
+      "D": "a construção do Canal do Panamá permitiu que os navios evitassem a rota do Cabo Horn, situado no extremo\nnorte do Canadá, uma região de difícil navegação em função da existência de correntes marítimas frias.",
+      "E": "a utilização do Canal do Panamá reduz a distância percorrida por um navio, que parte do Leste dos\nEstados Unidos para o Oeste deste mesmo país, em comparação a um navio que faz a mesma ligação,\nporém contornando o extremo sul do continente americano."
+    },
+    "correta": "E",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 7
+  },
+  {
+    "id": 242008,
+    "texto": "Leia o texto para responder às questões de 06 a 08.\n\n(Texto do Canal do Panamá omitido por brevidade)\n\nQuestão 08\nAntes da construção do canal, um navio cargueiro, que fosse do ponto Atlântico do Canal do Panamá até o ponto\nPacífico desse canal, precisaria passar pelo Cabo Horn, conforme descrito no texto.\nSuponha que esse navio conseguisse percorrer o trecho, citado no parágrafo anterior, navegando, sem paradas\nou intercorrências, a uma velocidade média de cruzeiro de aproximadamente 20 nós.\nAdotando 1 nó como $1.9~km/h$, é correto afirmar que o navio faria essa viagem, aproximadamente, em",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "10 horas.",
+      "B": "20 horas.",
+      "C": "50 horas.",
+      "D": "20 dias.",
+      "E": "10 dias."
+    },
+    "correta": "D",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 8
+  },
+  {
+    "id": 242009,
+    "texto": "Leia o texto para responder às questões de 09 a 11.\n\nA Comissão Econômica para a América Latina e o Caribe (CEPAL) apresentou, em seu último relatório anual,\nas projeções atualizadas para o crescimento do PIB dos países da região da América Latina e do Caribe.\nA tabela apresenta essas projeções para alguns dos países dessa região.\n\n(Tabela de Crescimento do PIB omitida, ver página 5)\n\nQuestão 09\nSe considerarmos apenas os países dessa lista que fazem parte da América do Sul, podemos calcular a média\naritmética referente à projeção do crescimento percentual desses países para o ano de 2024.\nAssinale, dentre as alternativas apresentadas, aquela na qual há um país da América do Sul cujo crescimento do\nPIB, em 2024, é mais próximo de M.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Costa Rica",
+      "B": "El Salvador",
+      "C": "Jamaica",
+      "D": "Peru",
+      "E": "Uruguai"
+    },
+    "correta": "D",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 9
+  },
+  {
+    "id": 242010,
+    "texto": "Leia o texto para responder às questões de 09 a 11.\n\n(Tabela de Crescimento do PIB omitida, ver página 5)\n\nQuestão 10\nConsidere que o PIB da Venezuela, no ano de 2022, foi estimado em cerca de US$ 196 bilhões.\nEntão, de acordo\ncom as previsões da CEPAL, a projeção para o ano de 2024, em bilhões, deve ser próxima de",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "US$ 209,96.",
+      "B": "US$ 209,57.",
+      "C": "US$ 205,67.",
+      "D": "US$ 202,86.",
+      "E": "US$ 196,70."
+    },
+    "correta": "A",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 10
+  },
+  {
+    "id": 242011,
+    "texto": "Leia o texto para responder às questões de 09 a 11.\n\n(Tabela de Crescimento do PIB omitida, ver página 5)\n\nQuestão 11\nA partir dos dados apresentados no quadro, o país que teve a maior variação percentual no crescimento do PIB,\nde 2023 a 2024, foi",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Panamá, localizado na América Central.",
+      "B": "Argentina, localizado na América do Sul.",
+      "C": "México, localizado na América do Norte.",
+      "D": "Brasil, localizado na América do Sul.",
+      "E": "Haiti, localizado na América Central."
+    },
+    "correta": "E",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 11
+  },
+  {
+    "id": 242012,
+    "texto": "O termo \"república de bananas\" foi cunhado pelo escritor estadunidense William Sydney Porter, no conto\nO Almirante, de 1904. A história do conto se passa na Anchuria, país fictício descrito pelo autor como \"uma\npequena república de bananas\". Acredita-se, porém, que Porter tenha se inspirado em Honduras, onde morava\nquando escreveu a história.\nAté o fim do século XIX e começo do século XX, algumas empresas estadunidenses começaram a\nfazer plantações de bananas em série e criaram enclaves modernos em repúblicas da América Central.\nAs \"repúblicas de bananas\" eram literalmente os países produtores de bananas e, com isso, dependentes da\nrenda de empresas estadunidenses. O termo acabou ganhando um significado mais amplo ao migrar para os estudos políticos.\nA expressão passou a fazer referência a países marcados pela monocultura, dotados de instituições\ngovernamentais fracas e corruptas, onde uma ou várias empresas estrangeiras têm o poder de influir nas\ndecisões nacionais.\nO que chama a atenção é que os anglo-saxões não aplicam a expressão a países que estejam fora da\nAmérica Latina.\n\nDe acordo com o texto, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Honduras exemplifica a expressão \"república de bananas\" por ser o maior produtor e exportador asiático de\nbananas, posição assumida desde o final do século XIX.",
+      "B": "a expressão \"repúblicas de bananas\" refere-se a países latino-americanos monocultores, cuja vida\npolítica e econômica sofriam ingerência de empresas estrangeiras.",
+      "C": "William Sydney Porter, presidente dos Estados Unidos no início do século XX, batizou os países da América\nCentral de \"república de bananas\" para caracterizar o principal produto de exportação desses países.",
+      "D": "os anglo-saxões criaram a denominação \"república de bananas\" para designar países que não\nsão latino-americanos, que são exportadores de bananas e que sofrem com o imperialismo estadunidense.",
+      "E": "países africanos, governados por empresas estadunidenses, são os principais produtores mundiais de frutas\ntropicais, pois utilizam tecnologias agrícolas avançadas e, por isso, são chamados de \"república de bananas\"."
+    },
+    "correta": "B",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 12
+  },
+  {
+    "id": 242013,
+    "texto": "Leia o texto para responder às questões 13 e 14.\n\nLatin America in 2024\nDespite mediocre growth, political risk is declining and cautious optimism is increasingly warranted.\nSÃO PAULO - Despite a challenging macroeconomic and geopolitical scenario, 2023 was not a bad year for\nLatin America. Throughout the past twelve months, a cautiously optimistic outlook among analysts has become\nincreasingly common. Economic growth in 2023 is expected to end up at 2.2% - somewhat better than the\n1.7% initially projected, but still below the global average of 3.2%. Most analysts expect growth to decline\nslightly to 1.9% this year, too little to decisively overcome the deep-seated public discontent that has been so\nprevalent across Latin America in recent years.\n\nQuestão 13\nA partir da leitura do texto, infere-se que, na América Latina,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "o crescimento negativo será agravado pelo cenário geopolítico.",
+      "B": "a mediocridade política impedirá o crescimento econômico.",
+      "C": "os desafios macroeconômicos contribuirão para um enorme pessimismo.",
+      "D": "há um certo otimismo diante de um crescimento econômico melhor do que o esperado.",
+      "E": "há uma onda bastante otimista indicando crescimento econômico acima da média mundial."
+    },
+    "correta": "D",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 13
+  },
+  {
+    "id": 242014,
+    "texto": "Leia o texto para responder às questões 13 e 14.\n\n(Texto em inglês omitido por brevidade)\n\nQuestão 14\nA palavra Despite, no texto, é usada para",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "retomar as causas dos problemas apresentados.",
+      "B": "apresentar informações contrastantes.",
+      "C": "introduzir exemplos de uma tese.",
+      "D": "suprimir o tom negativo do texto.",
+      "E": "marcar as consequências de um temor."
+    },
+    "correta": "B",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 14
+  },
+  {
+    "id": 242015,
+    "texto": "Leia o texto para responder às questões de 15 a 18.\n\nNo extremo sul do Chile, foi inaugurada, em 2022, a primeira planta industrial do mundo para produção de\ncombustíveis ecológicos. O processo utiliza dois recursos: o vento e a água, que são abundantes na região.\nO vento é responsável pela geração de energia elétrica limpa fornecida à usina. Essa energia é utilizada a fim de\nrealizar a eletrólise da água para obtenção de hidrogênio, substância usada na produção do combustível sintético\n(denominado e-fuel). Uma estação aspira o ar atmosférico e separa o dióxido de carbono dos demais componentes do ar. Por meio de\npressurizadores, condensadores e filtros, o $CO_2$ é armazenado no estado líquido. Feito isso, o próximo passo é\nreagir o $CO_2$ com o hidrogênio, gerando o metanol sintético que, refinado, resulta na gasolina sintética, conforme\no esquema.\n\nQuestão 15\nAssinale a alternativa que contém o nome correto da mudança de estado físico, ocorrida com o dióxido de carbono,\nno processo indicado em (I).",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q15.png",
+    "alternativas": {
+      "A": "Condensação",
+      "B": "Vaporização",
+      "C": "Sublimação",
+      "D": "Fusão",
+      "E": "Ebulição"
+    },
+    "correta": "A",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 15
+  },
+  {
+    "id": 242016,
+    "texto": "Leia o texto para responder às questões de 15 a 18.\n\n(Texto sobre gasolina sintética e esquema omitidos por brevidade)\n\nQuestão 16\nConsiderando a equação química (II), que representa a reação de produção de metanol, os valores de x e y,\nque tornam a equação corretamente balanceada, são, respectivamente,\n(II) $x~CO_2 + y~H_2 \\rightarrow 1~CH_3OH + 1~H_2O$",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q15.png",
+    "alternativas": {
+      "A": "1 e 1.",
+      "B": "1 e 2.",
+      "C": "1 e 3.",
+      "D": "2 e 1.",
+      "E": "2 e 3."
+    },
+    "correta": "C",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 16
+  },
+  {
+    "id": 242017,
+    "texto": "Leia o texto para responder às questões de 15 a 18.\n\n(Texto sobre gasolina sintética e esquema omitidos por brevidade)\n\nQuestão 17\nUm processo neutro em carbono ou de carbono neutro é aquele que não contribui para o aumento da quantidade\nde carbono emitido na atmosfera na forma de gases, como CO e $CO_2$.\nPodemos concluir corretamente que a produção da gasolina sintética pode ser considerada neutra em carbono,\njá que, de acordo com o esquema, o hidrogênio e o dióxido de carbono são transformados em gasolina sintética, cuja",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q15.png",
+    "alternativas": {
+      "A": "combustão libera água para a atmosfera.",
+      "B": "combustão produz carbono e gás hidrogênio.",
+      "C": "combustão não libera energia.",
+      "D": "produção reaproveita o carbono gerado no processo.",
+      "E": "produção gera metanol, composto não tóxico."
+    },
+    "correta": "D",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 17
+  },
+  {
+    "id": 242018,
+    "texto": "Leia o texto para responder às questões de 15 a 18.\n\n(Texto sobre gasolina sintética e esquema omitidos por brevidade)\n\nQuestão 18\nO combustível sintético emite, em sua queima, apenas 10% da quantidade de $CO_2$ emitida na combustão de\ncombustíveis fósseis.\nEsta equação química balanceada representa a queima da gasolina $(C_8H_{18})$ de origem fóssil.\n$C_8H_{18}(g) + \\frac{25}{2}O_2(g) \\rightarrow 8CO_2(g) + 9H_2O(g)$\nConsidere que um motor realizou a queima de 114 g de $C_8H_{18} (M=114g/mol)$ de origem fóssil.\nCaso esse mesmo motor utilizasse gasolina sintética, a massa de $CO_2 (M=44g/mol)$ emitida, em gramas, seria\nde, aproximadamente,",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q15.png",
+    "alternativas": {
+      "A": "523.",
+      "B": "352.",
+      "C": "207.",
+      "D": "35.",
+      "E": "22."
+    },
+    "correta": "D",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 18
+  },
+  {
+    "id": 242019,
+    "texto": "A América Latina é apontada pela Organização das Nações Unidas para Agricultura e Alimentação (FAO)\ncomo celeiro do mundo. Contudo, a produção de alimentos vem sendo ameaçada pelas plantas daninhas de\ndifícil controle (PDDC), que são resistentes à aplicação de herbicidas e de defensivos agrícolas, constituindo um\ndos principais problemas à agricultura mundial. As PDDC competem com as culturas agrícolas por nutrientes,\nágua, luz e espaço, podendo também ser hospedeiras de pragas e doenças.\nUma das espécies infestantes mais nocivas à agricultura é o capim-amargoso (Digitaria insularis), que se\ndesenvolve rapidamente por rizomas e sementes, com alta taxa de dispersão.\nNesses casos, o controle biológico realizado com o uso de fungos fitopatógenos, microrganismos que causam\ndoenças em plantas, tem se mostrado muito promissor, pois esses fungos promovem a inibição do crescimento\ndas plantas de capim-amargoso e diminuem, de forma significativa, a produção de suas sementes.\n\nÉ correto afirmar que o método de controle biológico, citado no texto,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "colabora para o aumento da quantidade de resíduos tóxicos de defensivos agrícolas nos alimentos cultivados\ncom as espécies infestantes.",
+      "B": "permite o desenvolvimento e o aumento da taxa de dispersão das espécies infestantes nocivas à agricultura\nde soja, milho e trigo.",
+      "C": "introduz genes de resistência aos herbicidas nas PDDC, responsáveis pelos principais problemas da\nagricultura mundial.",
+      "D": "impede o controle e o combate das pragas nas plantações, facilitando a dispersão das sementes das espécies\ninvasoras.",
+      "E": "consiste no uso de organismos para reduzir ou erradicar, nas plantações, a infestação de espécies nocivas."
+    },
+    "correta": "E",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 19
+  },
+  {
+    "id": 242020,
+    "texto": "Segundo a FAO, a produção de proteína animal é também considerada fundamental para a segurança alimentar\nda população do mundo. E, nesse aspecto, a contribuição da América Latina é importante, pois ocupa o segundo\nlugar mundial, perdendo apenas para a Ásia, na produção de carnes, pescados, leite e ovos.\n\nSegundo especialistas, no organismo humano, esse tipo de nutriente desempenha várias funções biológicas\nimportantes, como as realizadas",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "pela hemoglobina, que provoca a coagulação e que estimula a reparação dos vasos sanguíneos lesados.",
+      "B": "pelas enzimas, que se ligam aos gases respiratórios e que distribuem o gás carbônico dos alvéolos pulmonares\na todas as células do corpo.",
+      "C": "pela insulina, que atua no controle da ovulação, no desenvolvimento de características sexuais secundárias\nfemininas e pelo controle do ciclo menstrual.",
+      "D": "pelo colágeno, que atua como catalisador de reações químicas e que diminui a elasticidade e a hidratação\nda pele e das cartilagens humanas.",
+      "E": "pelas imunoglobulinas, que agem na defesa e atuam contra os antígenos que entram no organismo por meio\nde vacinação ou de uma infecção ativa."
+    },
+    "correta": "D",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 20
+  },
+  {
+    "id": 242021,
+    "texto": "A cidade mexicana de La Paz e o Parque Nacional da Patagônia (PNP), no Chile, separados por quase\n9.000 quilômetros, são dois lugares da América Latina que aparecem na lista dos 100 \"melhores lugares do mundo\"\na se explorar, segundo ranking de uma revista estadunidense.\nO quadro apresenta as coordenadas de tempo em GMT (Greenwich Mean Time), que são utilizadas para definir\nos fusos horários.\n\n(Tabela de Fuso Horário omitida, ver página 9)\n\nSuponha que seja possível embarcar em um voo direto entre esses dois lugares e que a aeronave faça esse trajeto\ncom velocidade média de $900~km/h.$\nSe um passageiro embarcasse em La Paz às 09h45min, ele desembarcaria no PNP, aproximadamente, às",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "6 h 45 min.",
+      "B": "12 h 45 min.",
+      "C": "16 h 45 min.",
+      "D": "19 h 45 min.",
+      "E": "22 h 45 min."
+    },
+    "correta": "E",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 21
+  },
+  {
+    "id": 242022,
+    "texto": "O congestionamento de tráfego é um desafio para a saúde econômica da América Latina. Investir em transporte\npúblico pode ser uma solução, uma vez que essa modalidade de transporte pode ser vista como uma maneira\ninteligente de usar o espaço público.\nDados apontam que um carro de médio porte ocupa 8 $m^2$ e transporta até 5 pessoas, enquanto um ônibus básico\nocupa 56 $m^2$ e transporta até 70 pessoas.\nLogo, para transportar simultaneamente 70 pessoas, a quantidade mínima de carros necessária é de I\no que equivale ao espaço público ocupado por II Ônibus.\nAssinale a alternativa que completa corretamente os espaços numerados.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "I=28, II=1",
+      "B": "I=14, II=4",
+      "C": "I=14, II=2",
+      "D": "I=7, II=2",
+      "E": "I=7, II=4"
+    },
+    "correta": "C",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 22
+  },
+  {
+    "id": 242023,
+    "texto": "A taxa bruta de matrícula é o indicador mais usado em todo o mundo para monitorar o acesso à educação.\nO gráfico apresentado foi elaborado utilizando uma aproximação linear para os valores dessa taxa de matrícula no\nensino superior.\nDe acordo com o gráfico, pode-se concluir, corretamente, que a taxa bruta de matrículas no ensino superior,\nestimada no ano de",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q23.png",
+    "alternativas": {
+      "A": "2000, corresponde à metade daquela aferida no ano de 2010.",
+      "B": "2005, é um número que pertence ao conjunto dos números não positivos.",
+      "C": "2010, equivale ao mesmo número representado pela fração irredutível $\\frac{193}{500}$",
+      "D": "2015, quando comparada com aquela medida no ano de 2000, é três vezes maior.",
+      "E": "2020, mostra uma desaceleração no número de matriculados em relação ao ano de 2015."
+    },
+    "correta": "C",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 23
+  },
+  {
+    "id": 242024,
+    "texto": "A Organização Pan-Americana de Saúde (OPAS) aderiu à \"Década de Ação pela Segurança no Trânsito\n2021-2030\" com a intenção de diminuir o número de mortes e de lesões em acidentes de trânsito.\nUm dos principais motivos observados é o excesso de velocidade. Por isso, têm sido instalados detectores de\nvelocidade. Entretanto, esses detectores precisam ser periodicamente calibrados.\nUma história clássica, ocorrida em 2021, foi a suspensão da Carteira Nacional de Habilitação (CNH) de um\nmotociclista que teria percorrido uma estrada a cerca de 900 km/h $(\\cong 250~m/s)$.\nSuponha que ele estivesse realmente a essa velocidade e o conjunto moto-piloto tivesse massa igual a 200 kg.\nDespreze quaisquer ações dissipativas e assinale a alternativa que apresenta, aproximadamente, o valor da\nenergia cinética, em joules, envolvida no conjunto moto-piloto no momento do registro.\nDado: $E_c = \\frac{m \\cdot v^2}{2}$",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "$2,8 \\times 10^8$",
+      "B": "$8,6 \\times 10^7$",
+      "C": "$1,4 \\times 10^7$",
+      "D": "$6,2 \\times 10^6$",
+      "E": "$5,0 \\times 10^5$"
+    },
+    "correta": "D",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 24
+  },
+  {
+    "id": 242025,
+    "texto": "Segundo a OPAS, na América Latina, mais de 10 mil pessoas morrem, a cada ano, em consequência de\ncomplicações causadas pelo mal de Chagas, sendo que cerca de 6 a 8 milhões de pessoas convivem com\nessa doença, apesar de 70% delas não saberem que estão infectadas devido à ausência de sintomas clínicos.\n\nPara prevenir, detectar, tratar essa enfermidade e quebrar a cadeia de transmissão, é importante saber que essa\ndoença se caracteriza por ser",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "uma infecção bacteriana transmitida por contato direto com os indivíduos contaminados, a qual causa\ncoceira e infecções generalizadas.",
+      "B": "uma infecção cutânea micótica debilitante, a qual causa necroses nos tecidos epiteliais, nos ossos, nos\ntecidos moles e gera problemas cardíacos.",
+      "C": "uma doença viral transmitida aos seres humanos por meio de mordidas de animais infectados, a qual pode\nocasionar convulsões e problemas pulmonares.",
+      "D": "uma protozoose transmitida aos seres humanos por meio de insetos hematófagos contaminados, a qual\npode ser fatal quando os sintomas se desenvolvem.",
+      "E": "uma verminose transmitida aos seres humanos pela picada de fêmeas infectadas de mosquitos, a qual\npode provocar hemorragias, patologias hepáticas e morte."
+    },
+    "correta": "D",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 25
+  },
+  {
+    "id": 242026,
+    "texto": "Leia uma passagem da obra O Livro dos Abraços, de Eduardo Galeano, escritor uruguaio que\nretratou a América Latina entre as décadas de 1970 e 1980, para responder às questões 26 e 27.\n\nA tevê dispara imagens que reproduzem o sistema e as vozes que lhe fazem eco;\ne não há canto do mundo que\nela não alcance. O planeta inteiro é um vasto subúrbio de Dallas.\nNós comemos emoções importadas como se\nfossem salsichas em lata, enquanto os jovens filhos da televisão, treinados para contemplar a vida em vez de\nfazê-la, sacodem os ombros.\nNa América Latina, a liberdade de expressão consiste no direito ao resmungo em algum rádio ou em jornais de\nescassa circulação.\nOs livros não precisam ser proibidos pela polícia: os preços já os proíbem.\n\nQuestão 26\nSegundo o texto apresentado, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a televisão, como ferramenta democrática de divulgação de informação, representa diferentes expressões\nculturais.",
+      "B": "a apropriação cultural ocorre nas gerações anteriores ao desenvolvimento da cultura de massa, fazendo-as\nse engajarem em movimentos sociais.",
+      "C": "países da América Latina têm acesso pleno à liberdade de expressão, valendo-se de recursos sonoros e\nescritos para se comunicar livremente.",
+      "D": "o incentivo ao desenvolvimento cultural, à liberdade de expressão e à mobilização social ocorre devido ao\naparecimento da televisão e do rádio.",
+      "E": "a mídia de massa gera um alheamento social, resultado da falta de acesso à cultura e da difusão de uma\ncultura hegemônica."
+    },
+    "correta": "E",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 26
+  },
+  {
+    "id": 242027,
+    "texto": "Leia uma passagem da obra O Livro dos Abraços, de Eduardo Galeano... (texto omitido por brevidade)\n\nQuestão 27\nO uso de conotação é recorrente, no texto apresentado, devido a seu caráter literário.\nIsso fica evidente na oração \"o planeta inteiro é um vasto subúrbio de Dallas\", que é uma",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "metáfora.",
+      "B": "zeugma.",
+      "C": "personificação.",
+      "D": "paradoxo.",
+      "E": "catacrese."
+    },
+    "correta": "A",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 27
+  },
+  {
+    "id": 242028,
+    "texto": "Leia o texto para responder às questões de 28 a 30.\n\nEm 1977, o Centro Médico Especializado de Ciudad Juárez adquiriu um equipamento médico para diagnóstico\nque continha material radioativo. Após seis anos, um técnico de manutenção, inadvertidamente, desmontou\nparte desse equipamento e extraiu de lá uma peça em cujo interior havia 6 mil grânulos do radioisótopo\ncobalto-60. Os grânulos desse radioisótopo são minúsculos e podem ser descritos como cilindros circulares retos que\npossuem diâmetro e altura com a mesma medida de 1,0 mm. Todavia, mesmo pequenos, esses grânulos\nrepresentam uma fonte de radioatividade cuja meia vida é estimada em 5 anos. Aparentemente, o objetivo do técnico era vender as peças da unidade de tratamento como sucata. No entanto,\na maneira como o dispositivo foi perfurado e transportado fez com que uma quantidade indefinida de grânulos\nfosse espalhada na caminhonete usada, nos demais veículos comerciais e até em ruas de Ciudad Juárez.\nEsse é um dos maiores incidentes nucleares registrado nas Américas.\n\nQuestão 28\nAssinale a alternativa que indica, em metros cúbicos, o volume total de grânulos do radioisótopo mencionado no\ntexto. (Adote $\\pi = 3$)",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "$1,0 \\times 10^{-6}$",
+      "B": "$1,5 \\times 10^{-6}$",
+      "C": "$3,0 \\times 10^{-6}$",
+      "D": "$4,5 \\times 10^{-6}$",
+      "E": "$6,0 \\times 10^{-6}$"
+    },
+    "correta": "D",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 28
+  },
+  {
+    "id": 242029,
+    "texto": "Leia o texto para responder às questões de 28 a 30.\n\n(Texto sobre incidente nuclear omitido por brevidade)\n\nQuestão 29\nO radioisótopo cobalto-60 $\\binom{60}{27}Co$ emite uma partícula beta negativa, transformando-se no isótopo estável\nniquel-60 $\\binom{60}{28}Ni$\nA alternativa que contém a equação nuclear correta para representar a emissão descrita é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "${}_{27}^{60}Co + {}_{-1}^{0}\\beta \\rightarrow {}_{28}^{60}Ni$",
+      "B": "${}_{60}^{27}Co + {}_{2}^{4}\\beta \\rightarrow {}_{60}^{28}Ni$",
+      "C": "${}_{60}^{27}Co \\rightarrow {}_{0}\\beta + {}_{60}^{28}Ni$",
+      "D": "${}_{60}^{27}Co \\rightarrow {}_{0}^{+1}\\beta + {}_{60}^{28}Ni$",
+      "E": "${}_{27}^{60}Co \\rightarrow {}_{-1}^{0}\\beta + {}_{28}^{60}Ni$"
+    },
+    "correta": "E",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 29
+  },
+  {
+    "id": 242030,
+    "texto": "Leia o texto para responder às questões de 28 a 30.\n\n(Texto sobre incidente nuclear omitido por brevidade)\n\nQuestão 30\nMeia-vida é o tempo necessário para que a atividade radioativa de um elemento seja reduzida pela metade.\nLevando em consideração que um ano possui 365 dias, verifica-se que a atividade radioativa do radioisótopo\ndiminuir, num período de 7300 dias, um percentual equivalente a",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "93,75.",
+      "B": "87,50.",
+      "C": "25,00.",
+      "D": "12,50.",
+      "E": "6,25."
+    },
+    "correta": "A",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 30
+  },
+  {
+    "id": 242031,
+    "texto": "A partir da década de 1960, diversas empresas denominadas \"maquiladoras\" começaram a se instalar nas\ncidades do norte do México e passaram a empregar milhares de trabalhadores, que, majoritariamente, recebem\nbaixos salários e desconhecem seus direitos mais básicos.\nEssas empresas, em sua maioria, são",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "estadunidenses, que, com a específica intencionalidade de impedir a imigração latino-americana para os\nEstados Unidos, instalam-se na fronteira sul do México e oferecem altos salários para fixar esses trabalhadores\nem solo mexicano.",
+      "B": "mexicanas, que preferiram sair da economia de aglomeração, na cidade do México, para obter vantagens\ncomparativas no sul dos Estados Unidos, aproveitando-se dos acordos de isenção de impostos entre\neste país e o Mercosul.",
+      "C": "europeias, que produzem cosméticos e produtos de beleza, as quais se instalaram na cidade do México\nem troca de isenção de impostos de importação e exportação previstos nos acordos firmados entre o\nMéxico e a União Europeia.",
+      "D": "estadunidenses, que se instalaram no México e importam insumos dos Estados Unidos, produzem bens que\nsão exportados de volta para este país, aproveitando os baixos custos da mão de obra local.",
+      "E": "mexicanas, que se estabeleceram no sul do México em razão da existência de grandes jazidas\nde minérios utilizados na fabricação de diferentes produtos exportados para diversos países."
+    },
+    "correta": "D",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 31
+  },
+  {
+    "id": 242032,
+    "texto": "No século XIX, o cientista inglês Charles Darwin explorou a costa da América do Sul, da Bahia ao arquipélago de\nGalápagos, situado a aproximadamente 1000 km da costa do Equador.\nDarwin foi um dos primeiros naturalistas a\nexplorar esse arquipélago, onde observou uma fauna e uma flora que variavam de ilha para ilha e que diferiam de\noutras encontradas no continente.\nAs inúmeras observações e pesquisas realizadas por esse naturalista desencadearam reflexões que o levaram a\ndesenvolver suas ideias sobre a evolução da vida, as quais se basearam",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "na transmissão genética, de um organismo parental aos descendentes, das características adquiridas por\ngeração espontânea.",
+      "B": "nos avanços dos estudos da biotecnologia, da clonagem dos seres vivos e das mutações gênicas.",
+      "C": "na lei de uso e desuso das estruturas anatômicas do corpo dos animais.",
+      "D": "nas contribuições dos estudos químicos detalhados de cromossomos do genoma humano.",
+      "E": "nos estudos dos processos de sobrevivência dos seres vivos mais bem adaptados."
+    },
+    "correta": "D",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 32
+  },
+  {
+    "id": 242033,
+    "texto": "Os excrementos de aves e morcegos depositados nas Ilhas Chincha, localizadas na costa Peruana, formam no\nsolo uma espessa camada de guano.\nO guano pode ser utilizado como fertilizante devido à presença de compostos\nnitrogenados, como a amônia $(NH_3)$.\nEsta equação química representa o equilíbrio que ocorre na decomposição da amônia em nitrogênio e hidrogênio:\n$2~NH_3(g) \\rightleftharpoons N_2(g) + 3~H_2(g)$\nO químico francês Le Chatelier, estudando o comportamento de sistemas em equilíbrio quando sujeitos à variação\nde fatores como concentração, pressão e temperatura, chegou às seguintes conclusões:\n• o aumento da concentração de reagentes desloca o equilíbrio no sentido dos produtos;\n• a diminuição da concentração de reagentes desloca o equilíbrio no sentido dos reagentes;\n• o aumento da pressão desloca o equilíbrio no sentido do menor volume gasoso; e\n• a diminuição da pressão desloca o equilíbrio no sentido de maior volume gasoso.\nDesse modo, considerando apenas essas conclusões, para deslocar o equilíbrio da referida equação no sentido\nda formação de amônia, deve-se",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "aumentar a concentração de $NH_3$.",
+      "B": "diminuir a concentração de $N_2$.",
+      "C": "diminuir a concentração de $H_2$.",
+      "D": "diminuir a pressão do sistema.",
+      "E": "aumentar a pressão do sistema."
+    },
+    "correta": "E",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 33
+  },
+  {
+    "id": 242034,
+    "texto": "Leia os textos para responder às questões 34 e 35.\n\nTexto I (Imagem do mapa invertido da América do Sul)\n\nTexto II\nEste não é um mapa como os convencionais, que costumam ser validados na ciência geográfica pelo\nemprego de escala, legenda, título ou dados georreferenciados. Também não é uma obra de arte usual,\npois visualizamos claramente uma estética ou um contorno que reconhecemos como cartográfico. Por\nser tanto um mapa, quanto uma obra de arte, enquadra-se no que é chamado de mapa artístico.\nSeu autor, Joaquín Torres-García, publicou-o em 1943 para inaugurar um movimento artístico inovador\ne original, em Montevidéu, o qual objetivava ser capaz de igualar a arte aqui desenvolvida à arte de\nParis. Entretanto, o artista encontrou dificuldades devido ao gosto predominante nas artes uruguaias\nde copiar cânones estéticos importados da Europa.\nEm sua obra, esse autor exaltava a cultura e os motivos do Uruguai e da América do Sul, combatendo\no comportamento que ele chamou de \"exilados da Europa\". Uma consciência que não era só de Torres-\nGarcía, como também de outros artistas modernistas da América Latina, incomodados com as principais\ncapitais latinas que não se apresentavam como sedes de sua sociedade.\n\nQuestão 34\nNo texto apresentado, o(s) pronome(s)",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q34.png",
+    "alternativas": {
+      "A": "que, no primeiro parágrafo, e o, no segundo parágrafo, referem-se à expressão \"mapa artístico\".",
+      "B": "o e o qual, no segundo parágrafo, fazem referência ao artista, Torres-García.",
+      "C": "o, no segundo parágrafo, e ele, no terceiro parágrafo, referem-se ao termo \"autor\".",
+      "D": "ele, no terceiro parágrafo, retoma o substantivo \"comportamento\".",
+      "E": "que, no terceiro parágrafo, refere-se à expressão \"as principais capitais latinas\"."
+    },
+    "correta": "E",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 34
+  },
+  {
+    "id": 242035,
+    "texto": "Leia os textos para responder às questões 34 e 35.\n\n(Textos I e II omitidos por brevidade)\n\nQuestão 35\nDe acordo com os textos, é correto afirmar que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q34.png",
+    "alternativas": {
+      "A": "os movimentos artístico-literários das Américas são dependentes de modelos europeus até hoje, no século XXI.",
+      "B": "a arte latino-americana do século XX realizou-se sob a influência de artistas parisienses que foram exilados\nda Europa.",
+      "C": "a obra de Joaquín Torres-García, apesar de apresentar uma preocupação estética, tem os elementos exigidos\npela Geografia para ser considerada também um mapa.",
+      "D": "o desconforto gerado pela falta de uma identidade artística própria motivou artistas da América do Sul a\nbuscarem, em sua cultura e em seu espaço, inspiração para suas obras.",
+      "E": "o desenvolvimento de uma arte genuína, sem influência estrangeira, foi rapidamente concretizado devido à\nurgência da população em buscar uma identidade cultural própria."
+    },
+    "correta": "D",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 35
+  },
+  {
+    "id": 242036,
+    "texto": "O texto apresentado pertence ao gênero",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q36.png",
+    "alternativas": {
+      "A": "folheto, divulgando um novo curso acadêmico direcionado ao público latino-americano.",
+      "B": "propaganda, anunciando um concerto de música clássica em um ginásio poliesportivo.",
+      "C": "convite, apresentando um jantar beneficente que ocorrerá em um hotel, em St. Augustine.",
+      "D": "pôster, falando de uma degustação gratuita de vinhos latino-americanos.",
+      "E": "campanha, incentivando a criação de bandas latino-americanas nos EUA."
+    },
+    "correta": "C",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 36
+  },
+  {
+    "id": 242037,
+    "texto": "A América Latina é uma das regiões do globo terrestre especialmente vulnerável à ocorrência de terremotos,\npois se localiza perto das bordas de placas tectônicas. No entanto, os terremotos não se distribuem igualmente\npelo território latino-americano. Uma das áreas onde os terremotos se concentram é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "na porção ocidental da América do Sul, em função do choque das placas de Nazca e Sul-americana.",
+      "B": "na porção oriental da América do Sul, em função do choque das placas de Cocos e Sul-americana.",
+      "C": "na porção norte do Caribe, em função do afastamento das placas Indiana e Euro-asiática.",
+      "D": "no interior da América do Sul, em função do choque das placas Arábica e Australiana.",
+      "E": "na porção sul do Caribe, em função do afastamento das placas do Pacífico e Filipina."
+    },
+    "correta": "A",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 37
+  },
+  {
+    "id": 242038,
+    "texto": "Três conhecidos, Ceci, Peri e Iracema, estão decidindo se vão visitar Cuba. Contudo, devido a questões pessoais,\nsabe-se que:\nI. Ceci só vai visitar Cuba, se Iracema for;\nII. se Peri for visitar Cuba, Ceci também irá.\nAssinale a alternativa que apresenta uma conclusão lógica verdadeira.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Ceci e Peri não irão visitar Cuba.",
+      "B": "Se Ceci decidir visitar Cuba, Peri não irá.",
+      "C": "Se Peri decidir visitar Cuba, Iracema não irá.",
+      "D": "Se Iracema não for visitar Cuba, Ceci também não irá.",
+      "E": "Peri e Iracema irão juntos visitar Cuba."
+    },
+    "correta": "D",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 38
+  },
+  {
+    "id": 242039,
+    "texto": "O físico brasileiro César Lattes tornou-se conhecido por descobrir a partícula subatômica méson pi (píon).\nA descoberta foi descrita por Lattes no artigo Processes involving charged mesons, publicado pela revista\nNature em 1947. O texto é coassinado por seus colegas de laboratório: Powell, Occhialini e Muirhead.\nEssa descoberta rendeu, em 1950, um Prêmio Nobel de Física e uma posterior controvérsia.\nO comitê do Nobel concedeu o prêmio apenas a Powell pelo desenvolvimento do método fotográfico para\nestudo de processos nucleares e pelos achados relacionados aos mésons. O motivo de o prêmio não ter\nido para o brasileiro foi a política interna do Nobel. Até 1960, a regra era premiar apenas o chefe da equipe\nresponsável pela descoberta. Entretanto, a façanha de Lattes marcou o início de um novo campo de estudos\nda Física.\n\nPodemos afirmar, corretamente, que o campo de estudo relacionado à descoberta de Lattes refere-se a",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Física de Partículas.",
+      "B": "Física Clássica.",
+      "C": "Biofísica.",
+      "D": "Termodinâmica.",
+      "E": "Eletromagnetismo."
+    },
+    "correta": "A",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 39
+  },
+  {
+    "id": 242040,
+    "texto": "O Relatório Planeta Vivo, produzido pela ONG Fundo Mundial para a Natureza (WWF), apontou que, entre 1970\ne 2018, houve uma queda significativa nas populações de espécies monitoradas de animais em todo o planeta.\nNo Brasil, o relatório identificou ameaças específicas a símbolos nacionais, como o boto-cor-de-rosa da\nAmazônia, a onça-pintada, o tatu-bola, os corais e os lagartos da Caatinga.\n\nEntre os fatores que impactam a vida dos animais monitorados, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a contaminação dos rios, em consequência do garimpo ilegal, preserva a fauna dos botos-cor-de-rosa, que\nficam protegidos da pesca predatória.",
+      "B": "o avanço das fronteiras agrícolas gera o desmatamento, que favorece a mudança dos hábitats naturais\ndos animais e que aumenta suas chances de sobrevivência.",
+      "C": "a introdução de espécies, que não vivem normalmente em determinado ambiente, ocasiona a ocorrência de\nmutações nas espécies nativas, sem afetar o equilíbrio do ecossistema.",
+      "D": "as mudanças climáticas, por provocarem um aumento na temperatura do planeta, favorecem a\nreprodução dos animais aquáticos e terrestres, possibilitando o aumento da fauna.",
+      "E": "a retirada ilegal de madeira, a exploração de plantas, o tráfico de animais e plantas silvestres\ndificultam a sobrevivência de vários organismos, que acabam entrando em extinção."
+    },
+    "correta": "E",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 40
+  },
+  {
+    "id": 242041,
+    "texto": "A Usina Hidrelétrica de Itaipu corresponde a uma imensa construção que foi desenvolvida\na partir dos interesses do Brasil e do Paraguai, e pertence a ambos. Em 1966, os\nministros de Relações Exteriores dos dois países assinaram a \"Ata do Iguaçu\", para\nanalisar a viabilidade do projeto. No ano de 1970, foi realizada uma licitação para a\nescolha das empresas responsáveis pela obra. A execução teve início no ano seguinte,\n1971. Em 1973, foi assinado o Tratado de Itaipu, que legalizou e oficializou a utilização\ndo rio Paraná para a construção da usina. No ano de 1974, foi instituída uma entidade\npara gerenciar a construção. Em 1978, o curso do rio Paraná foi desviado e, quatro\nanos depois, a construção da barragem foi finalizada. A usina entrou em funcionamento\nem 1984.\n\nCom base no texto, é correto concluir que o projeto",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "foi resultado da pressão brasileira sobre o Paraguai, que não desejava participar da execução da obra.",
+      "B": "sofreu sucessivos atrasos em sua execução, uma vez que sua inviabilidade foi atestada pela Ata do Iguaçu.",
+      "C": "foi inteiramente concebido e executado no período em que os dois países viviam sob regimes ditatoriais.",
+      "D": "valorizou a cultura tradicional dos povos indígenas, demarcando e preservando seus territórios originais.",
+      "E": "assegurou a preservação ambiental ao garantir a manutenção do curso original do rio Paraná, por pressão\ndo governo brasileiro."
+    },
+    "correta": "C",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 41
+  },
+  {
+    "id": 242042,
+    "texto": "Heitor Villa-Lobos (1887-1959) foi maestro, compositor, pianista e violonista brasileiro reconhecido mundialmente.\nSuas obras para violão são estudadas em praticamente todas as faculdades de música do mundo.\nO violão acústico é um instrumento musical de cordas que não precisa de energia elétrica, que é geralmente feito\nde madeira, com um corpo oco, chamado de caixa de ressonância, e que possui um orifício circular na frente.\n\nSobre os conceitos de Física que envolvem esse instrumento musical, podemos afirmar corretamente que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q42.png",
+    "alternativas": {
+      "A": "as cordas, quando tocadas corretamente, vibram em frequências que destoam de uma nota musical.",
+      "B": "a tensão e o comprimento da corda, definidos pela posição dos dedos no braço do instrumento, afetam a\nfrequência da nota musical quando a corda vibra.",
+      "C": "o corpo atua como uma caixa de ressonância, pois diminui a intensidade do som das cordas vibrantes\ncaptado pelo orifício circular.",
+      "D": "o corpo, mesmo sendo feito com materiais e em formas diferentes, ressoa sempre da mesma maneira.",
+      "E": "o tocar, mesmo sem microfone, envolve a conversão de energia mecânica em energia elétrica."
+    },
+    "correta": "B",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 42
+  },
+  {
+    "id": 242043,
+    "texto": "Leia o texto e complete a frase.\n\nA região de Essequibo, reivindicada I no território II , engloba praticamente toda a área a oeste do Rio Essequibo,\nA região em questão tem cerca de 159 mil quilômetros quadrados (um pouco maior\ndo que o estado do Ceará) tomados pelo bioma amazônico e é rica em recursos minerais e naturais.\n\nAssinale a alternativa que completa, correta e respectivamente, o texto",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "I=pela Guiana, II=brasileiro",
+      "B": "I=pela Guiana, II=surinamês",
+      "C": "I=pela Venezuela, II=surinamês",
+      "D": "I=pela Venezuela, II=guianense",
+      "E": "I=pelo Brasil, II=venezuelano"
+    },
+    "correta": "D",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 43
+  },
+  {
+    "id": 242044,
+    "texto": "Na Copa do Mundo de futebol masculino de 2022, participaram 32 países, dos quais 6 eram latino-americanos:\nArgentina, Brasil, Costa Rica, Equador, México e Uruguai.\nConsidere que dois países participantes dessa Copa serão sorteados, aleatoriamente, para disputar uma partida\namistosa, então a probabilidade de os dois sorteados serem latino-americanos é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "menor que 1%.",
+      "B": "maior que 1,0% e menor que 2,2%.",
+      "C": "maior que 2,2% e menor que 3,3%.",
+      "D": "maior que 3,3% e menor que 4,9%.",
+      "E": "maior que 4,9%."
+    },
+    "correta": "C",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 44
+  },
+  {
+    "id": 242045,
+    "texto": "Em 1958, num congresso da Conmebol realizado no Rio de Janeiro, ficou definido que seria realizada uma\ncompetição continental com os clubes campeões nacionais de futebol da América do Sul. Em 1965, o torneio\nteve seu nome alterado para Copa Libertadores da América. O motivo da mudança tinha a ver com identidade\nregional, pois o novo nome homenageava um conjunto de líderes que se destacaram na história do continente.\n\nO conjunto de líderes, a que o texto se refere, foi responsável",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "pelo fim das ditaduras cívico-militares implementadas nos países do chamado \"Cone Sul\", região que abriga\nMéxico, Guatemala e Honduras.",
+      "B": "pela eliminação das seleções de Alemanha, Itália, Espanha e França das Copas do Mundo de 1934, 1938,\n1950 e 1954.",
+      "C": "pela independência dos países de colonização espanhola e portuguesa na porção Sul do Continente\nAmericano.",
+      "D": "pela resistência dos povos indígenas da América Latina à dominação colonial espanhola e portuguesa no\ncontinente.",
+      "E": "pela abolição legal do tráfico e do comércio de escravizados africanos, que levou à libertação de milhares de\ncativos em todo o continente."
+    },
+    "correta": "C",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 45
+  },
+  {
+    "id": 242046,
+    "texto": "Leia o texto para responder às questões 46 e 47.\n\n(Texto 'What's the Difference Between the Metric and Imperial System?' omitido por brevidade)\n\nQuestão 46\nBaseando-se no texto, assinale a alternativa correta.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q46.png",
+    "alternativas": {
+      "A": "O Reino Unido adotou o Sistema Métrico em 1824.",
+      "B": "Todas as ex-colônias britânicas adotam o British Imperial System.",
+      "C": "O sistema de medidas usado nos EUA advém do Sistema Métrico criado em 1965.",
+      "D": "O Imperial System não padronizou as medidas de pés e libras nos países que as adotam.",
+      "E": "O Sistema Métrico também é conhecido atualmente como Sistema Internacional."
+    },
+    "correta": "E",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 46
+  },
+  {
+    "id": 242047,
+    "texto": "Leia o texto para responder às questões 46 e 47.\n\n(Texto 'What's the Difference Between the Metric and Imperial System?' omitido por brevidade)\n\nQuestão 47\nDas informações contidas no texto, é possível inferir corretamente que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q46.png",
+    "alternativas": {
+      "A": "Libéria, Myanmar e os Estados Unidos adotam o \"metro\" e o \"quilograma\".",
+      "B": "a América Latina usa o Sistema Imperial de medidas.",
+      "C": "algumas unidades do Sistema Internacional são: m, kg, s, A, K e cd.",
+      "D": "a unidade \"ampère\" corresponde a todas as grandezas de eletricidade.",
+      "E": "\"pés\" e \"metro\" são usados para medir distância tanto no Sistema Imperial, quanto no Sistema Internacional."
+    },
+    "correta": "C",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 47
+  },
+  {
+    "id": 242048,
+    "texto": "A tirinha é um gênero que utiliza linguagem verbal e\nnão verbal na construção de sentido.\nAo analisá-la, conclui-se corretamente que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2024_s2_q48.png",
+    "alternativas": {
+      "A": "a personagem mantém hábitos condizentes\ncom sua cultura ancestral.",
+      "B": "o susto expresso pela personagem evidencia\nsua falta de conhecimento histórico.",
+      "C": "a influência da cultura estrangeira é assimilada\nconscientemente pela personagem.",
+      "D": "o resultado do teste demonstra a despreocupação\nda personagem com sua origem.",
+      "E": "a expressão em inglês, dita pela personagem,\né incoerente com o espaço em que está."
+    },
+    "correta": "B",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 48
+  },
+  {
+    "id": 242049,
+    "texto": "Leia o texto para responder às questões de 49 a 51.\n\nHuge ancient lost city found in the Amazon\nThe discovery changes what we know about the history of people living in the Amazon.\nThe houses and plazas in the Upano area in eastern Ecuador were connected by an astounding network of roads and canals. The area\nlies in the shadow of a volcano that created rich local soils but also may have led to the destruction of the society.\nWhile we knew about cities in the highlands of South America, like Machu Picchu in Peru, it was believed that\npeople only lived nomadically or in tiny settlements in the Amazon.\n\"This is older than any other site we know in the Amazon. We have a Eurocentric view of civilisation, but this shows we have to change our idea about what is\nculture and civilisation,\" says Prof Stephen Rostain... (o resto do texto foi omitido por brevidade)\n\nQuestão 49\nDe acordo com o texto, o que pode ter levado à destruição da sociedade em questão foi",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "um vulcão.",
+      "B": "um meteoro.",
+      "C": "um terremoto.",
+      "D": "uma epidemia.",
+      "E": "uma guerra."
+    },
+    "correta": "A",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 49
+  },
+  {
+    "id": 242050,
+    "texto": "Leia o texto para responder às questões de 49 a 51.\n\n(Texto 'Huge ancient lost city...' omitido por brevidade)\n\nQuestão 50\nA nova descoberta descrita no texto aponta que, na região Amazônica,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "havia apenas o povo maia.",
+      "B": "havia muitos vilarejos isolados, que não se conectavam.",
+      "C": "os nativos eram nômades, extrativistas e viviam em pequenos grupos.",
+      "D": "havia inúmeros grupos primitivos que ainda não praticavam a agricultura.",
+      "E": "as sociedades se conectavam por uma grande estrutura de estradas e canais."
+    },
+    "correta": "E",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 50
+  },
+  {
+    "id": 242051,
+    "texto": "Leia o texto para responder às questões de 49 a 51.\n\n(Texto 'Huge ancient lost city...' omitido por brevidade)\n\nQuestão 51\nCom base no texto, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "as cidades encontradas no Vale Upano, no estado brasileiro do Amazonas, são mais antigas que a chegada\ndos primeiros europeus ao território americano.",
+      "B": "as cidades do Vale Upano, quando descobertas por Cristóvão Colombo, foram rapidamente destruídas\npara dar lugar às atuais metrópoles latino-americanas.",
+      "C": "a ausência de agricultura nas cidades pré-colombianas foi a maior responsável pela extinção dessas cidades,\nque não suportaram o ônus de comprar alimentos das metrópoles.",
+      "D": "o continente americano já era povoado, quando Cristóvão Colombo ali chegou, e abrigava sociedades\nque detinham conhecimentos e técnicas complexas em diversas áreas.",
+      "E": "as estradas largas e retas foram projetadas para que pudessem servir de caminho para os primeiros\nautomóveis movidos a combustível fóssil, construídos no continente americano."
+    },
+    "correta": "D",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 51
+  },
+  {
+    "id": 242052,
+    "texto": "Quéchua é uma família de línguas falada por diversos grupos étnicos, ao longo da região da cordilheira dos Andes.\nO quadro mostra os dez primeiros numerais nas linguas portuguesa e quéchua.\n\n(Tabela de numerais Quéchua omitida, ver página 21)\n\nNessa família de línguas, no que se refere ao seu sistema de numeração, existem algumas regras que são\nregulares e não variam. Por exemplo, se o nome de um algarismo está\nantes do numeral 10, isso indica uma multiplicação: pusac chunca é oito vezes dez, ou seja, 80;\ndepois do numeral 10, isso indica uma adição: chunca pusac é dez mais oito, ou seja, 18.\n\nSeguindo a lógica de formação numérica apresentada no texto, o numeral trinta e nove (39), na língua quéchua, é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "quimsa chunca iscun.",
+      "B": "quimsa iscun chunca.",
+      "C": "chunca quimsa iscun.",
+      "D": "iscun chunca quimsa.",
+      "E": "iscun quinsa chunca."
+    },
+    "correta": "A",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 52
+  },
+  {
+    "id": 242053,
+    "texto": "Os queros são descendentes de uma linhagem inca que, até hoje, fala a língua quéchua e mantém a tradição\ndo culto à Pachamama (Mãe Terra) e aos Apus (espíritos das montanhas). São camponeses e pastores que\nvalorizam o amor, o respeito e a comunicação com a terra, trazendo consigo o Sumak Kausay, o \"Bem-Viver\";\no Ayni, a reciprocidade com a vida; e o Ayllu, a compreensão da vida coletiva e em comunidade.\n\nSegundo o texto, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "os queros adotam um estilo de vida displicente e descuidado, privilegiando a religiosidade em detrimento do\ntrabalho.",
+      "B": "o estilo de vida baseado na satisfação dos desejos e interesses individuais, em detrimento das demandas\ncoletivas, é predominante nas comunidades dos queros.",
+      "C": "a organização social e religiosa dos queros baseia-se na valorização da vida em comunidade e no respeito à\nnatureza como elementos centrais para alcançar o \"Bem-Viver\".",
+      "D": "os queros modernizaram a língua e a tradição incas, integrando-se à vida urbana das sociedades\ncontemporâneas, modificando tanto hábitos quanto costumes.",
+      "E": "o culto à Pachamama impede que os queros realizem, a contento, as atividades econômicas como o cultivo\nde terra e o pastoreio de animais."
+    },
+    "correta": "C",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 53
+  },
+  {
+    "id": 242054,
+    "texto": "Leia o texto que um missionário dominicano escreveu aos reis da Espanha em 1565.\n\nTodas as guerras que chamamos de conquista foram e são injustíssimas. Nós usurpamos todos os reinos\ne senhorios das Índias. As encomiendas e repartimentos de índios são cruéis e tirânicos, todos os que se\nbeneficiam delas estão sempre em pecado mortal e, se não renunciarem a essas práticas, não poderão se\nsalvar. Todo o ouro, a prata, as pérolas e outras riquezas que foram à Espanha são roubados e, se não forem\ndevolvidos, quem os tomou não poderá se salvar. Todas as pessoas de quem roubamos, em qualquer parte,\ntêm direito adquirido de nos fazer guerra justíssima e este direito valerá até o dia do Juízo Final.\n\nSegundo o texto,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "as regras do direito internacional permitiram que os povos colonizados na Ásia renunciassem a práticas tirânicas.",
+      "B": "as guerras contra os nativos foram uma justa resposta aos ataques e aos roubos praticados pelos americanos.",
+      "C": "a colonização do continente americano ocorreu em um contexto de harmonia entre europeus e colonizados.",
+      "D": "a presença europeia na Ásia ocorreu em condições adversas, tornando os espanhóis vítimas da crueldade\ndos indianos.",
+      "E": "a conquista espanhola da América foi marcada pela opressão e pela violência contra os povos nativos\nda região."
+    },
+    "correta": "E",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2024",
+    "exame_questao_num": 54
+  }
+]

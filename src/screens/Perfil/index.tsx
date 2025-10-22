@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {
-  SafeAreaView, View, Text, ScrollView, TouchableOpacity, StatusBar,
+  View, Text, ScrollView, TouchableOpacity, StatusBar,
   ActivityIndicator, Alert, Image, TextInput, Modal,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as ImagePicker from 'expo-image-picker';
@@ -95,7 +96,6 @@ export default function ProfileScreen() {
       }
       setLoading(false);
 
-      // Atualiza AsyncStorage com os dados mais recentes
       AsyncStorage.setItem('@userData', JSON.stringify(data)).catch(err => console.error(err));
     });
 
@@ -137,7 +137,6 @@ export default function ProfileScreen() {
       await updateDoc(doc(db, 'users', userId), { username: newName, photoURL });
       setUserData(updatedData);
 
-      // Salva localmente
       await AsyncStorage.setItem('@userData', JSON.stringify(updatedData));
 
       Alert.alert('Sucesso', 'Perfil atualizado!');
@@ -170,7 +169,7 @@ export default function ProfileScreen() {
   }
 
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
       <StatusBar barStyle="dark-content" backgroundColor="#F4F8F7" />
       <ScrollView
         contentContainerStyle={[styles.scrollContent, { paddingBottom: bottomNavHeight + 20 }]}
@@ -231,20 +230,19 @@ export default function ProfileScreen() {
             Analisamos seu desempenho e este é o ranking das suas 3 matérias com maior
             número de acertos. Elas são seus maiores aliados na busca pela aprovação.
           </Text>
-          {/* Lista de matérias abaixo do gráfico */}
-          <View style={styles.rankingList}>
-            {rankingData.map((item, index) => (
-              <View key={index} style={styles.rankingItem}>
-                <View style={styles.rankingNumber}>
-                  <Text style={styles.rankingNumberText}>{index + 1}</Text>
-                </View>
-                <Text style={styles.rankingItemText}>{item.materia}</Text>
-              </View>
-            ))}
-          </View>
-          {/* Verificação para garantir que há dados para exibir */}
-          {rankingData.length > 0 && (
+          {rankingData.length > 0 ? (
             <>
+              {/* Lista de matérias abaixo do gráfico */}
+              <View style={styles.rankingList}>
+                {rankingData.map((item, index) => (
+                  <View key={index} style={styles.rankingItem}>
+                    <View style={styles.rankingNumber}>
+                      <Text style={styles.rankingNumberText}>{index + 1}</Text>
+                    </View>
+                    <Text style={styles.rankingItemText}>{item.materia}</Text>
+                  </View>
+                ))}
+              </View>
               {/* Container do gráfico de barras */}
               <View style={styles.rankingChartContainer}>
                 {/* Barra Esquerda (2º Lugar) */}
@@ -280,9 +278,10 @@ export default function ProfileScreen() {
                   </View>
                 )}
               </View>
-
-
             </>
+          ) : (
+            // Mensagem se não houver dados de ranking
+            <Text style={[styles.rankingDescription, {color:'#000'}]}>Complete alguns quizzes para ver seu ranking!</Text>
           )}
         </View>
       </ScrollView>
@@ -350,6 +349,6 @@ export default function ProfileScreen() {
           </View>
         </View>
       </Modal>
-    </SafeAreaView>
+    </SafeAreaView >
   );
 }

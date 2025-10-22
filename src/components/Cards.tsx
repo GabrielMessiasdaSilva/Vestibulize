@@ -6,15 +6,32 @@ import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { RootStackParamList } from "../navigation/types";
 
-type Prova = { semestre: string; questoes: number };
+type ProvaInfo = {
+  id: string;
+  nome: string;
+  questoes: number;
+};
 
-export default function Card({ provas }: { provas: Prova[] }) {
+const provasDisponiveis: ProvaInfo[] = [
+  { id: 'fatec_2024_s2', nome: 'Vestibular FATEC 2º Sem/2024', questoes: 54, },
+  { id: 'fatec_2024_s1', nome: 'Vestibular FATEC 1º Sem/2024', questoes: 54, },
+  { id: 'fatec_2023_s2', nome: 'Vestibular FATEC 2º Sem/2023', questoes: 54, },
+  { id: 'fatec_2023_s1', nome: 'Vestibular FATEC 1º Sem/2023', questoes: 54, },
+  { id: 'fatec_2022_s2', nome: 'Vestibular FATEC 2º Sem/2022', questoes: 54, },
+  { id: 'fatec_2020_s1', nome: 'Vestibular FATEC 1º Sem/2020', questoes: 54, },
+];
+
+export default function Card({ busca }: { busca: string }) {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, 'Home'>>();
 
-  const renderItem = ({ item }: { item: { semestre: string; questoes: number } }) => (
+  const provasFiltradas = provasDisponiveis.filter((p) =>
+    p.nome.toLowerCase().includes(busca.toLowerCase())
+  );
+
+  const renderItem = ({ item }: { item: ProvaInfo }) => (
     <View style={cards.card}>
       <View style={{ flex: 1 }}>
-        <Text style={cards.semestre}>{item.semestre}</Text>
+        <Text style={cards.semestre}>{item.nome}</Text>
         <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8 }}>
           <MaterialCommunityIcons
             name='file-question-outline'
@@ -29,7 +46,7 @@ export default function Card({ provas }: { provas: Prova[] }) {
         style={cards.buttonIniciar}
         onPress={() =>
           navigation.navigate("DecidirTempo", {
-            semestre: item.semestre,
+            semestre: item.id,
           })
         }
       >
@@ -40,8 +57,8 @@ export default function Card({ provas }: { provas: Prova[] }) {
 
   return (
     <FlatList
-      data={provas}
-      keyExtractor={(item) => item.semestre}
+      data={provasFiltradas}
+      keyExtractor={(item) => item.id}
       renderItem={renderItem}
       contentContainerStyle={{ padding: 16, gap: 12 }}
       scrollEnabled={false}

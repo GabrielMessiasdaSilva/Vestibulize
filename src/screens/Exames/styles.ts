@@ -125,10 +125,35 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.3,
         shadowRadius: 3,
     },
-    
+
     faseBox: {
         flexDirection: "row",
         alignItems: "center",
     },
 
+    questionImage: {
+        width: '100%',
+        height: 200,
+        marginTop: 10,
+        marginBottom: 10,
+    },
+
+    imagePlaceholder: {
+        width: '95%',
+        aspectRatio: 1.5,
+        alignSelf: 'center',
+        marginTop: 15,
+        marginBottom: 15,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#EEE',
+        backgroundColor: '#F7F7F7',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    placeholderText: {
+        marginTop: 8,
+        color: '#AAA',
+        fontSize: 12,
+    }
 });

@@ -96,4 +96,36 @@ export const styles = StyleSheet.create({
         fontWeight: "700",
         fontSize: 15,
     },
+
+    errorText: {
+        color: 'red',
+        textAlign: 'center',
+        marginTop: 20,
+        fontSize: 16,
+    },
+
+    input: {
+        height: 50,
+        borderColor: '#ccc',
+        borderWidth: 1,
+        width: '90%',
+        paddingHorizontal: 15,
+        marginVertical: 10,
+        borderRadius: 8,
+        fontSize: 16,
+        backgroundColor: '#fff'
+    },
+    button: {
+        backgroundColor: '#007bff',
+        paddingVertical: 12,
+        paddingHorizontal: 30,
+        borderRadius: 8,
+        alignItems: 'center',
+        marginTop: 10,
+    },
+    buttonText: {
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: 16,
+    }
 });

@@ -1,0 +1,920 @@
+[
+  {
+    "id": 201001,
+    "texto": "Leia a charge.\nA ironia da charge se constrói no fato de",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q01.png",
+    "alternativas": {
+      "A": "as pessoas parecerem felizes por terem subempregos.",
+      "B": "os trabalhadores estarem otimistas com os novos benefícios trabalhistas.",
+      "C": "haver o aquecimento da economia e consequente aumento de bons empregos.",
+      "D": "a taxa de desemprego diminuir e haver inúmeras vantagens aos trabalhadores atualmente.",
+      "E": "bons salários aparecerem entre as conquistas dos trabalhadores no atual cenário mundial."
+    },
+    "correta": "A",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 1
+  },
+  {
+    "id": 201002,
+    "texto": "O conceito de precariado se refere a uma classe emergente, definida por uma combinação distinta de relações.\nAs pessoas do precariado estão sendo forçadas a aceitar uma vida de empregos instáveis, sem uma identidade\nocupacional, sendo exploradas e sem horários regulares de trabalho.\nDe acordo com o texto, o precariado é um grupo de pessoas que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "não aceita a tutela do Estado e negocia sua força de trabalho diretamente com o governo, que o repassa às empresas,\nconseguindo, dessa forma, remunerações acima do mercado.",
+      "B": "não é explorado pelo fato de trabalhar sem folgas semanais, uma vez que possui registro na carteira de trabalho,\ne aceita, voluntariamente, não tirar as férias anuais previstas em lei.",
+      "C": "não possui um emprego formal e, portanto, não possui direitos trabalhistas, estando sujeito às atividades com longas\njornadas de trabalho, por prazo determinado e em condições insalubres.",
+      "D": "não recebe mais que um salário mínimo, contudo, possui horários regulares de trabalho e está amparado pelas leis\ntrabalhistas, que permitem uma remuneração menor que a prevista na Constituição Federal.",
+      "E": "não quer ter um emprego formal, mas tem seus direitos trabalhistas legais respeitados, mesmo cumprindo jornadas de\ntrabalho superiores a vinte horas diárias, e também possui estabilidade no emprego de caráter oficial."
+    },
+    "correta": "C",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 2
+  },
+  {
+    "id": 201003,
+    "texto": "Leia os textos I e II para responder às questões de 03 a 05.\n\nTexto I\n(Poema 'O Açúcar' de Ferreira Gullar)\n\nTexto II\n(Imagem de mãos segurando barras de cana-de-açúcar como grades)\n\nQuestão 03\nApós a leitura e a análise, infere-se corretamente que\nambos os textos abordam temáticas",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q03.png",
+    "alternativas": {
+      "A": "tangenciais, pois, apesar de tratarem do processo\nde produção e do consumo do açúcar, ignoram a\ndesigualdade existente entre o consumidor final e o\ncomerciante do produto.",
+      "B": "semelhantes, pois o primeiro induz à reflexão sobre\nas desigualdades existentes no ciclo de produção e de\nconsumo, e o segundo representa o impacto ambiental\ngerado pelo consumo excessivo.",
+      "C": "conflitantes, pois o primeiro representa a alienação\ndos poetas de todo o processo de produção dos\nalimentos, enquanto o segundo, a mão de obra\nempregada nos centros urbanos.",
+      "D": "similares, pois o primeiro ressalta as desigualdades\nexistentes entre o trabalhador rural e o consumidor, o\neu lírico;\ne o segundo evidencia a exploração da mão\nde obra.",
+      "E": "complementares, pois o primeiro aborda as\ndesigualdades sociais descrevendo os ciclos\neconômicos desenvolvidos em períodos diferentes;\nenquanto o segundo retrata a mão de obra utilizada\nnesses períodos."
+    },
+    "correta": "D",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 3
+  },
+  {
+    "id": 201004,
+    "texto": "Atualmente, o cultivo da cana-de-açúcar está mais\nmecanizado. Porém, até 2005, o Instituto de Economia\nAgrícola (IEA) informava que um único boia-fria\ncortava cerca de 9 toneladas de cana em uma jornada\naproximada de 12 horas de trabalho por dia.\nAlém disso,\no International Sugar Journal mensura que 1 tonelada de\ncana de açúcar gera aproximadamente 1,7 Gcal de energia\ne rende, em média, 150 kg de açúcar.\nCom as informações fornecidas, podemos concluir,\ncorretamente que, na jornada de um dia de trabalho, um\nboia-fria contribuía até 2005 com uma produção de energia\ne uma massa de açúcar, aproximada e respectivamente, de",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q03.png",
+    "alternativas": {
+      "A": "1,3 Gcal/h e 1350 kg",
+      "B": "1,3 Gcal/h e 150 kg",
+      "C": "1,7 Gcal/h e 135 kg",
+      "D": "1,7 Gcal/h e 150 kg",
+      "E": "1,7 Gcal/h e 1350 kg"
+    },
+    "correta": "A",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 4
+  },
+  {
+    "id": 201005,
+    "texto": "O texto II remete a um período de produção do açúcar em que se estabeleceu um tipo característico de relação social e de trabalho.\nAssinale a alternativa que apresenta, corretamente, algumas das características dessas relações sociais e de trabalho nos\nengenhos de açúcar da América portuguesa, no século XVI.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q03.png",
+    "alternativas": {
+      "A": "O modelo de produção de açúcar na América portuguesa beneficiou-se da prática corrente entre os povos africanos, que se\nofereciam voluntariamente à escravidão, como forma de fugir das más condições econômicas e climáticas características\ndo subdesenvolvimento do seu continente.",
+      "B": "A escravidão africana foi justificada por diferentes narrativas que utilizavam passagens bíblicas para defender o trabalho\nforçado como castigo divino ou como forma de expiação dos supostos pecados dos africanos, que, muitas vezes, na América\nportuguesa, foram separados de membros de suas famílias e comunidades.",
+      "C": "Embora no sudeste prevalecesse a escravidão africana, nos engenhos de açúcar do Nordeste, a mão de obra escravizada\nera predominantemente de origem indígena andina, fornecida por traficantes de escravos especializados em atravessar\nclandestinamente a linha de fronteira demarcada pelo Tratado de Tordesilhas.",
+      "D": "Ao contrário das capitanias do Nordeste, que utilizavam mão de obra escravizada, a capitania de São Vicente se caracterizou\npelo açúcar de alta qualidade, produzido a partir da mão de obra livre de imigrantes italianos e alemães, que vinham para\na América fugindo das guerras de unificação de seus respectivos países.",
+      "E": "A escravidão de africanos e afrodescendentes nos engenhos de açúcar coloniais seguia a lógica interna das sociedades\nafricanas, cujo sistema de produção de commodities em larga escala foi tomado como modelo para o desenvolvimento das\ncolônias europeias em todo o continente americano."
+    },
+    "correta": "B",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 5
+  },
+  {
+    "id": 201006,
+    "texto": "Embora há milhares de ano o ser humano utilize a Biotecnologia tradicional na produção de vinhos, vinagres, queijos e iogurtes,\na partir de organismos vivos como são encontrados na natureza, foram os conhecimentos em diversas áreas científicas, como a\nQuímica, a Biologia, a Física, a Informática e, em especial, as áreas relacionadas à molécula de DNA, que revolucionaram o modo\nde manipular os organismos por meio da Engenharia Genética ou da tecnologia do DNA recombinante.\nAssim, a Biotecnologia moderna tem uma formação multidisciplinar com conhecimentos em várias áreas, podendo atuar em\nvários setores, como na saúde, na microbiologia, no meio ambiente, na indústria, na agricultura, etc.\nAtualmente, sabe-se que certas enzimas bacterianas podem cortar moléculas de DNA em pontos específicos, gerando fragmentos\nde DNA com tamanhos definidos.\nEsses fragmentos podem ser separados por meio de um processo específico realizado em uma\nplaca de gelatina especial (gel).\nEsse processo permite identificar pessoas.\nAssinale a alternativa que associa correta e respectivamente os nomes das enzimas bacterianas e do processo específico\nreferidos no texto.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "enzimas bacterianas=endonucleases de restrição, processo=centrifugação",
+      "B": "enzimas bacterianas=DNA polimerase, processo=eletroforese",
+      "C": "enzimas bacterianas=transcriptase reversa, processo=centrifugação",
+      "D": "enzimas bacterianas=endonucleases de restrição, processo=eletroforese",
+      "E": "enzimas bacterianas=DNA polimerase, processo=centrifugação"
+    },
+    "correta": "D",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 6
+  },
+  {
+    "id": 201007,
+    "texto": "Uma das áreas de aplicação dos conhecimentos de biotecnologia no mercado de trabalho é a produção de alimentos, bebidas e\nbiocombustíveis que utilizam microorganismos em sua fabricação.\nNesse contexto, um dos processos utilizados é a fermentação\nde carboidratos.\nA equação química que representa a reação que ocorre na fermentação alcoólica da glicose é\n$C_{6}H_{12}O_{6}(aq) \\rightarrow 2~C_{2}H_{6}O(aq) + 2~CO_{2}(g) \\quad \\Delta_{r}H=?$\nAssinale a alternativa que apresenta o valor correto da entalpia padrão da reação $(\\Delta_{r}H)$ de fermentação da glicose, em $kJ/mol$\n\nEntalpias de formação em $kJ/mol$\nSubstância | $\\Delta_{f}H$\n---|---\n$C_{6}H_{12}O_{6}(aq)$ | -1277\n$C_{2}H_{6}O(aq)$ | -278\n$CO_{2}(g)$ | -394",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "-67",
+      "B": "-32",
+      "C": "+16",
+      "D": "+32",
+      "E": "+67"
+    },
+    "correta": "A",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 7
+  },
+  {
+    "id": 201008,
+    "texto": "Leia o gráfico que apresenta a distribuição do trabalho informal no Brasil, em milhões de trabalhadores, referente ao\nsegundo trimestre de 2019.\n\n(Gráfico de barras sobre trabalho informal)\n\nSegundo o gráfico, a porcentagem aproximada de\ntrabalhadores empregados no setor privado sem carteira\nassinada, em relação ao total de trabalhadores informais, é",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q08.png",
+    "alternativas": {
+      "A": "10%",
+      "B": "20%",
+      "C": "30%",
+      "D": "40%",
+      "E": "50%"
+    },
+    "correta": "C",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 8
+  },
+  {
+    "id": 201009,
+    "texto": "Carlos está desempregado já há algum tempo e resolveu estudar a possibilidade de se tornar motorista de aplicativos.\nPesquisando as possibilidades, encontrou uma simulação de quanto recebem os motoristas de aplicativos em viagens\ncurtas de 5 quilômetros.\n\n(Tabela com valores de viagem para 6 plataformas)\n\nCarlos trabalhará apenas com plataformas nas quais o valor recebido pelo motorista para esse tipo de viagem esteja acima\nda média aritmética dos valores encontrados na tabela.\nAssim, a quantidade de aplicativos que atende às exigências de Carlos é",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q09.png",
+    "alternativas": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "correta": "B",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 9
+  },
+  {
+    "id": 201010,
+    "texto": "Um grupo de 8 alunos da Fatec do curso de Têxtil e Moda está prestando consultoria a 32 startups.\nCada uma dessas startups\né auxiliada precisamente por 3 alunos desse grupo, e cada aluno auxilia o mesmo número de startups.\nNessas condições, a quantidade de startups que cada aluno auxilia é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "8.",
+      "B": "9.",
+      "C": "10.",
+      "D": "11.",
+      "E": "12."
+    },
+    "correta": "E",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 10
+  },
+  {
+    "id": 201011,
+    "texto": "Observe os grupos de palavras que seguem uma determinada\nlógica:\nI. Corte | Afiador | Bestialidade\nII. Forte | Educador | Multiplicidade\nIII. Norte | ? | Relatividade\nIV. Sorte | Observador | Trivialidade\n\nSeguindo a mesma lógica, assinale a palavra\nque completa, de maneira coerente, o espaço\nvazio na linha III da tabela.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Empreendedor.",
+      "B": "Questionador.",
+      "C": "Inspirador.",
+      "D": "Unificador.",
+      "E": "Transformador."
+    },
+    "correta": "C",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 11
+  },
+  {
+    "id": 201012,
+    "texto": "A utilização de cadeira de rodas impõe limites à execução de tarefas por dificultar a aproximação aos objetos e o alcance\na elementos acima e abaixo do raio de ação de uma pessoa sentada.\nA dificuldade nas manobras com a cadeira de rodas\npressupõe o estabelecimento de um raio mínimo para a execução de atividades.\nAs figuras se baseiam nas recomendações\nda Associação Brasileira de Normas Técnicas (ABNT) para manobras de rotação.\nDe acordo com as dimensões apresentadas nas\nfiguras, para que uma pessoa em cadeira de rodas\npossa efetuar uma manobra de 360°, ela precisa de um\nespaço mínimo equivalente a um círculo, centrado no\neixo de rotação da cadeira, de raio igual a",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q12.png",
+    "alternativas": {
+      "A": "0,60 m.",
+      "B": "0,75 m.",
+      "C": "0,85 m.",
+      "D": "1,20 m.",
+      "E": "1,50 m."
+    },
+    "correta": "B",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 12
+  },
+  {
+    "id": 201013,
+    "texto": "Douglas, aluno do curso de Instalações Elétricas, sabe que a resistência elétrica de um fio é diretamente proporcional ao seu\ncomprimento e inversamente proporcional ao quadrado do diâmetro de sua secção transversal.\nDurante uma atividade prática do curso, Douglas precisou realizar uma melhoria em uma máquina.\nPara isso um fio deveria\nser trocado por outro do mesmo material, mas cujo\n• comprimento seria 60% maior; e\n• diâmetro seria 20% menor.\nAssinale a alternativa que apresenta corretamente a relação entre a resistência do fio retirado $(R_{1})$ e a resistência do novo fio $(R_{2})$.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "$R_{2}=0,20 \\cdot R_{1}$",
+      "B": "$R_{2}=0,30 \\cdot R_{1}$",
+      "C": "$R_{2}=0,75 \\cdot R_{1}$",
+      "D": "$R_{2}=1,50 \\cdot R_{1}$",
+      "E": "$R_{2}=2,50 \\cdot R_{1}$"
+    },
+    "correta": "E",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 13
+  },
+  {
+    "id": 201014,
+    "texto": "No mundo digital, podem-se definir as cores com o auxílio de um\nsistema de códigos que é composto pelo sinal de sustenido (#)\nseguido por seis caracteres que podem ser algarismos\n(que vão de 0 até 9) ou letras (de A até F).\nDeste modo, são exemplos de códigos que representam cores:\n\nCódigo | Cor\n---|---\n#084D6E | Azul Petróleo\n#DA70D6 | Orquídea\n#FF00FF | Fúcsia\n\nLogo, utilizando esse código, a quantidade de\ncores que é possível representar é igual a",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "$2^{6}$",
+      "B": "$2^{10}$",
+      "C": "$2^{12}$",
+      "D": "$2^{18}$",
+      "E": "$2^{24}$"
+    },
+    "correta": "E",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 14
+  },
+  {
+    "id": 201015,
+    "texto": "Observe o gráfico.\n\n(Gráfico: Evolução demográfica da Europa 1000-1500)\n\nA leitura do gráfico permite concluir, corretamente, que o\nperíodo de queda demográfica mais acentuada na Europa\nocorreu",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q15.png",
+    "alternativas": {
+      "A": "na primeira metade do século XI, devido ao período de\nsecas que comprometeu as colheitas e provocou fome\ngeneralizada em toda a porção ocidental do Continente.",
+      "B": "na primeira metade do século XII, quando a introdução\nde técnicas agrícolas não-sustentáveis provocou o\nesgotamento dos pastos e a diminuição pronunciada\ndos rebanhos bovinos.",
+      "C": "na segunda metade do século XIII, devido à perseguição\npromovida pela Igreja Católica contra judeus,\nmuçulmanos e praticantes de religiões pagās, acusados\nde bruxaria.",
+      "D": "na primeira metade do século XIV, quando o número\nde infectados pela peste negra atingiu seu ápice,\nprovocando a morte de pouco menos de um terço da\npopulação europeia.",
+      "E": "na segunda metade do século XV, devido à migração\nde milhões de europeus em direção aos continentes\nrecém-descobertos no processo das Grandes\nNavegações."
+    },
+    "correta": "D",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 15
+  },
+  {
+    "id": 201016,
+    "texto": "O projeto de ocupação populacional da Colônia foi estabelecido entre 1534 e 1536, com a adoção do sistema de capitanias\nhereditárias, que já havia sido empregado com sucesso nas ilhas atlânticas e, além do Brasil, seria estendido à Angola.\nO objetivo do rei D. João III com o sistema de capitanias hereditárias era promover a ocupação territorial, transferindo o\nônus para particulares.\nO sistema consistia na concessão pelo rei de extensos domínios a particulares, os quais recebiam\numa carta de doação real e um foral, no qual estavam especificadas suas obrigações.\nO donatário, nome dado ao particular\nque recebia a capitania, tinha o direito de explorá-la economicamente, administrar a Justiça e, ao mesmo tempo, estava\nobrigado a se sujeitar à autoridade da Coroa, a recolher os tributos e a expandir a fé católica, entre outras atribuições.\nCabia\nao donatário, ainda, a concessão de sesmarias, grandes extensões de terras que estão na origem do latifúndio no Brasil.\nO sistema, contudo, começou a apresentar problemas para os donatários. Poucas foram as capitanias que efetivamente\nprosperaram.\nAssinale a alternativa que apresenta, corretamente, algumas das causas do fracasso do sistema descrito no texto.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "A maior parte dos donatários enfrentou a resistência dos grupos indígenas à ocupação de seus territórios tradicionais,\nos altos custos de manutenção e de desenvolvimento das capitanias e/ou a falta de assistência por parte da Coroa\nportuguesa.",
+      "B": "Por serem de origem nobre, os donatários não demonstraram las habilidades necessárias para administrar\nadequadamente os recursos econômicos de suas capitanias e gerar lucros, forçando a Coroa portuguesa a promulgar a\nLei de Terras.",
+      "C": "A natureza política do sistema de capitanias hereditárias foi questionada pela burguesia portuguesa, que recorreu a\ncortes internacionais para impedir a distribuição da maior parte das terras americanas aos membros da nobreza.",
+      "D": "O declínio do sistema é consequência do fracasso agrícola, causado pela alternância de períodos de chuva intensa e\nsecas prolongadas, características do clima de monções predominante na maior parte do território americano.",
+      "E": "O sistema entrou em colapso quando a terceira geração de donatários foi derrotada na guerra contra os corsários\nfranceses, que, após a vitória, ocuparam os territórios das antigas capitanias hereditárias."
+    },
+    "correta": "A",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 16
+  },
+  {
+    "id": 201017,
+    "texto": "Tinha cinco metros o mapa que dominou o encontro,\nque teve lugar na Chancelaria do Reich.\nMostrava o\ncontinente, com rios, lagos, nomes de alguns locais e\nmuitas manchas brancas.\nQuando a Conferência chegou ao fim, depois de mais\nde três meses de discussões, ainda havia grandes\nextensões do continente onde nenhum europeu tinha\nposto os pés.\nRepresentantes de diversos países deslocaram-se a\nconvite do chanceler alemão Otto von Bismarck para\ndividirem o continente entre si, \"em conformidade\ncom o direito internacional\".\nCom duas exceções, todos\nos Estados que hoje compõem o continente foram\ndivididos entre as potências coloniais poucos anos\napós o encontro.\nMuitos historiadores consideram que\na Conferência foi o fundamento de futuros conflitos\ninternos no continente.\nAssinale a alternativa que apresenta, corretamente, a\nconferência a que o texto se refere e o processo histórico\nque se iniciou a partir dela.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Conferência de Verdun, cujo tratado final dividiu a\nEuropa ocidental entre os herdeiros de Carlos Magno,\nno início do século X.",
+      "B": "Conferência de Tordesilhas, cujo tratado final dividiu\nos territórios da América entre Portugal e Espanha no\nfinal do século XV.",
+      "C": "Conferência de Madri, que tinha por objetivo rever\nas determinações de Tordesilhas, cujo tratado vinha\nsendo desrespeitado desde meados do século XVI.",
+      "D": "Conferência de Berlim, que dividiu o território do\ncontinente africano entre as principais potências\nmundiais do final do século XIX.",
+      "E": "Conferência de Versalhes, que separou a Alemanha e\nsua capital, Berlim, nas partes Oriental e Ocidental em\nmeados do século XX."
+    },
+    "correta": "D",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 17
+  },
+  {
+    "id": 201018,
+    "texto": "No Brasil, nas primeiras décadas do século XX, as mulheres\nformavam grande parte do operariado, especialmente\nas imigrantes: espanholas, italianas, portuguesas,\nhúngaras, romenas, polonesas, lituanas e sírias.\nEm 1901,\ncomo afirma a historiadora Mary Del Priore, constituíam\nquase 68% da mão de obra empregada na indústria de\nfiação e tecelagem.\nTrabalhavam de 10 a 14 horas por dia,\nem péssimas condições de higiene e sob grande controle\ndisciplinar.\nAlém disso, os salários eram baixos, estavam\nconstantemente sujeitas ao assédio sexual e não existia\nqualquer legislação trabalhista capaz de protegê-las\nde tal exploração. Somente a partir da década de 1930,\ndepois de inúmeras manifestações operárias em todo o\nmundo, a legislação brasileira proporcionou garantias\ntrabalhistas às mulheres.\nNa Era Vargas, anos 30, 40 e\n50, houve a regulamentação do trabalho de mulheres e\ncrianças, e o presidente Getúlio Vargas fixou a jornada\nde trabalho em 8 horas diárias.\nSegundo o texto,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "as inúmeras manifestações operárias em todo o\nmundo conquistaram o controle disciplinar sobre os\ntrabalhadores, bem como o direito à jornada de 10 a\n14 horas diárias.",
+      "B": "nas primeiras décadas do século XX, as operárias\nestavam protegidas por legislação que limitava a\njornada de trabalho e garantia condições adequadas\nde higiene.",
+      "C": "o trabalho feminino foi regulamentado entre as\ndécadas de 1930 e 1950 pelo presidente Getúlio Vargas,\nque também fixou a jornada de trabalho em 8 horas\ndiárias.",
+      "D": "as mulheres que constituíram la mão de obra empregada\nna indústria de fiação e tecelagem estavam protegidas\npor mecanismos que inibiam o assédio sexual.",
+      "E": "quase 68% da população brasileira era formada pelas\nmulheres operárias imigrantes, principalmente as\nespanholas, italianas, portuguesas e húngaras."
+    },
+    "correta": "C",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 18
+  },
+  {
+    "id": 201019,
+    "texto": "Costuma-se definir a Guerra Fria como um período histórico\nde disputas estratégicas e conflitos entre Estados Unidos e\nUnião Soviética, os quais, entre o final da Segunda Guerra\nMundial (1945) e o fim da União Soviética (1991), disputaram\na hegemonia política, militar, tecnológica, econômica e\nsocial.\nÉ chamada de \"fria\" porque não houve um confronto direto\nentre as duas superpotências, mas houve enfrentamento\nindireto em diferentes conflitos regionais, tais como:",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Guerra da Coreia, Guerra do Vietnã e independências\nde países africanos.",
+      "B": "Revolução Francesa, independência do Haiti e Guerra\nda Crimeia.",
+      "C": "Guerra da Síria, Guerra do Golfo e Guerra Irã-Iraque.",
+      "D": "Revolução Mexicana, independência de Cuba e Guerra\ndo Paraguai.",
+      "E": "Guerra dos Cem Anos, Guerra de Secessão e\nindependência da Venezuela."
+    },
+    "correta": "A",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 19
+  },
+  {
+    "id": 201020,
+    "texto": "Leia o texto para responder às questões de 20 a 24.\n\nA Química do Slime\nA jornada histórica do slime tem início nas primeiras décadas do século XX, quando James Wright criou um material com\ncaracterísticas muito parecidas com a borracha.\nAtualmente, devido às mais variadas formulações disponibilizadas em\nplataformas e mídias digitais, pode-se produzir o próprio slime em casa.\nO slime caseiro pode ser produzido pela mistura de duas colheres de chá de bicarbonato de sódio $(NaHCO_{3})$, 100 mL de\nágua boricada (solução de ácido bórico, $H_{3}BO_{3}$) e 60 g de cola de isopor (constituída de poliacetato de vinila, PVAc).\nQuando\nmisturamos o bicarbonato de sódio com o ácido bórico, ocorre uma reação química que produz gás carbônico, água e borato\nde sódio $(Na_{3}BO_{3})$.\nA dissociação, em solução aquosa, do borato e do bicarbonato de sódio libera íons sódio $(Na^{+})$, que vão interagir com as\nmoléculas do PVAc, formando um composto de elevada viscosidade e elasticidade.\nOs íons sódio interagem com a estrutura do PVAc conforme representado.\n\n(Diagrama da interação Íon Sódio com PVAc)\n\nA reação entre o ácido bórico e o bicarbonato de sódio também origina o tetraborato de sódio, conhecido como \"Bórax\"\n$(Na_{2}B_{4}O_{7})$.\nEste, em meio básico, transforma-se em tetrahidroxiborato, conforme representado na equação 1.\n\n(Equação 1: Reação do Bórax)\n\nO PVAc reage com moléculas de água produzindo álcool polivinílico (PVA), conforme representado na equação 2.\n\n(Equação 2: Reação do PVAc com água)\n\nO tetrahidroxiborato reage com o PVA (equação 3), formando novas ligações que interligam as cadeias do polímero que\nconstitui o slime.\n\n(Equação 3: Reação do PVA com tetrahidroxiborato)\n\nQuestão 20\nConsiderando que uma colher de chá de bicarbonato de sódio contém 5 g desse composto, é correto afirmar que o número\nde moléculas de bicarbonato de sódio utilizadas na fabricação do slime caseiro, conforme descrito no texto, corresponde a\naproximadamente\nMassa molar do $NaHCO_{3} = 84~g/mol$\nConstante de Avogadro: $6 \\times 10^{23} mol^{-1}$",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q20.png",
+    "alternativas": {
+      "A": "$6,2 \\times 10^{22}$",
+      "B": "$7,1 \\times 10^{22}$",
+      "C": "$9,1 \\times 10^{22}$",
+      "D": "$2,0 \\times 10^{23}$",
+      "E": "$3,0 \\times 10^{23}$"
+    },
+    "correta": "B",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 20
+  },
+  {
+    "id": 201021,
+    "texto": "Leia o texto para responder às questões de 20 a 24.\n\n(Texto sobre Química do Slime)\n\nQuestão 21\nAssinale a alternativa que contém la equação química balanceada que representa, corretamente, a reação que ocorre entre\no ácido bórico e o bicarbonato de sódio.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q20.png",
+    "alternativas": {
+      "A": "$H_{3}BO_{3}+Na_{3}HCO_{3} \\rightarrow Na_{3}BO_{3}+H_{2}O+CO_{2}$",
+      "B": "$H_{3}BO_{3}+3~NaHCO_{3} \\rightarrow Na_{3}BO_{3}+H_{2}O+CO_{2}$",
+      "C": "$H_{3}BO_{3}+3~NaHCO_{3} \\rightarrow Na_{3}BO_{3}+3~H_{2}O+3~CO_{2}$",
+      "D": "$H_{3}BO_{2}+3~NaHCO_{3} \\rightarrow Na_{3}BO_{2}+3~H_{2}O+3~CO_{2}$",
+      "E": "$H_{2}BO_{2}+2~NaHCO_{3} \\rightarrow Na_{2}BO_{2}+2~H_{2}O+2~CO_{2}$"
+    },
+    "correta": "C",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 21
+  },
+  {
+    "id": 201022,
+    "texto": "Leia o texto para responder às questões de 20 a 24.\n\n(Texto sobre Química do Slime)\n\nQuestão 22\nA interação entre os íons sódio e as estruturas do PVAc é denominada, corretamente, como",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q20.png",
+    "alternativas": {
+      "A": "dipolo-dipolo.",
+      "B": "dipolo instantâneo-dipolo induzido.",
+      "C": "ligação de hidrogênio.",
+      "D": "íon-dipolo.",
+      "E": "íon-íon."
+    },
+    "correta": "D",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 22
+  },
+  {
+    "id": 201023,
+    "texto": "Leia o texto para responder às questões de 20 a 24.\n\n(Texto sobre Química do Slime)\n\nQuestão 23\nNa equação 2, o nome da reação química que ocorre entre o PVAc e a água e o nome da função orgânica a que pertence o\ncomposto X, formado na reação, são, respectivamente,",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q20.png",
+    "alternativas": {
+      "A": "hidrólise e álcool.",
+      "B": "hidrólise e acetona.",
+      "C": "hidrólise e ácido carboxílico.",
+      "D": "esterificação e ácido carboxílico.",
+      "E": "esterificação e acetona."
+    },
+    "correta": "C",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 23
+  },
+  {
+    "id": 201024,
+    "texto": "Leia o texto para responder às questões de 20 a 24.\n\n(Texto sobre Química do Slime)\n\nQuestão 24\nNa equação 3, as ligações químicas I, II, III e IV, formadas\nno trecho da cadeia do slime, são denominadas",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q20.png",
+    "alternativas": {
+      "A": "ligações iônicas.",
+      "B": "ligações covalentes.",
+      "C": "ligações metálicas.",
+      "D": "ligações de hidrogênio.",
+      "E": "ligações apolares."
+    },
+    "correta": "B",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 24
+  },
+  {
+    "id": 201025,
+    "texto": "Leia o texto para responder às questões de 25 a 29.\n\nMinority ethnic Britons face 'shocking' job\ndiscrimination\nHaroon Siddique\nThu 17 Jan 2019 17.00 GMT Last modified on Fri 18 Jan 2019 00.50 GMT\nA study by experts based at the Centre for Social\nInvestigation at Nuffield College, University of Oxford,\nfound applicants from minority ethnic backgrounds\nhad to send 80% more applications to get a positive\nresponse from an employer than a white person of\nBritish origin.\nA linked study by the same researchers, comparing\ntheir results with similar field experiments dating\nback to 1969, found discrimination against black\nBritons and those of south Asian origin - particularly\nPakistanis - unchanged over almost 50 years.\nThe research, part of a larger cross-national\nproject funded by the European Union and shared\nexclusively with the Guardian before its official\nlaunch, prompted concerns that race relations\nlegislation had failed.\nIt echoes findings published as part of the Guardian's\nBias in Britain series that people from minority ethnic\nbackgrounds face discrimination when seeking a\nroom to rent.\nIn a snapshot survey of online flatshare\nads the Guardian found that an applicant called\nMuhammad was significantly less likely to receive a\npositive response than an applicant called David.\nProf Anthony Heath, co-author and emeritus fellow\nof Nuffield College, said: \"The absence of any real\ndecline in discrimination against black British and\npeople of Pakistani background is a disturbing\nfinding, which calls into question the effectiveness\nof previous policies. Ethnic inequality remains a\nburning injustice and there needs to be a radical\nrethink about how to tackle it.\"\nDr Zubaida Haque, the deputy director of the race\nequality thinktank Runnymede, described the\nfindings as shocking. They demonstrated that \"it's\nnot just covert racism or unconscious bias that we\nneed to worry about; it's overt and conscious racism,\nwhere applicants are getting shortlisted on the basis\nof their ethnicity and/or name\", she said.\n\"It's clear that race relations legislation is not\nsufficient to hold employers to account. There are\nno real consequences for employers of racially\ndiscriminating in subtle ways, but for BME* applicants\nor employees it means higher unemployment, lower\nwages, poorer conditions and less security in work\nand life.\"\n*BME - Black and Minority Ethnicity\n\nQuestão 25\nO estudo mencionado no texto aponta para a discriminação\nracial de",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "negros e caucasianos.",
+      "B": "asiáticos e latinos.",
+      "C": "negros e latinos.",
+      "D": "negros e asiáticos.",
+      "E": "asiáticos e caucasianos."
+    },
+    "correta": "D",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 25
+  },
+  {
+    "id": 201026,
+    "texto": "Leia o texto para responder às questões de 25 a 29.\n\n(Texto sobre discriminação no Reino Unido)\n\nQuestão 26\nSegundo o texto, estudos indicam que a discriminação está\npresente tanto na busca por emprego, quanto",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "na locação de residência.",
+      "B": "no atendimento no comércio.",
+      "C": "na obtenção de vistos de viagem.",
+      "D": "na garantia de oportunidade política.",
+      "E": "na facilidade em obter seguro de vida."
+    },
+    "correta": "A",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 26
+  },
+  {
+    "id": 201027,
+    "texto": "Leia o texto para responder às questões de 25 a 29.\n\n(Texto sobre discriminação no Reino Unido)\n\nQuestão 27\nDe acordo com o Professor Anthony Heath, o que causa\nsurpresa em relação à pesquisa apresentada é que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "houve aumento nos índices de xenofobia nos últimos\ncinquenta anos.",
+      "B": "houve diminuição nos índices de discriminação contra\nnegros desde 1969.",
+      "C": "houve aumento nos índices de aceitação dos\nimigrantes desde a década de 1960.",
+      "D": "não houve estabilização nos índices discriminatórios\ncontra latinos desde 1969.",
+      "E": "não houve diminuição nos índices de discriminação\ncontra negros e paquistaneses."
+    },
+    "correta": "E",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 27
+  },
+  {
+    "id": 201028,
+    "texto": "Leia o texto para responder às questões de 25 a 29.\n\n(Texto sobre discriminação no Reino Unido)\n\nQuestão 28\nSegundo a fala da Dra. Zubaida Haque, o mais preocupante é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a xenofobia velada.",
+      "B": "a misoginia aparente.",
+      "C": "a sexismo inconsciente.",
+      "D": "o antissemitismo evidente.",
+      "E": "o racismo aberto e consciente."
+    },
+    "correta": "E",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 28
+  },
+  {
+    "id": 201029,
+    "texto": "Leia o texto para responder às questões de 25 a 29.\n\n(Texto sobre discriminação no Reino Unido)\n\nQuestão 29\nA diretora do grupo Runnymede acredita que o panorama descrito",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "incita a violência e compromete a segurança do país.",
+      "B": "degrada as condições trabalhistas das minorias.",
+      "C": "oferece segurança para os trabalhadores.",
+      "D": "assusta trabalhadores e empregadores.",
+      "E": "impede a criação de leis mais rigorosas."
+    },
+    "correta": "B",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 29
+  },
+  {
+    "id": 201030,
+    "texto": "Amanda resolveu complementar seu orçamento doméstico como motorista por aplicativo. Como já possui um automóvel,\ninscreveu-se numa plataforma em que o valor cobrado do passageiro por viagem depende basicamente de três fatores:\n• o valor fixo de R$ 2,00 cobrado no início de qualquer viagem;\n• o valor de R$ 0,26 por minuto de viagem;\n• o valor de R$ 1,40 por quilômetro rodado.\nAlém disso, Amanda sabe que:\n• a plataforma do aplicativo retém um quarto do valor pago pelo passageiro;\n• terá um custo de combustível no valor de R$ 0,28 por quilômetro rodado.\nSuponha que ela realizará apenas viagens de 5 km, com duração de 10 minutos cada.\nConsiderando que Amanda deseja receber mensalmente o valor líquido mínimo de R$ 2.190,00, o menor número de viagens\nmensais, como motorista de aplicativo, que Amanda precisa fazer é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "280",
+      "B": "300",
+      "C": "320",
+      "D": "340",
+      "E": "360"
+    },
+    "correta": "B",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 30
+  },
+  {
+    "id": 201031,
+    "texto": "Uma empresa trabalha com fretamento de ônibus para o litoral.\nO valor cobrado por passageiro, no caso dos 50 lugares\ndisponíveis serem todos ocupados, é de R$ 40,00.\nNo caso de não ocorrer a lotação máxima, cada passageiro deverá pagar\nR$ 2,00 a mais por assento vazio.\nO valor máximo arrecadado por essa empresa, numa dessas viagens, é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "R$ 2.000,00",
+      "B": "R$ 2.200,00",
+      "C": "R$ 2.350,00",
+      "D": "R$ 2.450,00",
+      "E": "R$ 2.540,00"
+    },
+    "correta": "D",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 31
+  },
+  {
+    "id": 201032,
+    "texto": "Um tanque de combustível contém 50 litros de uma mistura de gasolina e álcool na razão 2:3, nessa ordem.\nDeseja-se acrescentar à mistura N litros de álcool para que la razão de gasolina e álcool, nessa ordem, passe a ser 1:3.\nAssim, o valor N é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "40",
+      "E": "50"
+    },
+    "correta": "C",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 32
+  },
+  {
+    "id": 201033,
+    "texto": "Um aprendiz de feiticeiro, numa experiência investigativa, tem a sua disposição cinco substâncias distintas entre as quais\ndeverá escolher três distintas para fazer uma poção.\nNo entanto, duas dessas cinco substâncias, quando misturadas,\nanulam qualquer efeito reativo.\nA probabilidade do aprendiz obter uma poção sem efeito reativo é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "20%",
+      "B": "30%",
+      "C": "40%",
+      "D": "50%",
+      "E": "60%"
+    },
+    "correta": "B",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 33
+  },
+  {
+    "id": 201034,
+    "texto": "Na figura temos um mapa onde se localiza a Praça Tales de Mileto. A prefeitura pretende cobri-la completamente com grama.\n\n(Mapa com a Praça Tales de Mileto e ruas adjacentes)\n\nAdmita que a medida do ângulo agudo formado entre a Rua Fibonacci e a Avenida Descartes é igual a $60^{\\circ}$, e que a Avenida\nBhaskara é paralela à Avenida Descartes.\nNessas condições, o total da área a ser gramada é, em metros quadrados, igual a",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q34.png",
+    "alternativas": {
+      "A": "$20 400 \\sqrt{3}$",
+      "B": "$20 400 \\sqrt{2}$",
+      "C": "27 000",
+      "D": "$18 000 \\sqrt{3}$",
+      "E": "12 000"
+    },
+    "correta": "D",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 34
+  },
+  {
+    "id": 201035,
+    "texto": "Considere o gráfico de velocidade vertical por tempo\n\n(Gráfico Velocidade vs Tempo)\n\nConsiderando-se um sistema de referência ideal orientado de cima para baixo, podemos associar o gráfico ao movimento\naproximado de",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q35.png",
+    "alternativas": {
+      "A": "um balão com gás hélio solto das mãos de uma criança em pé no chão.",
+      "B": "um foguete, alçando voo a partir de um lançamento no solo.",
+      "C": "uma fruta, caindo de uma árvore direto ao solo.",
+      "D": "um paraquedista, saindo de uma aeronave, a qual está com velocidade vertical nula, até chegar ao solo.",
+      "E": "uma águia de bico amarelo em seu sobrevoo, atacando uma presa posicionada próxima à superfície do oceano."
+    },
+    "correta": "D",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 35
+  },
+  {
+    "id": 201036,
+    "texto": "O tether consiste em dois objetos fixos nas duas extremidades de um cabo.\nA pesquisadora brasileira\nAlessandra F. S. Ferreira, da Unesp de Guaratinguetá (SP), foi agraciada com o prêmio Mario Grossi no evento\ninternacional Tether in Space 2019 (em Madrid).\nEm seu estudo, ela propôs a aplicação de um cabo fino e rígido de\n100 km de comprimento com uma ponta ancorada na superfície de um corpo celeste, como um asteroide por exemplo.\nA outra ponta estará ancorada em um veículo espacial, conforme apresentado na figura.\nAssim, a técnica poderá ser\nutilizada para economizar energia e aumentar o impulso em viagens espaciais mais longas.\n\n(Figura ilustrativa do tether espacial)\n\nUma espaçonave de 100 toneladas, navegando a uma velocidade tangencial aproximada de 28,8 mil km/h, acopla-se ao cabo\ncitado de 100 km de extensão ancorado em um asteroide (considerado aqui como um ponto material em repouso).\nAssumindo que a massa do cabo seja desprezível em relação ao sistema, podemos afirmar, corretamente, que a força\ncentrípeta aplicada na extremidade do cabo ligada ao veículo espacial, em newtons, é\nLembre-se de que\n$a_{c} = \\frac{V^{2}}{R}$",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q36.png",
+    "alternativas": {
+      "A": "$6,4 \\times 10^{7}$",
+      "B": "$6,4 \\times 10^{5}$",
+      "C": "$6,4 \\times 10^{3}$",
+      "D": "$8,3 \\times 10^{4}$",
+      "E": "$8,3 \\times 10^{6}$"
+    },
+    "correta": "A",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 36
+  },
+  {
+    "id": 201037,
+    "texto": "Em 2019 comemora-se, em todo o mundo, o centenário\ndas observações astronômicas realizadas na cidade\nde Sobral (CE), durante o eclipse solar de 29 de maio\nde 1919. As medidas da deflexão da luz decorrentes\ndas estrelas na borda do Sol constituíram uma\nprova fundamental para a confirmação da Teoria da\nRelatividade Geral do físico Albert Einstein.\nSobre o eclipse referido, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "as regiões de eclipse solar total comprovam a Terra ser\nplana e as de eclipse solar parcial a Lua ser esférica.",
+      "B": "as regiões de eclipse solar total equivalem às\npenumbras e as de eclipse solar parcial, às sombras.",
+      "C": "a Terra se coloca entre o Sol e a Lua, projetando, assim,\na sombra da Terra na Lua.",
+      "D": "o Sol se coloca entre la Terra e a Lua, projetando, assim,\na sombra do Sol na Terra.",
+      "E": "a Lua se coloca entre o Sol e a Terra, projetando, assim,\na sombra da Lua na Terra."
+    },
+    "correta": "E",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 37
+  },
+  {
+    "id": 201038,
+    "texto": "Na Teoria da Relatividade Restrita de Einstein, dois\nconceitos estudados referem-se ao fato de que, ao\nconsiderar um objeto propagando-se à velocidade da luz,\npodemos verificar",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a dilatação do tempo e a dilatação do comprimento.",
+      "B": "a contração do tempo e a dilatação do comprimento.",
+      "C": "a dilatação do tempo e a contração do comprimento.",
+      "D": "a dilatação do tempo sem contração do comprimento.",
+      "E": "a contração do tempo sem contração do comprimento."
+    },
+    "correta": "C",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 38
+  },
+  {
+    "id": 201039,
+    "texto": "Recentemente, uma empresa britânica apresentou um\nprotótipo de um motor a jato hipersônico que permitirá\nàs aeronaves comerciais voarem a uma velocidade muito\nacima da velocidade do som, fazendo com que uma viagem\nde São Paulo à Austrália dure, aproximadamente, 4 horas\n(atualmente essa viagem dura cerca de 24 horas).\nIsso só é possível devido ao fato de o motor ser alimentado\npor uma mistura de hidrogênio e oxigênio.\nEsse motor\n\"suga\" o ar à sua frente fazendo com que os gases, antes de\nentrarem no combustor, sejam resfriados por um sistema\ndenominado pre-cooler.\nEsse dispositivo consegue resfriar\nos gases variando a temperatura 1000 K em cerca de 50 ms.\nAssim, ele aumenta a eficiência de combustível.\nCom base nessas informações, podemos afirmar que a taxa\nde variação de resfriamento térmico, em °C/s, é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "25 460",
+      "B": "20 000",
+      "C": "2 546",
+      "D": "2 000",
+      "E": "250"
+    },
+    "correta": "B",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 39
+  },
+  {
+    "id": 201040,
+    "texto": "O Brasil é reconhecido internacionalmente por seu\namplo programa de imunização, que disponibiliza\nvacinas gratuitamente à população por meio do\nSistema Único de Saúde (SUS).\nCriado em 1973, o\nPrograma Nacional de Imunização (PNI) teve início\ncom 4 tipos de vacinas e, hoje, oferece 27 à população\nsem qualquer custo.\nNem mesmo a crise econômica\nafeta o bilionário orçamento da iniciativa, o qual foi\nde R$ 3,9 bilhões em 2017.\nNo entanto, a cobertura vacinal no Brasil está em\nqueda.\nNúmeros do PNI analisados pela BBC Brasil,\nem 2017, mostram que o governo tem tido cada vez\nmais dificuldades em bater a meta de vacinar a maior\nparte da população.\nUm exemplo é a poliomielite:\na doença, responsável pela paralisia infantil, está\nerradicada no País desde 1990.\nPara o governo, é cedo para dizer se há tendência de\nqueda real ou se são oscilações por mudanças em\ncurso no sistema de notificação;\nporém, os números\njá preocupam. \"Ainda é muito precoce para dizer se\nhá oscilação real, mas estamos preocupados, sim.\nO sinal amarelo acendeu,\" afirma a coordenadora\ndo PNI.\nO que o governo mais teme é que a redução de pessoas\nvacinadas crie bolsões de indivíduos suscetíveis a\ndoenças antigas e controladas no País.\nUma consequência do problema abordado é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a erradicação de doenças infectocontagiosas em\nfunção da ausência de seus transmissores, pois a não\nimunização faz os agentes patogênicos morrerem,\njá que o indivíduo imunizado foi inoculado com\ngrandes quantidades de vírus.",
+      "B": "a elevação do índice de mortalidade do grupo de\npessoas que se vacinam, pois a vacina provoca uma\nresposta imunológica, fazendo com que o organismo\npare de produzir anticorpos.",
+      "C": "a diminuição de pessoas imunizadas e a consequente\neliminação dos vírus transmissores de doenças\ninfectocontagiosas, levando ao desaparecimento das\npatologias.",
+      "D": "um aumento no gasto com saúde pública, pois as\npessoas tendem a ficar doentes caso não sejam\nimunizadas, uma vez que a transmissão dos vírus\ntende a aumentar.",
+      "E": "um surto mundial de doenças como a poliomielite, a\nasma e o sarampo, uma vez que as vacinas têm um\nantígeno fortalecido, levando milhões de pessoas à\nmorte."
+    },
+    "correta": "D",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 40
+  },
+  {
+    "id": 201041,
+    "texto": "\"A América do Sul ficou como um continente isolado no oceano durante milhões de anos. A região amazônica era um\nambiente de sedimentação e os rios equatoriais corriam no sentido oposto ao atual, desaguando no Pacífico, na atual\nregião do golfo de Guayaquil, no Equador\".\nA inversão do sentido dos rios amazônicos, mencionada no texto, ocorreu em consequência",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "da formação de uma única massa continental, a Pangeia, na era Pré-Cambriana.",
+      "B": "do soerguimento da Cordilheira dos Andes, no período Terciário da era Cenozoica.",
+      "C": "do processo de desertificação das áreas equatoriais, no período Jurássico da era Mesozoica.",
+      "D": "do início da abertura do Oceano Atlântico e de retração do Oceano Pacífico, na era Proterozoica.",
+      "E": "do surgimento do istmo que liga a América do Norte à América do Sul, no período Carbonífero da era Paleozoica."
+    },
+    "correta": "B",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 41
+  },
+  {
+    "id": 201042,
+    "texto": "A distância real entre a cidade A e a cidade B é de 1500 quilômetros.\nEm um determinado mapa, essa distância é de\n50 centímetros.\nPortanto, a escala numérica desse mapa é",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "1:3000",
+      "B": "1:30 000",
+      "C": "1:300 000",
+      "D": "1:3 000 000",
+      "E": "1:30 000 000"
+    },
+    "correta": "D",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 42
+  },
+  {
+    "id": 201043,
+    "texto": "\"No Oriente Médio, nos anos 1950, à medida que o velho Império Britânico retirava-se e se reduzia a seu arquipélago\ninicial, os Estados Unidos substituíam-no. Para isso, colocou à frente dos países dessa região seus \"homens\", sobretudo\nna Arábia Saudita e no Irã, principais produtores de petróleo do mundo junto com a Venezuela, na época já sob\ncontrole estadunidense.\"\nDesde 1953, o Irã foi um grande aliado dos Estados Unidos no Oriente Médio.\nPorém, essa aliança se rompeu e as relações\nentre os dois países foram cortadas em 1980.\nO fato que levou a esse rompimento aconteceu, entre 1978 e 1979, em decorrência da",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Guerra Irã-Iraque, na qual o presidente do Irã, Saddam Hussein, ataca o Iraque com a intenção de expandir o islamismo\nxiita e se apropriar dos campos de petróleo na bacia dos rios Tigre e Eufrates.",
+      "B": "Revolução Socialista, que ocorreu no Irã e que levou o Partido Comunista desse país ao poder, suprimiu a propriedade\nprivada e nacionalizou as companhias de petróleo estrangeiras, incluindo as estadunidenses.",
+      "C": "Guerra do Golfo, na qual o exército iraniano invadiu o Kuwait, bombardeou os poços de petróleo desse país e rumou em\ndireção à Arábia Saudita, quando foi surpreendido pelas forças de coalizão lideradas pelos Estados Unidos.",
+      "D": "derrubada das torres gêmeas do Word Trade Center de Nova Iorque, ação comandada pelo iraniano Osama bin Laden,\nque tinha a intenção de destruir os centros de comando das Sete Irmãs do Petróleo instaladas naquele complexo de\nedifícios.",
+      "E": "Revolução Islâmica ocorrida no Irã, em que grupos que eram a favor da nacionalização do petróleo, organizações\nislâmicas e movimentos estudantis apoiaram a rebelião que derrubou a monarquia pró-Estados Unidos e proclamou\na República Islâmica do Irã."
+    },
+    "correta": "E",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 43
+  },
+  {
+    "id": 201044,
+    "texto": "\"O livre mercado é um termo conciso para designar um arranjo de trocas que ocorrem na sociedade. Cada troca\nacontece como um acordo voluntário entre duas pessoas ou entre grupos de pessoas representados por agentes. Esses\nindivíduos, ou seus agentes, trocam dois bens econômicos, tanto commodities tangíveis quanto serviços não-tangíveis.\"\nA expressão \"livre mercado\", presente no texto, é típica de uma sociedade",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "anarquista, em que as relações de poder existentes permitem que o mercado se autorregule.",
+      "B": "feudal, em que as relações entre senhores feudais e os servos ocorrem na base da livre negociação.",
+      "C": "socialista, em que o poder concentrado no parlamento viabiliza as práticas autorregulatórias do mercado.",
+      "D": "monarquista, em que a ausência de poder central oportuniza relações comerciais livres, sem a regulamentação estatal.",
+      "E": "capitalista, em que as relações econômicas e o mercado se autorregulam de acordo com a demanda dos consumidores."
+    },
+    "correta": "E",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 44
+  },
+  {
+    "id": 201045,
+    "texto": "Os cientistas que realizam pesquisas históricas com base nos anéis de crescimento das árvores organizam amostras de\nmadeiras de plantas vivas e mortas para determinar as condições climáticas do passado em regiões específicas.\nIsso é\npossível porque, em certas espécies, principalmente em regiões de clima temperado, o número de anéis de crescimento\ncorresponde exatamente ao número de anos de existência da árvore, sendo que, durante cada inverno, a atividade do\ncâmbio é interrompida e, posteriormente, retomada na primavera.\nAlém disso, a espessura do caule varia de acordo com\ndiversos fatores ambientais, tais como luminosidade, temperatura, regime de chuvas, água disponível no solo e duração\ndo período de crescimento.\nQuando as condições são favoráveis, os anéis são largos; em condições desfavoráveis, eles\nsão mais estreitos.\nSobre os anéis de crescimento de certas espécies de árvores, é correto afirmar que são formados",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "pela atividade do câmbio, que produz o xilema estival e o xilema primaveril em resposta às alterações climáticas das\nestações do ano.",
+      "B": "pela atividade do câmbio, que produz, principalmente no inverno, o xilema estival com vasos de grande calibre e\nparedes finas.",
+      "C": "pela atividade do câmbio, que independente dos fatores ambientais, produz o floema primaveril que conduz seiva bruta\nou mineral.",
+      "D": "pelos vasos lenhosos, que se desenvolvem mais no inverno do que no verão e conduzem seiva elaborada ou orgânica.",
+      "E": "pelos feixes liberolenhosos, que se desenvolvem apenas no verão e só conduzem seiva elaborada ou orgânica."
+    },
+    "correta": "A",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 45
+  },
+  {
+    "id": 201046,
+    "texto": "Assim como as bactérias, os fungos desempenham o papel de decompositores na natureza, possibilitando que outros seres\nvivos reaproveitem os elementos químicos da matéria decomposta.\nAlém disso, alguns fungos, popularmente conhecidos\ncomo cogumelos, crescem perto de plantas.\nAs hifas, filamentos microscópicos desses fungos, desenvolvem-se no solo, onde\nse enrolam e, às vezes, penetram nas raízes das árvores, formando as chamadas micorrizas.\nEstudos recentes mostram que as plantas se beneficiam dessa associação, especialmente se o solo for pobre nos minerais\nde que elas necessitam, principalmente, porque esses fungos",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "atuam como decompositores e estabelecem com as plantas relações de parasitismo na troca de nutrientes.",
+      "B": "realizam fotossíntese e liberam, para o meio ambiente, a matéria orgânica presente em suas hifas clorofiladas.",
+      "C": "estabelecem um tipo específico de associação ecológica, o comensalismo, em que ambos os organismos se prejudicam\ncom a interação.",
+      "D": "liberam antibióticos, substâncias que matam as bactérias do solo e que impedem a absorção dos sais minerais pelas\nraízes das plantas.",
+      "E": "aumentam a capacidade de as raízes absorverem os minerais do solo e se beneficiam pela obtenção de substâncias\nproduzidas pelos vegetais."
+    },
+    "correta": "E",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 46
+  },
+  {
+    "id": 201047,
+    "texto": "Os nematelmintos são vermes que causam diversas doenças, mas geralmente não provocam la morte do hospedeiro, o que\npode ser interpretado como uma grande adaptação à vida parasitária.\nÉ vantajoso ao parasita que o hospedeiro resista à\nparasitose, pois, se este morrer, o parasita perderá a moradia e a fonte de alimentação.\nOs textos se referem a dois tipos diferentes de doenças comuns no Brasil, causadas por nematelmintos nos seres humanos.\nI\nVerminose, habitualmente sem sintomatologia, mas que pode se manifestar por dor abdominal, diarreia,\nnáuseas e anorexia.\nQuando há grande número de vermes, pode ocorrer quadro de obstrução intestinal.\nA contaminação ocorre por meio da ingestão dos ovos infectantes do parasita, procedentes do solo, água\nou alimentos contaminados com fezes humanas.\nII\nVerminose que pode ser assintomática em caso de infecções leves.\nEm crianças com parasitismo\nintenso, pode ocorrer queda na quantidade de proteína sanguínea e atraso no desenvolvimento físico e\nmental.\nCom frequência, dependendo da intensidade da infecção, acarreta anemia por redução de ferro.\nA transmissão acontece por meio de contato, geralmente dos pés, com as larvas desse parasita, que vive\nno solo.\nNão se transmite de pessoa a pessoa. Os indivíduos infectados, quando não são adequadamente\ntratados, podem contaminar o solo.\nNo Brasil, predomina nas áreas rurais, principalmente sem saneamento,\ncujas populações têm como hábito andar descalças.\nAssinale a alternativa que indica, correta e respectivamente, as verminoses descritas nos textos I e II.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "I=Filariose, II=Ascaridíase",
+      "B": "I=Ancilostomose, II=Filariose",
+      "C": "I=Ascaridíase, II=Ancilostomose",
+      "D": "I=Ancilostomose, II=Ascaridíase",
+      "E": "I=Ascaridíase, II=Filariose"
+    },
+    "correta": "C",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 47
+  },
+  {
+    "id": 201048,
+    "texto": "O esquema representa o ciclo reprodutivo de uma pteridófita (samambaia).\n\n(Diagrama do ciclo reprodutivo: Esporo -> Gametófito -> Anterozoide/Oosfera -> Zigoto -> Esporófito -> Esporo)\n\nSobre esse ciclo, é correto afirmar que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q48.png",
+    "alternativas": {
+      "A": "a meiose ocorre no gametófito, no processo de formação dos gametas.",
+      "B": "a meiose ocorre no esporófito, no processo de formação dos esporos.",
+      "C": "o gametófito se origina a partir da união do anterozoide com a oosfera.",
+      "D": "o gametófito é diploide e corresponde à geração predominante.",
+      "E": "o esporófito é haploide e corresponde à geração predominante."
+    },
+    "correta": "B",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 48
+  },
+  {
+    "id": 201049,
+    "texto": "Os tipos sanguíneos do sistema ABO são caracterizados\npela presença ou ausência de aglutinogênios e aglutininas.\nO sangue tipo B, por exemplo, possui como principal\ncaracterística a presença do aglutinogênio B nas hemácias\ne da aglutinina anti-A no plasma.\nEsses tipos sanguíneos são codificados pela presença\nde três alelos múltiplos: $I^{A}$, $I^{B}$ e i.\nEntre os alelos $I^{A}$ e $I^{B}$, ocorre codominância, ou seja,\nambos os alelos se expressam.\nEntretanto, esses alelos são\ndominantes sobre o alelo i.\nConsidere a seguinte situação: uma mulher, que\npossui aglutinina anti-A no seu sangue, teve um filho do\ngrupo O.\nSabendo-se que o marido tem o aglutinogênio A,\npodemos afirmar que os genótipos da mulher (♀) e do seu\nmarido (♂) são, respectivamente,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "♀=$I^{B}i$, ♂=$I^{B}i$",
+      "B": "♀=$I^{B}I^{B}$, ♂=$I^{A}i$",
+      "C": "♀=$I^{B}i$, ♂=$I^{A}i$",
+      "D": "♀=$I^{A}I^{B}$, ♂=$I^{B}I^{B}$",
+      "E": "♀=$I^{B}i$, ♂=$I^{A}I^{A}$"
+    },
+    "correta": "C",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 49
+  },
+  {
+    "id": 201050,
+    "texto": "Leia a charge.\nDe acordo com as informações verbais e não verbais apresentadas na charge, pode-se depreender, corretamente, que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q50.png",
+    "alternativas": {
+      "A": "a alta qualificação profissional da maioria da população acarreta um aumento no número de vagas não preenchidas no\nmercado de trabalho.",
+      "B": "as vagas de emprego cresceram devido à alta concorrência entre os trabalhadores, incluindo-se até mesmo crianças e\nmulheres na disputa por uma vaga no mercado de trabalho.",
+      "C": "a falta de oportunidade de trabalho, aliada a novos meios de transporte de massa, impedem o desenvolvimento de\natividades paralelas no mercado de trabalho.",
+      "D": "as vagas ofertadas no mercado de trabalho, apesar de inúmeras e constantes, não garantem estabilidade e remuneram\nmenos do que as atividades \"empreendedoras\".",
+      "E": "a resiliência, aliada à persistência, levam as pessoas a se realocarem dentro do mercado de trabalho e, consequentemente, adaptarem-se a novas oportunidades de trabalho."
+    },
+    "correta": "E",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 50
+  },
+  {
+    "id": 201051,
+    "texto": "Leia o texto para responder às questões de 51 a 54.\n\nO leitor encontra, neste belo número da Revista Katálysis, um panorama rico, denso e qualificado\ndo que vem ocorrendo no mundo do trabalho hoje, com seus traços de \"continuidade\" e\n\"descontinuidade\", num período em que o capitalismo aprofundou ainda mais as penalizações\nque está impondo ao universo laborativo, onde o \"novo\" e o \"velho\" se (re) configuram a partir da\nnova Divisão Internacional do Trabalho (DIT), que se reestruturou nas últimas décadas.\n[...]\nSe a Revolução Industrial, nos séculos XVIII e XIX, legou-nos um enorme processo de\n\"desantropomorfização do trabalho\" (Lukács);\nse o século XX pode ser caracterizado pelo que\nBraverman definiu como sendo a \"era da degradação do trabalho\", as últimas décadas do\nséculo passado e os inícios do atual vêm presenciando a generalização de \"outras formas\ne modalidades de precarização\", [...] aquela responsável pela geração do cybertariado\n(Ursula Huws), uma nova força de trabalho global que mescla intensamente \"informatização\"\ncom \"informalização\".[...]\nAs consequências são fortes: nesta fase de desmanche, estamos presenciando o derretimento\ndos poucos laços de sociabilidade, [...] sem presenciarmos uma ampliação da vida dotada de\nsentido, nem \"dentro\" e nem \"fora\" do trabalho.\nA vida se consolida, cada vez mais, como sendo\ndesprovida de sentido no trabalho e, por outro lado, estranhada e fetichizada* também \"fora\"\ndo trabalho, exaurindo-se no mundo sublimado do consumo (virtual ou real), ou na labuta\nincansável pelas qualificações de todo tipo, que são incentivadas como antídoto [...] para não\nperder o emprego daqueles que o têm.\nÉ por isso que estamos presenciando uma desconstrução sem precedentes do trabalho em\ntoda a era moderna, ampliando os diversos modos de ser da precarização e do desemprego\nestrutural.\nResta para a \"classe-que-vive-do-trabalho\" oscilar, ao modo dos pêndulos, entre a\nbusca de qualquer \"labor\" e a vivência do desemprego.\nEste número especial da Revista Katálysis, dedicado às novas configurações do trabalho na\nsociedade capitalista, é uma contribuição efetiva para a linhagem crítica, atualizada e original,\ntanto pelos temas selecionados, quanto pela qualidade e competência dos colaboradores\npresentes, ajudando a descortinar tantos elementos que configuram a \"nova morfologia do\ntrabalho\", seus dilemas e desafios.\n*fetichizar: ação de admirar exageradamente, irrestritamente, incondicionalmente uma pessoa\nou coisa.\n\nQuestão 51\nAssinale a alternativa que apresenta uma análise correta das informações apresentadas no texto.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "As mudanças ocorridas no mercado de trabalho, nas últimas décadas, caracterizam-se por um processo contínuo de\nreformulação geradora de lucros ao trabalhador.",
+      "B": "As novas formas de relações laborais acabam por gerar oportunidades no mercado de trabalho e garantir o acesso do\ntrabalhador aos direitos assegurados pela carteira assinada.",
+      "C": "Como resultado do processo de desumanização das relações trabalhistas, a vida é dissipada pelo consumo ou pelo\ndesgaste devido à busca constante por aperfeiçoamento profissional.",
+      "D": "A sociedade atual mantém questionamentos e desafios herdados de períodos históricos diferentes, sem, contudo,\ndespertar o interesse mais profundo de pesquisadores e cientistas.",
+      "E": "A partir da Revolução Industrial, repetidos processos geradores de garantias trabalhistas ocorreram, visando à\nhumanização das relações entre empregador e empregado."
+    },
+    "correta": "ANULADA",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 51
+  },
+  {
+    "id": 201052,
+    "texto": "Leia o texto para responder às questões de 51 a 54.\n\n(Texto editorial da Revista Katálysis)\n\nQuestão 52\nDentre as propostas de reescrita dos diferentes trechos retirados do texto, assinale a única que mantém o sentido original\ne que respeita as normas da variedade culta da língua portuguesa.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2020_s1_q52.png",
+    "alternativas": {
+      "A": "Texto original: \"É por isso que estamos presenciando uma desconstrução do trabalho sem precedentes...\"\nTexto reescrito: É por isso que uma desconstrução inédita do trabalho está sendo presenciada por nós...",
+      "B": "Texto original: \"A vida se consolida, cada vez mais, como sendo desprovida de sentido no trabalho...\"\nTexto reescrito: Consolidam a vida, ininterruptamente, tirando do trabalho o sentido...",
+      "C": "Texto original: \"...o capitalismo aprofundou ainda mais as penalizações que está impondo ao universo laborativo...\"\nTexto reescrito: As penalizações impostas ao universo laborativo aprofundaram ainda mais o capitalismo...",
+      "D": "Texto original: \"...as últimas décadas do século passado e os inícios do atual vêm presenciando a generalização de 'outras formas e modalidades de precarização'...\"\nTexto reescrito: entre meados do século XIX e início do século XXI, a difusão de \"outras formas e modalidades de precarização\" foi presenciada...",
+      "E": "Texto original: \"Este número especial da Revista Katálysis... é uma contribuição efetiva para a linhagem crítica, atualizada e original, tanto pelos temas selecionados, quanto pela qualidade e competência dos colaboradores presentes...\"\nTexto reescrito: Uma contribuição efetiva pela linguagem crítica moderna e clássica foi feita pelo número especial da Revista Katálysis, devido aos temas abordados e à qualidade dos colaboradores..."
+    },
+    "correta": "ANULADA",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 52
+  },
+  {
+    "id": 201053,
+    "texto": "Leia o texto para responder às questões de 51 a 54.\n\n(Texto editorial da Revista Katálysis)\n\nQuestão 53\nOs termos \"continuidade\", \"desconstrução\" e \"desmanche\" são palavras constituídas por diferentes processos de formação\nde palavras.\nAssinale a alternativa cujas palavras são formadas, respectivamente, pelos mesmos processos dos vocábulos apresentados\nno enunciado.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Idade, endeusar e venda.",
+      "B": "Vivência, rememoração e renúncia.",
+      "C": "Morosidade, entardecer e aguardente.",
+      "D": "Idealismo, vivenciamento e desmantelar.",
+      "E": "Porosidade, descontinuamente e remontar."
+    },
+    "correta": "B",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 53
+  },
+  {
+    "id": 201054,
+    "texto": "Leia o texto para responder às questões de 51 a 54.\n\n(Texto editorial da Revista Katálysis)\n\nQuestão 54\nOs termos destacados no texto são exemplos de paronomásia, figura sonora definida, segundo o Dicionário Houaiss de\nLíngua Portuguesa, como \"figura de linguagem que extrai expressividade da combinação de palavras que apresentam\nsemelhança fônica, mas possuem sentidos diferentes\".\nAssinale a alternativa em que o autor também utilizou a paronomásia na construção de seus versos.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Febre, hemoptise, dispneia e suores noturnos.\nA vida inteira que podia ter sido e que não foi.\nTosse, tosse, tosse\n(Manuel Bandeira)",
+      "B": "No azul do céu de metileno\nA lua irônica\nDiurética\nÉ uma gravura de sala de jantar.\n(Carlos Drummond de Andrade)",
+      "C": "Não amei bastante meu semelhante,\nNão catei o verme nem curei a sarna.\nSó proferi algumas palavras,\nMelodiosas, tarde, ao voltar da festa.\n(Carlos Drummond de Andrade)",
+      "D": "Antes de tudo, a música preza\nPortanto, o ímpar.\nSó cabe usar\nO que é mais vago e solúvel no ar\nSem nada em si que pousa ou pesa.\n(Paul Verlaine)",
+      "E": "E o amor sempre nessa toada:\nBriga perdoa perdoa briga.\nNão se deve xingar a vida,\nA gente vive, depois esquece.\nSó o amor volta para brigar,\nPara perdoar,\nAmor cachorro bandido trem.\n(Carlos Drummond de Andrade)"
+    },
+    "correta": "D",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "1º Sem/2020",
+    "exame_questao_num": 54
+  }
+]

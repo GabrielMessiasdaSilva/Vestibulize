@@ -13,10 +13,19 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 
-const provas = [
-  { semestre: '2° Semestre 2025', questoes: 54 },
-  { semestre: '1° Semestre 2025', questoes: 54 },
-  { semestre: '2° Semestre 2024', questoes: 54 },
+type ProvaInfo = {
+  id: string;
+  nome: string;
+  questoes: number;
+};
+
+const provasDisponiveis: ProvaInfo[] = [
+  { id: 'fatec_2024_s2', nome: 'Vestibular FATEC 2º Sem/2024', questoes: 54, },
+  { id: 'fatec_2024_s1', nome: 'Vestibular FATEC 1º Sem/2024', questoes: 54, },
+  { id: 'fatec_2023_s2', nome: 'Vestibular FATEC 2º Sem/2023', questoes: 54, },
+  { id: 'fatec_2023_s1', nome: 'Vestibular FATEC 1º Sem/2023', questoes: 54, },
+  { id: 'fatec_2022_s2', nome: 'Vestibular FATEC 2º Sem/2022', questoes: 54, },
+  { id: 'fatec_2020_s1', nome: 'Vestibular FATEC 1º Sem/2020', questoes: 54, },
 ];
 
 export default function Home() {
@@ -26,10 +35,6 @@ export default function Home() {
   const inputRef = useRef<TextInput>(null);
   const { t } = useTranslation();
   const [isFocused, setIsFocused] = useState(false);
-
-  const provasFiltradas = provas.filter((p) =>
-    p.semestre.toLowerCase().includes(busca.toLowerCase())
-  );
 
   useEffect(() => {
     const unsubscribe = navigation.addListener(
@@ -83,7 +88,7 @@ export default function Home() {
           <MaterialCommunityIcons name="magnify" size={24} color="#40484B" />
         </TouchableOpacity>
         <Text style={styles.examsText}>{t('home.examsText')}</Text>
-        <Card provas={provasFiltradas} />
+        <Card busca={busca} />
       </ScrollView>
       <Footer />
     </View>

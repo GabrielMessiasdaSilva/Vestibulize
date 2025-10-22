@@ -1,0 +1,920 @@
+[
+  {
+    "id": 232001,
+    "texto": "Ao aprender a cozinhar, os homens da pré-História deram um dos passos evolutivos mais importantes\nda nossa espécie. Estudos recentes sugerem que hominídeos já cozinhavam alimentos há cerca\nde 780 mil anos. Antes desses estudos, a evidência mais antiga de comida cozida era de cerca de\n170 mil anos atrás, com os primeiros Homo sapiens e Neandertais usando fogo para cozinhar legumes e\ncarne. Cozinhar torna a carne, o peixe e os vegetais mais fáceis de digerir, permitindo o crescimento do\ncorpo e do cérebro de forma muito mais eficiente do que ao comer alimentos crus. O cozimento também\ntorna os alimentos mais seguros, pois mata potenciais patógenos.\nAssinale a alternativa que apresenta corretamente uma das conclusões do estudo citado no texto.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q01.png",
+    "alternativas": {
+      "A": "As evidências disponíveis são insuficientes para identificar o período em que os hominídeos começaram\na cozinhar os alimentos.",
+      "B": "As evidências coletadas pelo estudo sugerem que a agricultura e a pecuária eram praticadas pelos\nhominídeos há 780 mil anos.",
+      "C": "Os alimentos cozidos permitiram o crescimento do corpo e do cérebro humanos, contribuindo para a\nevolução de nossa espécie.",
+      "D": "Os hominídeos cozinhavam alimentos há cerca de 780 mil anos, mas os Homo sapiens e os Neandertais\npreferiam os alimentos crus.",
+      "E": "O tamanho do cérebro dos Homo sapiens e dos Neandertais é um fator evolutivo insignificante em\nrelação aos primeiros hominídeos."
+    },
+    "correta": "C",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 1
+  },
+  {
+    "id": 232002,
+    "texto": "Uma alimentação saudável e variada, em que se come tudo nas quantidades adequadas, considerando as\nnecessidades diárias de carboidratos, proteínas, gorduras, minerais, fibras e água, pode ajudar a prevenir\ndoenças, dar mais disposição, melhorar a qualidade do sono e favorecer o bem-estar.\nSem os nutrientes certos, muitas das nossas reações bioquímicas deixam de acontecer como deveriam e\nisso pode resultar em doenças graves.\nCom base no texto, pode-se afirmar corretamente que é benéfico à saúde",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "consumir defumados ou embutidos ricos em gorduras e em sódio, pois diminuem a pressão arterial, o\ncolesterol e o risco de alguns tipos de câncer.",
+      "B": "consumir, nas refeições, apenas alimentos industrializados e altamente processados, pois garantem o\naumento da imunidade e a prevenção contra vírus e bactérias.",
+      "C": "preferir suplementos alimentares industrializados de vitaminas ou de proteínas, pois são mais saudáveis\ne não colocam a saúde do corpo em risco, ao contrário da ingestão de alimentos naturais.",
+      "D": "optar por temperos naturais, como ervas aromáticas e especiarias, que contêm vitaminas, minerais e\nantioxidantes, em vez de temperos industrializados, com alto teor de sódio e conservantes.",
+      "E": "optar por alimentos ricos em gorduras trans, que não se depositam em nossas artérias e que foram\ndesenvolvidas pela indústria alimentícia para manter alimentos mais tempo sem estragar."
+    },
+    "correta": "D",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 2
+  },
+  {
+    "id": 232003,
+    "texto": "Existe o mito de que a beterraba cura a anemia\ndevido a sua coloração vermelha, que é associada\nao sangue. Por isso, muitas pessoas acham que a\nbeterraba contém muito ferro. Isso é um erro.\nAs melhores fontes de ferro de origem vegetal são\nos vegetais verde-escuros, as leguminosas e os\ngrãos integrais.\nComo a vitamina C potencializa a absorção de ferro\nno organismo, é aconselhável consumir alimentos\ncom alto teor dessa vitamina junto a alimentos que\ncontêm ferro.\nExistem alimentos como chás escuros, café,\nrefrigerantes à base de cola, chocolate e alimentos\nricos em cálcio, como leite e derivados, que inibem\na absorção de ferro, portanto deve-se evitar\nconsumi-los durante ou logo após as refeições.\nCom base no texto, é correto afirmar que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q03.png",
+    "alternativas": {
+      "A": "a carne vermelha e a carne de peixe in natura\nsão excelentes fontes de vitamina C.",
+      "B": "a absorção de ferro é inibida pelo consumo de\ncafé quando este é consumido logo após as\nrefeições.",
+      "C": "a coloração avermelhada da beterraba\né uma evidência da abundância de ferro\nnesse vegetal.",
+      "D": "o consumo de ovos, ricos em vitamina C,\nelimina a anemia, doença que afeta grande\nparte da humanidade.",
+      "E": "o leite é um alimento rico em cálcio que\npotencializa a absorção de ferro pelo\norganismo quando consumido logo após as\nrefeições."
+    },
+    "correta": "B",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 3
+  },
+  {
+    "id": 232004,
+    "texto": "Os sais inorgânicos desempenham variadas funções nos organismos de todos os seres vivos.\nAssinale a alternativa que associa corretamente o elemento químico presente no sal às respectivas funções\nque desempenha nos organismos humanos.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Cálcio: ajuda a formar o esqueleto, atua na contração muscular e na coagulação sanguínea.",
+      "B": "Cloro: faz parte dos hormônios da tireoide, que controlam o metabolismo, e atua na formação dos ossos\ne dos dentes.",
+      "C": "Ferro: está presente nas estruturas que realizam a transferência de energia dentro da célula\n(ATP e ADP) e nos ácidos nucleicos.",
+      "D": "Fósforo: participa da constituição da hemoglobina e de enzimas da respiração celular.",
+      "E": "lodo: participa da produção da melanina, pigmento que dá cor à pele, e do funcionamento do sistema\nnervoso."
+    },
+    "correta": "A",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 4
+  },
+  {
+    "id": 232005,
+    "texto": "Durante a mastigação de um alimento sólido, os dentes molares de uma pessoa adulta podem exercer uma\npressão aproximada de $5~kgf/cm^{2}$ sobre o alimento.\nSabendo que $kgf/cm^{2}$ equivale à unidade de medida bar, assinale a alternativa que apresenta corretamente\na pressão exercida pelos molares de uma pessoa adulta em $N/m^{2}$ (ou Pa).\nConsidere: $1~bar=100000~Pa$",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "$5,0 \\times 10^{6}$",
+      "B": "$5,0 \\times 10^{5}$",
+      "C": "$5,0 \\times 10^{4}$",
+      "D": "$1,0 \\times 10^{5}$",
+      "E": "$1,0 \\times 10^{6}$"
+    },
+    "correta": "B",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 5
+  },
+  {
+    "id": 232006,
+    "texto": "Leia o texto para responder às questões 06 e 07.\n\nEm Minas Gerais, os municípios da Serra\nda Canastra se destacam pela produção\nartesanal de queijo. Os portugueses trouxeram o conhecimento\nda produção de queijos para o Brasil\nColônia. À região da Canastra, ele chegou\nhá dois séculos. Lá, o pasto que alimenta\na vaca determina o teor de proteína e de\ngordura do leite. As bactérias e leveduras do\nambiente são responsáveis pelo sabor forte,\nlevemente ácido e picante.\nPara que as bactérias façam seu trabalho,\né essencial que a produção aconteça direto\ndo leite tirado da vaca, sem pasteurização.\nO líquido é despejado em um tanque e\nfiltrado. Depois, a produtora adiciona coalho,\ncontendo enzimas que interagem com\nproteínas do leite, chamadas caseínas.\nA artesã acrescenta também o fermento\nlácteo natural, conhecido como \"pingo\", um\nsoro cheio de bactérias que pingou do queijo\nde uma produção anterior.\nNa etapa seguinte, o papel do sal é\nfundamental, porque quanto mais água\nno queijo, mais bactérias. O sal dá início\nao processo de cura (desidratação), que\npermite exterminar as bactérias do queijo.\nAo longo do processo, as bactérias\nconsomem o açúcar do leite. Conforme o\naçúcar vai acabando, as bactérias morrem.\nÉ a morte dos micro-organismos (ou seja,\no rompimento das células deles) que libera\nsubstâncias responsáveis por reforçar o\naroma e o sabor.\nNa serra, nos sítios de produção familiar,\nquem em geral faz o queijo são as mulheres.\nO isolamento da Serra da Canastra sempre\ndificultou as oportunidades para a economia\nda região. Os produtores, enfrentando a\nconcorrência da indústria, vendiam seus\nprodutos a preços irrisórios para fábricas\nde pão de queijo. Nos últimos anos, os\nprodutores se uniram para valorizar seu\nqueijo.\n\nQuestão 06\nSegundo o texto,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "isolamento geográfico da Serra da\nCanastra, aliado a condições ambientais\ndesfavoráveis, como a má qualidade do\npasto, prejudicam a qualidade do queijo ali\nproduzido e, consequentemente, diminuem as\noportunidades econômicas da região.",
+      "B": "as indústrias de pão de queijo instaladas na\nregião provocaram a extinção dos modos de\nprodução artesanal, o que valorizou o queijo\nda Serra da Canastra nos mercados interno e\nexterno.",
+      "C": "nos últimos anos, a produção de queijo,\nna Serra da Canastra, adotou tecnologia\nde ponta para mecanizar a indústria, o que\nprovocou a valorização do produto no mercado\ninternacional.",
+      "D": "os saberes envolvidos na produção do\nqueijo foram trazidos ao Brasil Colônia pelos\nportugueses e chegaram à Serra da Canastra\nhá duzentos anos, sendo preservados\nprincipalmente pelas mulheres.",
+      "E": "o diferencial do queijo da Serra da Canastra é a\nutilização de leite pasteurizado que, submetido\naos processos tradicionais de fermentação,\nproduz um queijo de sabor ímpar."
+    },
+    "correta": "D",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 6
+  },
+  {
+    "id": 232007,
+    "texto": "Leia o texto para responder às questões 06 e 07.\n\n(Texto sobre Queijo da Canastra)\n\nQuestão 07\nA produção dos queijos da Serra da Canastra se\ncaracteriza, principalmente,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "pelo emprego de leite não pasteurizado e que,\nportanto, não apresenta os micro-organismos\nnaturais responsáveis pelas reações\nbioquímicas de fabricação desses produtos.",
+      "B": "pela adição do coalho, conhecido como \"pingo\",\ncheio de bactérias que atuam na coagulação\ndo leite devido à hidrólise das caseínas.",
+      "C": "pela adição de sal no processo de cura,\nque acelera a multiplicação de bactérias e\nde leveduras no soro, o qual é totalmente\neliminado da massa do queijo.",
+      "D": "pela ação das leveduras, que são fungos\nautotróficos, responsáveis pela produção da\nlactose e de outros açúcares do leite.",
+      "E": "pela degradação do açúcar do leite devido à\nação das bactérias, que são micro-organismos\nfundamentais para a formação do sabor e do\naroma característicos desse tipo de queijo."
+    },
+    "correta": "E",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 7
+  },
+  {
+    "id": 232008,
+    "texto": "A pecuária consiste na criação de animais para a comercialização, principalmente para a obtenção de\nmatérias-primas, como a carne, o leite, o couro, entre outras.\nDentro da pecuária, destaca-se a existência de\ndois sistemas de criação: o extensivo e o intensivo.\nO sistema extensivo",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "consiste na criação do gado solto em grandes áreas, e a dieta dos animais é baseada majoritariamente\nem pastagem e suplementos minerais.",
+      "B": "usa métodos avançados de preparo do solo e de cultivo das forrageiras de modo que a exploração deste\nrecurso se dá por um tempo maior.",
+      "C": "possui uma estratégia nutricional avançada, que, combinada a outras tecnologias alimentares, melhora\na produtividade do rebanho.",
+      "D": "cria os animais em um sistema de confinamento, colocando o maior número de cabeças de gado no\nmenor espaço possível.",
+      "E": "utiliza inseminação artificial, maquinários computadorizados, agrotóxicos e fertilizantes de alto\ndesempenho."
+    },
+    "correta": "A",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 8
+  },
+  {
+    "id": 232009,
+    "texto": "Leia o texto para responder às questões 09 e 10.\n\nAgroforestry is the interaction of agriculture and trees, including the agricultural use of trees.\nThis comprises\ntrees on farms and in agricultural landscapes, farming in forests and along forest margins and tree-crop\nproduction, including cocoa, coffee, rubber and oil palm.\nInteractions between trees and other components of\nagriculture may be important at a range of scales: in fields (where trees and crops are grown together), on farms\n(where trees may provide fodder for livestock, fuel, food, shelter or income from products including timber) and\nlandscapes (where agricultural and forest land uses combine in determining the provision of ecosystem services).\nAgroforestry is agricultural and forestry systems that try to balance various needs:\n1) to produce trees for timber and other commercial purposes;\n2) to produce a diverse, adequate supply of nutritious foods both to meet global demand and to satisfy\nthe needs of the producers themselves; and\n3) to ensure the protection of the natural environment **so that** it continues to provide resources\nand environmental services to meet the needs of the present generations and those to come.\n\nQuestão 09\nDe acordo com o texto, o equilíbrio pretendido\nentre agricultura e floresta, no sistema chamado de\nAgroforestry, prevê",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "mais árvores em fazendas para sombrear a\ncultura de café.",
+      "B": "reflorestamento e plantações, mas sem a\nprodução de carne.",
+      "C": "proteção ambiental com a retirada do pasto e\nda criação de gado.",
+      "D": "plantio de alimentos orgânicos, mas sem\nextração de madeira.",
+      "E": "proteção dos ecossistemas pela coexistência\nentre plantações e árvores."
+    },
+    "correta": "E",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 9
+  },
+  {
+    "id": 232010,
+    "texto": "Leia o texto para responder às questões 09 e 10.\n\n(Texto sobre Agroforestry)\n\nQuestão 10\nNa sentença destacada em negrito no texto, a\nexpressão \"so that\" expressa a ideia de",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "causa.",
+      "B": "contrariedade.",
+      "C": "ênfase.",
+      "D": "exemplificação.",
+      "E": "finalidade."
+    },
+    "correta": "E",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 10
+  },
+  {
+    "id": 232011,
+    "texto": "No Recife, em Pernambuco, há quase 500 anos, originou-se uma avançada \"civilização do açúcar\", forjada\nna mão de obra de negros escravizados sobre os massapés da Zona da Mata, onde açúcar e frutas nativas\nandam de mãos dadas.\nCaju, umbu, ubaia, pitanga, guabiraba e muitas outras frutas podem ser comidas frescas, mas viram doces,\nlicores e compotas, \"tudo à moda de Pernambuco\".\nCaju é doce de praia, feito em calda ou em passa.\nUmbu\nou imbu é doce sertanejo e a fruta dá até uma bebida: a saborosa umbuzada feita com leite.\nDa guabiraba,\nfrutinha cada vez mais rara na Zona da Mata, faz-se o doce que só se come uma vez por ano, por conta da\nsafra curta.\nExistem até doces de Carnaval.\nO São João é o palco principal de todos os bolos, doces e afins: canjica, munguzá, bolo pé-de-moleque,\nmanuê, bolo de macaxeira, bolos de milho de todos os jeitos, arroz-doce e mais uma infinidade de guloseimas.\nA partir das informações apresentadas no texto, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "o consumo de açúcar em Pernambuco ocorre uma vez por ano, durante a celebração a São João,\nquando a população tem acesso aos doces de festa.",
+      "B": "a \"civilização do açúcar\" surgiu após a abolição da mão de obra escravizada na Zona da Mata, devido\nao volume de produção de frutas nativas.",
+      "C": "a necessidade de produzir e de consumir doces fez com que os pernambucanos inventassem uma\nforma de extrair açúcar a partir das frutas nativas, como o caju e a guabiraba.",
+      "D": "a \"civilização do açúcar\" foi construída a partir da utilização de mão de obra negra escravizada, que\nproduzia o açúcar na região litorânea de Pernambuco, conhecida como Zona da Mata.",
+      "E": "o cultivo de açúcar, na Zona da Mata, foi responsável pelo esgotamento do solo, que teve como\nconsequência a extinção da guabiraba, fruta de safra curta cujo doce só se come uma vez por ano."
+    },
+    "correta": "D",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 11
+  },
+  {
+    "id": 232012,
+    "texto": "No comércio de alimentação, a embalagem compõe a identidade visual do produto.\nUm exemplo disso é a\nclássica caixinha de entrega de comida chinesa.\nA figura apresenta a vista lateral, a vista da parte inferior e a vista da parte superior desse tipo de embalagem.\nLeia o texto e assinale a alternativa cujos termos completam, correta e respectivamente, as lacunas.\nCom base nas vistas fornecidas, é correto afirmar que a embalagem tem o formato de um (I) e que\na área total de material necessário para a confeccionar pode ser estimada em cerca de (II) $cm^{2}$, sem\nlevar em consideração as dobras de fechamento e de colagem.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q12.png",
+    "alternativas": {
+      "A": "I=prisma, II=680",
+      "B": "I=tronco de pirâmide, II=680",
+      "C": "I=prisma, II=1220",
+      "D": "I=tronco de pirâmide, II=1220",
+      "E": "I=prisma, II=1280"
+    },
+    "correta": "D",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 12
+  },
+  {
+    "id": 232013,
+    "texto": "Três ex-alunas de marketing da FATEC montam um ensaio fotográfico com algumas frutas.\nPara isso, utilizam\numa lâmpada de LED como iluminação de apoio.\nEssa lâmpada de LED tem um dispositivo eletrônico que\npermite controlar a emissão de luz em diferentes comprimentos de onda, apresentados em angström (Å), e\ndiferentes frequências, apresentadas em terahertz, conforme apresentado no quadro.\n\n(Tabela de cores, comprimentos de onda e frequências)\n\nPara esse ensaio fotográfico, as alunas selecionaram separadamente morangos, bananas e limões maduros.\nAlém disso, elas restringiram a variação de cores da luz da lâmpada de LED para realçar as cores apenas\ndesses alimentos nas imagens produzidas.\nAssim, podemos afirmar corretamente que, durante a produção das diferentes imagens, a lâmpada emitiu\nondas eletromagnéticas que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "operavam na faixa de 384 THz a 659 THz.",
+      "B": "vibravam na faixa de 482 THz a 800 THz.",
+      "C": "oscilavam na faixa de 4920 Å a 7800 Å.",
+      "D": "estavam na faixa de 3900 Å a 5970 Å.",
+      "E": "giravam na faixa de 384 THz a 3 900 Å."
+    },
+    "correta": "C",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 13
+  },
+  {
+    "id": 232014,
+    "texto": "Observe o mapa que apresenta as rotas de difusão de um produto alimentício.\nO processo histórico que explica o fenômeno expresso no mapa é",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q14.png",
+    "alternativas": {
+      "A": "a expansão chinesa no Sudeste da Ásia que, há cerca de 5000 anos, resultou no desenvolvimento da\ncultura do arroz, principal alimento da região até a atualidade.",
+      "B": "o transporte de pimenta, produzida na Índia, para as Américas e para a Europa, realizado pelas\ncompanhias comerciais holandesas e inglesas, no século XVIII.",
+      "C": "o envio de mudas de café da Etiópia para o lêmen, onde ele passou a ser produzido comercialmente\npor volta de 575 d.C., principalmente para consumo interno.",
+      "D": "a ampliação da cultura persa, na Ásia e na África, levando à popularização do consumo de gergelim nas\nregiões da Malásia e da Indonésia, a partir de 4300 a.C.",
+      "E": "a difusão do cacau por grande parte do mundo a partir do século XVI, devido à atividade comercial\nrealizada pelos colonizadores espanhóis da América."
+    },
+    "correta": "E",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 14
+  },
+  {
+    "id": 232015,
+    "texto": "Leia o texto e o gráfico para responder às questões de 15 a 17.\n\nSegundo estudiosos, pode ter sido em São Paulo que a pizza assumiu a cara de um prato familiar que pode\nservir mais de uma pessoa, sendo caracterizado, normalmente, como um disco de 35 cm de diâmetro;\nao\ncontrário da pizza de Nápoles, sua ancestral, que é um prato individual feito com um diâmetro médio de 28,5 cm.\nO gráfico mostra as preferências dos paulistanos em relação à pizza.\n\n(Gráfico: Cobertura de pizza predileta dos paulistanos)\n\nQuestão 15\nAdmita que, em um sábado, 45% dos paulistanos\npediram uma pizza da sua cobertura predileta.\nPode-se dizer que, nesse dia, a cada 100\npaulistanos, aproximadamente N pessoas pediram\numa pizza cuja cobertura predileta é portuguesa.\nAssinale a alternativa que apresenta o número\ninteiro que mais se aproxima de N.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q15.png",
+    "alternativas": {
+      "A": "1",
+      "B": "5",
+      "C": "8",
+      "D": "11",
+      "E": "13"
+    },
+    "correta": "C",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 15
+  },
+  {
+    "id": 232016,
+    "texto": "Leia o texto e o gráfico para responder às questões de 15 a 17.\n\n(Texto e gráfico sobre pizza)\n\nQuestão 16\nAo analisar os dados numéricos do gráfico, é correto\nafirmar, sobre eles, que a",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q15.png",
+    "alternativas": {
+      "A": "média é maior que a moda.",
+      "B": "moda é igual a 17,7%.",
+      "C": "moda é maior que a mediana.",
+      "D": "mediana é igual a 14,7%.",
+      "E": "mediana é maior que a média."
+    },
+    "correta": "A",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 16
+  },
+  {
+    "id": 232017,
+    "texto": "Leia o texto e o gráfico para responder às questões de 15 a 17.\n\n(Texto e gráfico sobre pizza)\n\nQuestão 17\nAo se comparar a área de um disco de pizza de\nSão Paulo à área de um disco de pizza de Nápoles,\npercebemos que o primeiro excede o segundo.\nAdotando $\\pi=3$ é possível concluir corretamente\nque a diferença entre as áreas calculadas é, em\n$cm^{2}$, aproximadamente, de",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q15.png",
+    "alternativas": {
+      "A": "6,51.",
+      "B": "9,75.",
+      "C": "19,50.",
+      "D": "103,19.",
+      "E": "309,56."
+    },
+    "correta": "E",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 17
+  },
+  {
+    "id": 232018,
+    "texto": "Em uma feira livre, um cliente percebeu que os\nfeirantes organizaram suas barracas numerando-as.\nNa primeira barraca, era comercializada banana;\nna segunda, vendia-se coco; a terceira ainda\nestava sendo montada; na quarta, negociavam-se\nespeciarias;\ne, na quinta, revendiam-se flores.\nConsidere que as barracas, nessa feira, distribuíram\nos produtos comercializados seguindo uma\nsequência lógica e que nenhuma barraca vende o\nmesmo produto que a outra.\nÉ correto afirmar que, dentre as opções relacionadas\nnas alternativas e obedecendo a sequência\nlógica mencionada, os produtos que poderiam ser\ncomercializados pela terceira barraca são",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "abacaxis.",
+      "B": "doces.",
+      "C": "hortaliças.",
+      "D": "legumes.",
+      "E": "tubérculos."
+    },
+    "correta": "B",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 18
+  },
+  {
+    "id": 232019,
+    "texto": "Uma especialidade da gastronomia brasileira\né o acarajé: bolinho feito de massa de feijão\nfradinho, cebola, sal e outros temperos,\nfrito no azeite de dendê.\nEle é considerado\npor muitos como uma comida sagrada. Por\neste motivo, sua receita, além de não poder\nser modificada, deve ser preparada pelas\nfilhas-de-santo.\nO bolinho e a religiosidade relacionada a ele\nremetem",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "à vinda de povos árabes que, no final do\nséculo XIX, fugiram de perseguições religiosas\ne tornaram-se mascates nas grandes cidades\ne nas fazendas do interior do país.",
+      "B": "à chegada do primeiro grupo de imigrantes\njaponeses, no início do século XX, na fazenda\nSanto Antônio, onde se cultivava feijão para a\nprodução de bolinhos doces e salgados.",
+      "C": "aos deslocamentos dos tropeiros, que\npercorriam as estradas transportando carne\nseca para os moradores das regiões de\nextração de ouro e diamantes em Minas Gerais.",
+      "D": "à escravização de pessoas africanas para a\nprodução de açúcar, a mineração de ouro e\no plantio de café, entre outros, nos períodos\ncolonial e imperial da história do Brasil.",
+      "E": "à intensa imigração de mexicanos, em 1848,\nmotivada pelo Tratado de Guadalupe Hidalgo,\nque trouxe para o Brasil pratos típicos à base\nde feijão, como o taco."
+    },
+    "correta": "D",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 19
+  },
+  {
+    "id": 232020,
+    "texto": "Todos os dias, Alex e sua família consomem,\nexatamente, 500 mililitros de leite no café da manhã\ne 250 mililitros durante o lanche da tarde.\nVisando\neconomizar, eles decidiram comprar, em um\nmercado, uma embalagem fechada contendo\n12 unidades de leite, cada unidade com 1 litro.\nEm uma segunda-feira, antes do café da manhã,\nAlex descobriu que o leite tinha acabado e, então,\ndecidiu abrir a embalagem adquirida no mercado.\nAssinale a alternativa que apresenta, corretamente,\no dia da semana em que a família terminará de\nconsumir todas as unidades de leite da embalagem\ncomprada.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Sexta-feira",
+      "B": "Sábado",
+      "C": "Domingo",
+      "D": "Segunda-feira",
+      "E": "Terça-feira"
+    },
+    "correta": "E",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 20
+  },
+  {
+    "id": 232021,
+    "texto": "Leia o texto para responder às questões de 21 a 23.\n\nFoi um tempo difícil. Meu pai se referia àquele período\ncomo (I) a pior seca desde 1932. Aquele também\nfoi o último ano em que vi uma plantação extensa\nde arroz naquelas terras.\nO arroz, dependente de\nágua, foi o primeiro a secar com a estiagem.\nDepois\nsecaram a cana, as vagens de feijão, os umbuzeiros,\nos pés de tomates, de quiabo e de abóbora.\nHavia\numa reserva de grãos guardada em casa e no\ngalpão da fazenda.\nCom a seca, veio o medo de que\nnos mandassem embora por (II) falta de trabalho.\nDepois veio o medo mais imediato da fome.\nOs grãos passaram a rarear, o feijão acabou antes\ndo arroz, e do arroz restava muito pouco.\nHavia um\nrazoável suprimento de farinha de mandioca que\nalgumas famílias fabricavam e trocavam por outros\nalimentos.\nAgora, mais que antes, seguíamos quase\ntodos os dias para (III) os rios para pescar, e a cada\npescaria só conseguíamos capturar peixes cada\nvez menores, que só serviam para dar um gosto ao\nangu de farinha.\n(...)\nDisputamos a palma com o gado da fazenda. Havia\numa parcela de terra destinada ao seu plantio.\nO cacto que (IV) se destinava à nossa alimentação\nestava em nossos quintais.\nQuem não foi previdente\nem ter sua própria plantação de palma, que acabaria\ncom o passar dos meses, tinha que contar com\na solidariedade de um vizinho para (V) garantir o\ncortado na mesa, guisado no azeite de dendê.\n\nQuestão 21\nHá, na passagem apresentada, diversos elementos\nde coesão responsáveis pela conexão das\ninformações contidas no texto.\nÉ correto afirmar, após analisar os conectivos\ndestacados no texto, que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "\"como\" (I) é conjunção e expressa relação de\ncausa, podendo ser substituída por \"conforme\".",
+      "B": "\"por\" (II) é preposição e expressa relação de\nconsequência, podendo ser substituída por\n\"por causa de\".",
+      "C": "\"para\" (III) é preposição e expressa ideia de\norigem, podendo ser substituída por \"de\".",
+      "D": "\"que\" (IV) é pronome e retoma o substantivo\n\"o cacto\", podendo ser substituído por \"cujo\".",
+      "E": "\"para\" (V) é preposição e expressa finalidade,\npodendo ser substituída por \"a fim de\"."
+    },
+    "correta": "E",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 21
+  },
+  {
+    "id": 232022,
+    "texto": "Leia o texto para responder às questões de 21 a 23.\n\n(Texto de Itamar Vieira Jr. - Torto Arado)\n\nQuestão 22\nSobre o texto, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "o armazenamento de alimentos perecíveis,\ncomo grãos, junto à certeza da permanência\nno emprego, garantiu a sobrevivência eo\nbem-estar dos trabalhadores.",
+      "B": "a crise enfrentada fez com que os moradores\ndo local esgotassem as riquezas naturais\nda floresta, levando, consequentemente, à\nexaustão das águas de rios e mares.",
+      "C": "a narrativa segue a ordem cronológica e\nretrata o agravamento da crise cujo ápice se\ndá quando se recorre ao consumo de alimento\ndestinado aos animais.",
+      "D": "o narrador, que não participa da história,\nretrata um momento difícil da vivência de sua\ncomunidade devido à fome gerada pela seca.",
+      "E": "a produção de feijão e umbu, por ser destinada\nao consumo doméstico dos trabalhadores,\nresistiu ao período de estiagem."
+    },
+    "correta": "C",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 22
+  },
+  {
+    "id": 232023,
+    "texto": "Leia o texto para responder às questões de 21 a 23.\n\n(Texto de Itamar Vieira Jr. - Torto Arado)\n\nQuestão 23\nNo texto, o vegetal utilizado como alimento para\nhumanos e animais, durante o período da estiagem,\ncaracteriza-se por",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "possuir hastes parecidas com as de outros\ngrãos, como aveia, e se adaptar bem a\nambientes aquáticos.",
+      "B": "possuir folhas modificadas que evitam a perda\nde água por transpiração, adaptando-se bem\na ambientes secos.",
+      "C": "fornecer sombra devido à copa frondosa e\narmazenar, em suas raízes, até mil litros de\nágua, sendo seu fruto conhecido como umbu.",
+      "D": "ser um arbusto, cujas raízes, com tecido interno\nbranco ou amarelado, podem ser consumidas\nou utilizadas na fabricação de farinha.",
+      "E": "ser uma gramínea com troncos fortes, que\npodem alcançar até cinco metros de altura\ne que podem ser utilizados na fabricação de\naçúcar."
+    },
+    "correta": "B",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 23
+  },
+  {
+    "id": 232024,
+    "texto": "Analise a charge.\nA charge utiliza a linguagem verbal e não verbal na\nconstrução de uma",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q24.png",
+    "alternativas": {
+      "A": "narrativa sintética, pois estão implícitas as\nações desempenhadas pelo personagem cuja\nbiografia representa o sucesso das políticas\nsociais do país.",
+      "B": "crítica social, pois tematiza a fome na\nsociedade brasileira, evidenciada pelo prato\nvazio no lugar da esfera celeste da bandeira\nnacional.",
+      "C": "descrição mimética, devido à caracterização\nfiel da realidade vivenciada por cidadãos\npobres ao redor do mundo.",
+      "D": "crônica reflexiva, já que o autor evidencia um\nposicionamento imparcial sobre o aumento da\nsegurança alimentar no Brasil.",
+      "E": "caricatura, pois há uma distorção exagerada\nde uma realidade individual amplificada\ngrotescamente para gerar humor no leitor."
+    },
+    "correta": "B",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 24
+  },
+  {
+    "id": 232025,
+    "texto": "A partir do século XIV, os períodos de\nmás colheitas tornaram-se frequentes\ne longos.\nAs fortes chuvas, em\nquase todas as regiões da Europa,\ndestruíram muitas plantações.\nO\nperíodo mais crítico foi de 1314 a 1319.\nComo consequência, houve um rápido\naumento dos preços dos alimentos,\nprincipalmente do trigo.\nAssim, o\ntemido fantasma da fome voltou a\nameaçar a população europeia.\nEm Flandres, cerca de 10% da população\nmorreu por inanição.\nEm Winchester,\nna Inglaterra, as mortes ocorridas em\n1317 atingiram o dobro das registradas\nem 1310. Na região do Baixo Reno,\nna França, um cronista relatou que as\npopulações chegaram a se alimentar de\nanimais mortos por doenças, o que teria\ndado origem a pestes epidêmicas.\nSegundo o texto,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a estiagem ocorrida entre 1314 e 1319\npossibilitou o aumento da produção e\npromoveu o desenvolvimento econômico do\ncontinente.",
+      "B": "o início do século XIV marcou o fim dos\nperíodos de más colheitas e as fortes chuvas\nprovocaram um aumento da produção\nagrícola.",
+      "C": "em Winchester, os efeitos da fome não\nforam sentidos, já que o número de mortos\nmanteve-se o mesmo nos anos de 1310\ne 1317.",
+      "D": "em Flandres, um quinto da população morreu\npor inanição devido ao rápido aumento dos\npreços dos alimentos, principalmente do\ntrigo.",
+      "E": "na França, a falta de alimentos deu origem\na epidemias, já que parte da população se\nalimentou de animais que morreram doentes."
+    },
+    "correta": "E",
+    "categoria": "historia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 25
+  },
+  {
+    "id": 232026,
+    "texto": "Leia o texto para responder às questões de 26 a 28.\n\nWhat is hunger?\nHunger is an uncomfortable or painful physical sensation caused by insufficient consumption of dietary energy.\nIt becomes chronic when the person does not consume a sufficient amount of calories (dietary energy) on a\nregular basis to lead a normal, active and healthy life.\nFor decades, Food and Agriculture Organization (FAO)\nhas used the Prevalence of Undernourishment indicator to estimate the extent of hunger in the world, thus\n\"hunger\" may also be referred to as undernourishment.\nWhat is food insecurity?\nA person is food insecure when they **lack** regular access to enough safe and nutritious food for normal\ngrowth and development and an active and healthy life.\nThis may be due to unavailability of food and/or lack\nof resources to obtain food.\nFood insecurity can be experienced at different levels of severity.\nFAO measures\nfood insecurity using the Food Insecurity Experience Scale (FIES) shown below:\n\n(Infográfico FOOD INSECURITY BASED ON THE FIES)\n\nQuestão 26\nSegundo a Organização das Nações Unidas para a\nAgricultura e Alimentação (FAO),",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q26.png",
+    "alternativas": {
+      "A": "a falta de alimentos nutritivos eleva a fome.",
+      "B": "\"fome\" e \"insegurança alimentar\" são\nsinônimos.",
+      "C": "\"fome\" e \"desnutrição\" definem o mesmo\nconceito.",
+      "D": "a alimentação de baixa caloria leva à\ninsegurança alimentar.",
+      "E": "o comprometimento alimentar implica acesso\ndiário ao alimento."
+    },
+    "correta": "C",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 26
+  },
+  {
+    "id": 232027,
+    "texto": "Leia o texto para responder às questões de 26 a 28.\n\n(Texto e infográfico sobre fome e insegurança alimentar)\n\nQuestão 27\nConsiderando o infográfico, a insegurança alimentar\nsevera se caracteriza por",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q26.png",
+    "alternativas": {
+      "A": "sensação de fome e de desconforto por um\ndia.",
+      "B": "sensação de desconforto e baixa ingestão de\nalimentos.",
+      "C": "falta de acesso ao alimento por um dia inteiro\nvárias vezes ao ano.",
+      "D": "baixa ingestão de calorias e ocorrência de\napenas uma refeição diária.",
+      "E": "incerteza de ingestão de alimentos calóricos\nem horários padronizados."
+    },
+    "correta": "C",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 27
+  },
+  {
+    "id": 232028,
+    "texto": "Leia o texto para responder às questões de 26 a 28.\n\n(Texto e infográfico sobre fome e insegurança alimentar)\n\nQuestão 28\nO vocábulo \"lack\", na sentença destacada em\nnegrito no texto, significa",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q26.png",
+    "alternativas": {
+      "A": "\"ter\".",
+      "B": "\"trazer\".",
+      "C": "\"manter\".",
+      "D": "\"penar\".",
+      "E": "\"faltar\"."
+    },
+    "correta": "E",
+    "categoria": "ingles",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 28
+  },
+  {
+    "id": 232029,
+    "texto": "Leia os provérbios.\nI. Resto de uns, comida de outros.\nII. Quando a comida tarda, a fome é boa mostarda.\nIII. O amor morre mais de indigestão do que de fome.\nIV. A fome é o melhor tempero.\nV. A fome faz sair o lobo do covil.\nAnalisando-os, pode concluir-se corretamente que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "são todos formados por construções nominais\ncujo sentido se articula por análise do contexto\nde ocorrência.",
+      "B": "são todos construídos de forma prolixa, usando\no presente do indicativo para expressar ações\nhabituais do cotidiano brasileiro.",
+      "C": "os provérbios I e III, embora usem vocabulário\nrelacionado ao universo da alimentação, são\nmetáforas sobre o excesso de expressões\nsentimentais.",
+      "D": "o provérbio V pode ser parafraseado pela\nmáxima \"farinha pouca, meu pirão primeiro\",\nambos expressando a cautela necessária em\nmomentos de dificuldades.",
+      "E": "os provérbios II e IV são semelhantes, pois\na expressão \"comida tarda\" aproxima-se\nsemanticamente de \"fome\" e \"boa mostarda\",\nde \"melhor tempero\"."
+    },
+    "correta": "E",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 29
+  },
+  {
+    "id": 232030,
+    "texto": "Considere que:\n oferta é a quantidade de um produto que está\ndisponível para compra, e\n demanda é a quantidade desse mesmo produto\nque os consumidores estão dispostos a comprar.\nUma pesquisa de mercado definiu duas equações\nque descrevem matematicamente a oferta e a\ndemanda por um determinado produto:\n a equação de oferta determinada foi $q_{o}=3p+50$\ne relaciona o número de unidades $(q_{\\circ})$ que\nvendedores estão dispostos a comercializar em\nfunção do preço (p), em reais, desse produto;\ne\n a equação de demanda foi descrita pela\nexpressão por $q_{d}=-2p+500$ que relaciona o\nnúmero de unidades $(q_{d})$ que consumidores\nestão propensos a adquirir em função do mesmo\npreço (p), em reais, desse produto.\nO preço que iguala a quantidade ofertada e\na quantidade demandada de um produto é\ndenominado preço de equilíbrio de mercado, ou\nseja, quando $q_{o}$ e $q_{d}$ se igualam.\nAssinale a alternativa que apresenta, correta e\nrespectivamente, o preço de equilíbrio de mercado\ndo produto e sua quantidade nessa situação.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "R$ 90,00 e 280 unidades",
+      "B": "R$ 90,00 e 320 unidades",
+      "C": "R$ 90,00 e 380 unidades",
+      "D": "R$ 110,00 e 320 unidades",
+      "E": "R$ 110,00 e 380 unidades"
+    },
+    "correta": "B",
+    "categoria": "matematica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 30
+  },
+  {
+    "id": 232031,
+    "texto": "Um dos componentes do café é a cafeína\n(fórmula: $C_{8}H_{10}N_{4}O_{2}$), cuja ingestão diária de 9,9 g\né letal para adultos.\nConsidere que um adulto ingere\ndiariamente n xícaras de café e que cada xícara\ncontém 180 mg de cafeína.\nCom base no texto, é correto afirmar que o número\nde elementos químicos presentes na molécula de\ncafeína e o valor mínimo de n, para que a dose letal\nseja atingida, são, respectivamente,",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "4 e 55.",
+      "B": "4 e 125.",
+      "C": "24 e 55.",
+      "D": "24 e 125.",
+      "E": "24 e 160."
+    },
+    "correta": "A",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 31
+  },
+  {
+    "id": 232032,
+    "texto": "O quadro relaciona algumas variedades de café à quantidade de cafeína contida em cada uma.\nConsidere que uma variedade de café de massa\n500 g foi analisada e apresentou 11 g de cafeína.\n\n(Tabela Variedade de café x Quantidade média de cafeína)\n\nCom base no quadro fornecido, é correto afirmar\nque a variedade de café analisada é",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q32.png",
+    "alternativas": {
+      "A": "Coffea arabica.",
+      "B": "Coffea excelsa.",
+      "C": "Coffea liberica.",
+      "D": "Coffea canephora.",
+      "E": "Coffea robusta."
+    },
+    "correta": "D",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 32
+  },
+  {
+    "id": 232033,
+    "texto": "A acidez é uma das características usadas para determinar a qualidade dos diferentes tipos de café.\nPara definir a acidez dessa bebida, pode-se usar o pH, denominado potencial hidrogeniônico.\nA escala apresenta valores aproximados do pH de diversos materiais a $25^{\\circ}C$\n\n(Imagem da Escala de pH)\n\nConsidere que:\n$pH = -log[H^{+}]$\n$[H^{+}] = 10^{-pH}$\nsendo $[H^{+}]$ a concentração em mol/L dos íons $[H^{+}]$ em solução aquosa\nPor exemplo: o ovo tem caráter básico, pois apresenta pH = 8,0.\nLogo, a $[H^{+}] = 10^{-8} mol/L$\nAnalisando duas amostras de café A e B, constatou-se que a amostra A apresenta $[H^{+}] = 10^{-4,8} mol/L$,\nenquanto a amostra B apresenta $[H^{+}] = 10^{-4} mol/L$\nDiante do exposto, pode-se concluir corretamente que a amostra",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q33.png",
+    "alternativas": {
+      "A": "B possui $pH=4,0$, sendo mais ácida que o limão.",
+      "B": "B possui $pH=4,8$, sendo mais ácida que o tomate.",
+      "C": "A possui $pH=4,0$, sendo mais ácida que o leite.",
+      "D": "A possui $pH=4,8$, sendo mais ácida que o tomate.",
+      "E": "A possui $pH=4,8$, sendo mais ácida que o leite."
+    },
+    "correta": "E",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 33
+  },
+  {
+    "id": 232034,
+    "texto": "As algas podem ser encontradas nos mais variados ambientes, como em oceanos, rios, lagos e até em\ntroncos de árvores onde se associam com outros seres vivos para garantir a sua sobrevivência.\nElas são\nutilizadas na fabricação de bebidas, tintas, fertilizantes, rações para animais, cosméticos e outros produtos.\nNa alimentação, as algas são consideradas alimentos funcionais, pois são fontes de minerais, de vitaminas,\nde ácidos graxos ômega-3 e de fibras alimentares solúveis, além de compostos bioativos com potencial efeito\nna saúde.\nNo setor agroalimentar, o cultivo das algas oceânicas oferece uma série de vantagens sobre plantas\nterrestres, pois\n as algas crescem e se multiplicam rapidamente;\n não precisam de fertilizantes artificiais, já que absorvem nutrientes resultantes da decomposição\nde matéria orgânica existente na água;\n absorvem, por meio da fotossíntese, o dióxido de carbono da água, sendo uma das principais fontes do\ngás oxigênio presente na atmosfera;\ne\n ajudam a combater a acidificação dos oceanos.\nUmas das preocupações com o aumento do consumo das algas é a possibilidade de elas acumularem metais\npesados, presentes no ambiente aquático contaminado, e que são altamente tóxicos para os organismos,\ncomo arsênio, chumbo, cádmio e mercúrio.\nBaseado no texto, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "as algas, apesar de seu elevado valor nutricional, não servem de alimento para os seres vivos, pois são\ntóxicas e atuam na decomposição da matéria orgânica dos oceanos.",
+      "B": "as algas se multiplicam lentamente, dependem de fertilizantes artificiais para se desenvolverem e\npossuem grande capacidade de absorver dióxido de carbono do ar atmosférico.",
+      "C": "o cultivo de algas oceânicas não precisa de terras férteis, ao contrário da agricultura tradicional, pois as\nalgas obtêm da água os nutrientes necessários para o desenvolvimento delas.",
+      "D": "as algas oceânicas usam os metais pesados, provenientes do meio ambiente, para realizar a síntese de\ncompostos orgânicos de elevado valor nutricional e para liberar o gás oxigênio no ambiente.",
+      "E": "o cultivo de algas ricas em metais pesados, cujo consumo é essencial ao organismo humano, tende\na aumentar, porque elas são importantes fontes de vitaminas, minerais, arsênio, chumbo, mercúrio e\nácidos graxos ômega-3."
+    },
+    "correta": "C",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 34
+  },
+  {
+    "id": 232035,
+    "texto": "Em uma cesta básica, há 10 itens:\n-> 4 tipos de grãos (feijão, arroz, milho e lentilha);\n-> 3 tipos de farináceos (fubá, farinha de trigo e farinha de mandioca);\n-> 2 doces (gelatina e goiabada); e\n-> 1 sal.\nÉ correto afirmar que, se uma pessoa retirar, ao acaso e sem olhar, apenas",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "4 itens, 2 pertencerão à categoria grãos.",
+      "B": "5 itens, pelo menos um deles será um farináceo.",
+      "C": "6 itens, teremos produtos de três categorias diferentes.",
+      "D": "7 itens, pelo menos um deles será um grão.",
+      "E": "8 itens, pelo menos um deles será um doce."
+    },
+    "correta": "D",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 35
+  },
+  {
+    "id": 232036,
+    "texto": "Leia o texto para responder às questões 36 e 37.\n\nNo Brasil, a Instrução Normativa - IN N° 95, de 8 de\noutubro de 2020, estabelece os requisitos técnicos\npara declaração da rotulagem nutricional nos\nalimentos embalados.\nEstão presentes, nos anexos\ndesta resolução, os valores diários de referência de\nnutrientes de declaração obrigatória, apresentados\nparcialmente na tabela 1. Esses valores indicam a\nquantidade máxima recomendada de ingestão de\num determinado nutriente em um dia.\nA tabela 2 apresenta os valores nutricionais de uma\nporção do milho painço.\n\n(Tabela 1: Valores diários de referência)\n(Tabela 2: Milho painço porção de 45 g)\n\nQuestão 36\nLeia o texto e assinale a alternativa cujos termos\ncompletam, correta e respectivamente, as lacunas.\nAo consumir uma porção de milho painço,\numa pessoa ingere substâncias relacionadas\nao armazenamento de energia, (I), que agem\ncomo um importante isolante térmico.\nNessa porção,\nelas correspondem a, aproximadamente, (II) %\ndo total diário recomendado.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q36.png",
+    "alternativas": {
+      "A": "I=Proteínas, II=10,8",
+      "B": "I=Carboidratos, II=10,0",
+      "C": "I=Gorduras, II=10,8",
+      "D": "I=Carboidratos, II=2,8",
+      "E": "I=Gorduras, II=2,8"
+    },
+    "correta": "E",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 36
+  },
+  {
+    "id": 232037,
+    "texto": "Leia o texto para responder às questões 36 e 37.\n\n(Texto sobre rotulagem e tabelas nutricionais)\n\nQuestão 37\nA quantidade de energia que os alimentos digeridos\nno tubo digestório humano fornecem ao organismo é,\ngeralmente, medida em quilocalorias (kcal).\nPara o cálculo da quantidade de quilocalorias\nde alguns alimentos, é importante saber que\n1 g de carboidrato ou de proteína fornece cerca de\n4 kcal, enquanto 1 g de lipídio fornece cerca de 9 kcal.\nLogo, a quantidade de energia, em kcal, que uma\npessoa obtém, ao ingerir uma porção de milho\npainço igual à descrita na Tabela 2, corresponde a\ncerca de",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q36.png",
+    "alternativas": {
+      "A": "158.",
+      "B": "176.",
+      "C": "185.",
+      "D": "299.",
+      "E": "308."
+    },
+    "correta": "A",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 37
+  },
+  {
+    "id": 232038,
+    "texto": "Em 2023, a Organização das Nações Unidas\npromove o Ano Internacional do Milho Painço\n(IYM 2023).\nEle é fonte de alimentação para milhões\nde pessoas no mundo.\n**Espera-se que o IYM 2023 seja uma oportunidade\npara promover a produção do milho painço e\ndestacar seu potencial para criar um mercado\nsustentável.**\nAssinale a alternativa que contém a negação lógica\nda frase destacada em negrito no texto.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "não promover a produção do milho painço\nou não destacar seu potencial para criar um\nmercado sustentável.",
+      "B": "não promover a produção do milho painço\ne não destacar seu potencial para criar um\nmercado sustentável.",
+      "C": "não promover a produção do milho painço ou\ndestacar seu potencial para criar um mercado\nsustentável.",
+      "D": "não promover a produção do milho painço e\ndestacar seu potencial para criar um mercado\nsustentável.",
+      "E": "promover a produção do milho painço ou não\ndestacar seu potencial para criar um mercado\nsustentável."
+    },
+    "correta": "A",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 38
+  },
+  {
+    "id": 232039,
+    "texto": "Considere a imagem de uma embalagem\npara responder às questões de 39 a 41.\n\n(Imagem Sample Label for Frozen Lasagna)\n\nQuestão 39\nA partir da leitura da imagem, pode concluir-se\ncorretamente que uma porção desse produto",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q39.png",
+    "alternativas": {
+      "A": "possui alto teor de açúcar, sódio e nutrientes.",
+      "B": "corresponde a 454 g do alimento.",
+      "C": "possui uma quantidade baixa de gorduras\nsaturadas.",
+      "D": "oferece todas as vitaminas para uma dieta\ndiária saudável.",
+      "E": "possui teor de sódio superior ao recomendado."
+    },
+    "correta": "ANULADA",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 39
+  },
+  {
+    "id": 232040,
+    "texto": "Considere a imagem de uma embalagem\npara responder às questões de 39 a 41.\n\n(Imagem Sample Label for Frozen Lasagna e Figura Calorímetro de Combustão)\n\nQuestão 40\nEm uma tabela nutricional, como a apresentada,\na quantidade de energia expressa em calorias\né obtida, experimentalmente, utilizando-se um\nrecipiente denominado \"calorímetro de combustão\"\n(figura).\nPara que isso ocorra, uma certa amostra\ndo alimento (ou seja, uma massa) entra em\ncombustão dentro de uma cápsula fechada,\nimersa em um recipiente termicamente isolado, o\nqual contém um termômetro e uma determinada\nmassa de água pura.\nDurante a combustão há\ntransferência de energia para a água (calor).\nConsequentemente, observa-se a variação de\ntemperatura da água por meio dos dados do calor\nespecífico (c) da água, de sua massa (m), sendo\npossível prever a quantidade (Q) de energia\ntrocada.\nSuponha que, para a construção da tabela\nnutricional apresentada, o experimento foi\nmontado utilizando uma massa de água pura que\né igual à massa da porção do alimento da tabela.\nConsiderando as informações descritas e os dados\ncontidos na tabela nutricional, assinale a alternativa\nque apresenta, correta e aproximadamente, a\nvariação de temperatura ($\\Delta\\theta$), em °C, observada no\ntermômetro.\nLembre-se de que:\n$Q=m \\cdot c \\cdot \\Delta\\theta$\n$C_{H_{2}O}=1~cal/g \\cdot ^{\\circ}C$",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q39.png",
+    "alternativas": {
+      "A": "1,50",
+      "B": "1,23",
+      "C": "1,00",
+      "D": "0,81",
+      "E": "0,60"
+    },
+    "correta": "B",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 40
+  },
+  {
+    "id": 232041,
+    "texto": "Considere a imagem de uma embalagem\npara responder às questões de 39 a 41.\n\n(Imagem Sample Label for Frozen Lasagna e Tabela de Elementos Químicos)\n\nQuestão 41\nA lasanha apresenta, em sua composição, os\ncátions sódio $(Na^{+})$, cálcio $(Ca^{2+})$, ferro $(Fe^{3+})$ e\npotássio $(K^{+})$.\nConsidere que\n\n(Tabela com Número Atômico Z e Número de massa A para Na, Ca, Fe, K)\n\nA respeito desses cátions, é correto afirmar que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q39.png",
+    "alternativas": {
+      "A": "o número de elétrons do $Ca^{2+}$ é o mesmo do $K^{+}$.",
+      "B": "o número de nêutrons do $Fe^{3+}$ é 29.",
+      "C": "o número de elétrons do $Na^{+}$ é 11.",
+      "D": "o número de massa do $K^{+}$ é 19.",
+      "E": "o número atômico do $Ca^{2+}$ é o mesmo do $K^{+}$"
+    },
+    "correta": "A",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 41
+  },
+  {
+    "id": 232042,
+    "texto": "Há uma variedade de técnicas, amplamente utilizadas na indústria, que conservam os alimentos por mais\ntempo.\nEssas técnicas são métodos de conservação, pois impedem as alterações microbianas, enzimáticas,\nquímicas e físicas dos produtos nutricionais.\nEm relação a essas técnicas, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "a pasteurização expõe os alimentos à fumaça, produzida pela combustão incompleta da madeira,\na fim de inibir a ação de micro-organismos patogênicos.",
+      "B": "o branqueamento reduz o pH, conferindo um gosto ácido aos alimentos, o que provoca a desnaturação\ndas proteínas e dificulta o desenvolvimento microbiano.",
+      "C": "a liofilização é a desidratação de alimentos por congelamento, processo em que o gelo formado é\nsublimado, aumentando o tempo de conservação do produto pela retirada da água.",
+      "D": "a fermentação é um tratamento químico dos alimentos, no qual se eleva a temperatura a mais de\n$100^{\\circ}C$ e, posteriormente, os alimentos são resfriados a fim de eliminar os micro-organismos.",
+      "E": "a defumação consiste na imersão do alimento em água fervente para promover um cozimento rápido,\ne, em seguida, sua imersão em um recipiente com água gelada."
+    },
+    "correta": "C",
+    "categoria": "biologia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 42
+  },
+  {
+    "id": 232043,
+    "texto": "Leia o texto para responder às questões 43 e 44.\n\nO sal e o açúcar são agentes conservantes utilizados em produtos que consumimos.\nA conservação pelo uso do açúcar é empregada em frutas ao preparar geleias, conservas e cristalizações.\nEm alta concentração, esse composto possui efeito desidratante, pois ocasiona aumento da pressão\nosmótica no interior da fruta, o que dificulta o desenvolvimento de bactérias, bolores e leveduras.\nDo mesmo modo, soluções com altas concentrações salinas fazem os micro-organismos presentes\nmorrerem por desidratação.\nEste processo é conhecido por salga ou salmoura e é eficiente do ponto de\nvista microbiológico, porém não evita a degradação química.\nEm alguns alimentos, como na carne seca, com\no passar do tempo, ocorrem reações de oxidação das gorduras que conferem sabor de ranço ao alimento.\n\nQuestão 43\nDe acordo com o texto, é correto afirmar que, quando entram em contato com soluções cujas concentrações\nsalinas são altas, os micro-organismos",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "perdem água por osmose, pois o meio externo é hipertônico.",
+      "B": "perdem água por osmose, pois o meio externo é hipotônico.",
+      "C": "perdem água por difusão, pois o meio externo é hipertônico.",
+      "D": "ganham água por difusão, pois o meio externo é hipotônico.",
+      "E": "ganham água por difusão, pois o meio externo é hipertônico."
+    },
+    "correta": "A",
+    "categoria": "quimica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 43
+  },
+  {
+    "id": 232044,
+    "texto": "Leia o texto para responder às questões 43 e 44.\n\n(Texto sobre sal e açúcar como conservantes)\n\nQuestão 44\nA imagem apresenta um enigma, no qual cada palavra destacada em negrito no texto está representada em\numa linha horizontal;\ne, nele, os símbolos iguais indicam letras iguais.\nAo solucionar o enigma, uma palavra relacionada à alimentação surgirá na coluna em destaque.\nAssinale a alternativa que contém a versão correta, em inglês, da palavra formada na coluna destacada.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q44.png",
+    "alternativas": {
+      "A": "comid",
+      "B": "food",
+      "C": "meet",
+      "D": "meat",
+      "E": "sugar"
+    },
+    "correta": "B",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 44
+  },
+  {
+    "id": 232045,
+    "texto": "As evoluções tecnológicas estão transformando\na maneira como a agricultura tem sido praticada.\nUm desses exemplos é o uso de sensores digitais.\nPor intermédio deles, pulverizadores podem atingir\nalvos, como, por exemplo, plantas daninhas, evitando\no desperdício de princípio ativo em plantas não alvo.\nO monitoramento de pulverização tratorizada\npor GPS permite a pulverização certeira e evita a\nsobreposição de pulverização na mesma área, e já\né uma realidade na agricultura brasileira.\nJá se usam, no Brasil, sensores de colheita que\nmonitoram a produtividade do que está sendo colhido\nem tempo real, gerando mapas de produtividade.\nEsses mapas podem ser cruzados com mapas de\nanálise de solo, e auxiliar nas tomadas de decisão\nsobre o uso de fertilizantes para as próximas safras.\nSobre o uso das tecnologias nos processos\nprodutivos agrícolas, é correto afirmar que",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "o gado de corte, no Rio Grande do Sul, é\nabatido com base nos sensores de umidade\ndo solo presos aos cascos dos animais.",
+      "B": "o monitoramento da irrigação é fundamental\npara as plantações de trigo, no Acre, devido à\nescassez de água nesse estado.",
+      "C": "já é possível, no Brasil, saber o quanto\nestá sendo colhido em tempo\nutilizando-se de sensores de colheita.",
+      "D": "as lavouras de subsistência, no interior do\nNordeste, utilizam o GPS e os drones para a\npulverização de agrotóxicos.",
+      "E": "já se utilizavam, no Brasil Colônia, os sensores\neletrônicos para pulverizar as lavouras de\ncana-de-açúcar."
+    },
+    "correta": "C",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 45
+  },
+  {
+    "id": 232046,
+    "texto": "A técnica da calagem é utilizada para diminuir a acidez do solo, ou seja, aumentar seu pH, além de fornecer\ncálcio e magnésio para as plantas.\nEssa técnica consiste em",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "pulverizar as plantas com herbicidas.",
+      "B": "misturar cloreto de sódio ao adubo.",
+      "C": "aumentar o uso de cloro no solo.",
+      "D": "incorporar antioxidantes à terra.",
+      "E": "adicionar calcário ao solo."
+    },
+    "correta": "E",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 46
+  },
+  {
+    "id": 232047,
+    "texto": "O Frontier é o novo computador mais rápido do mundo.\nEquipado com processadores AMD EPYC 64C\n2 GHz e somando 8730 112 núcleos, o sistema atingiu pontuação de 1102 exaflop/s no benchmark HPL\n(High Performance Linpack).\nEsses números tornam o Frontier a primeira máquina efetivamente \"exascale\"\nda história, já que é capaz de executar a marca de um quintilhão de cálculos por segundo.\nEm computação e sistemas, flop/s ou FLOPS (Floating-point Operations Per Second) é uma unidade de\nmedida usada para analisar desempenho de máquinas como a exemplificada no texto.\nCom base nos conceitos da Física, é correto afirmar que a unidade de medida FLOPS refere-se à grandeza\nfísica conhecida como",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "aceleração.",
+      "B": "frequência.",
+      "C": "precisão.",
+      "D": "radiação.",
+      "E": "velocidade."
+    },
+    "correta": "B",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 47
+  },
+  {
+    "id": 232048,
+    "texto": "Leia o texto para responder às questões 48 e 49.\n\nPara se aprofundar nos estudos, um estudante do curso de Análise e Desenvolvimento de Sistemas da FATEC\nresolve testar uma ferramenta de Inteligência Artificial (IA) interativa, pré-treinada e geradora de respostas.\nEle pede à IA que elabore um exercício de Física que envolve sustentabilidade e entrega de comida.\nA IA, então, retorna para o estudante um determinado enunciado cujas informações são apresentadas\nno quadro.\n\n(Quadro com dados: Tempo médio, Velocidade escalar média, Carga elétrica da bateria)\n\nQuestão 48\nApós receber o exercício, o estudante identifica\num erro.\nAnalisando os dados, é correto afirmar que o erro\nidentificado se refere",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q48.png",
+    "alternativas": {
+      "A": "ao fato de que motos elétricas não usam\nbaterias elétricas.",
+      "B": "à unidade de medida da carga elétrica da\nbateria.",
+      "C": "ao fato de que a velocidade de uma moto\nelétrica é medida em $km/h$.",
+      "D": "à conversão da unidade de 15 minutos para\n900 segundos.",
+      "E": "ao fato de entregadores não usarem motos."
+    },
+    "correta": "B",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 48
+  },
+  {
+    "id": 232049,
+    "texto": "Leia o texto para responder às questões 48 e 49.\n\n(Texto sobre IA e quadro com dados)\n\nQuestão 49\nO estudante percebeu que, apesar do erro, poderia\nainda utilizar os dados fornecidos pela IA para\ndeterminar a distância percorrida pelo entregador.\nApós fazer os cálculos, ele descobriu que, no tempo\napresentado, o entregador percorreu, em km, a\ndistância de",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q48.png",
+    "alternativas": {
+      "A": "15,0.",
+      "B": "13,5.",
+      "C": "10,0.",
+      "D": "9,0.",
+      "E": "2,0."
+    },
+    "correta": "D",
+    "categoria": "fisica",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 49
+  },
+  {
+    "id": 232050,
+    "texto": "Ciência e Tecnologia de Alimentos (CTA) é a área do conhecimento voltada para o processamento dos\nalimentos, da colheita ou do abate até à prateleira do supermercado.\nEla lida com o desenvolvimento dos\nprodutos, a escolha do material no qual serão embalados, os aditivos que devem ou não ser utilizados, a\nanálise da qualidade dos alimentos e a data de vencimento.\nCom o incremento cada vez maior das indústrias alimentícias e das técnicas de produção, a avaliação da\nqualidade da comida servida à população passou a demandar processos mais sofisticados e desenvolvidos,\nos quais impedem que alimentos sem qualidade parem na mesa da população.\nMuitas das questões dessa\nciência estão relacionadas à Agronomia, à Nutrição e à Medicina e, hoje, esse conhecimento é essencial à\nsaúde pública.\nA maioria dos países possui órgãos especialmente dedicados à regulamentação alimentícia.\nDe acordo com o texto, é correto afirmar que a CTA",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "contribui para a diminuição do número de indústrias alimentícias presentes no Brasil.",
+      "B": "impede que produtos sem qualidade cheguem à mesa dos brasileiros, livrando-os da fome.",
+      "C": "assumiu a responsabilidade sobre a saúde pública no Brasil, em substituição ao Ministério da Saúde.",
+      "D": "é uma área do conhecimento a qual pensa sobre a qualidade dos alimentos consumidos pelas pessoas.",
+      "E": "rivaliza com a Medicina e com a Agronomia, pois questiona pesquisas consolidadas dessas áreas."
+    },
+    "correta": "D",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 50
+  },
+  {
+    "id": 232051,
+    "texto": "O azeite de oliva é um óleo extraído da polpa da azeitona, que é um fruto oriundo da oliveira.\nAs oliveiras são\nárvores cultivadas desde aproximadamente 3500 a.C.. Egípcios, gregos e romanos utilizaram o azeite não\napenas como alimento, mas também como combustível em lamparinas e como oferendas em rituais.\nNo azeite de oliva, encontramos diversos tipos de ácidos graxos insaturados.\nÁcidos graxos insaturados são ácidos carboxílicos de cadeia longa que apresentam ligação dupla (insaturação)\nentre átomos de carbono.\nO principal ácido graxo insaturado encontrado no azeite é o ácido oleico, cuja fórmula estrutural apresenta:\n 18 átomos de carbono;\ne\n uma insaturação entre os carbonos 9 e 10, contados a partir do átomo de carbono que está localizado\nna ponta da cadeia e que está ligado aos átomos de oxigênio.\nCom base no texto, assinale a alternativa que apresenta corretamente o período histórico mencionado no\ntexto e a fórmula estrutural do ácido oleico.",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q51.png",
+    "alternativas": {
+      "A": "Idade Antiga e Fórmula A",
+      "B": "Idade Antiga e Fórmula B",
+      "C": "Idade Antiga e Fórmula C",
+      "D": "Idade Média e Fórmula D",
+      "E": "Idade Média e Fórmula E"
+    },
+    "correta": "A",
+    "categoria": "multidisciplinar",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 51
+  },
+  {
+    "id": 232052,
+    "texto": "Para a produção de sementes de soja de\nalta qualidade fisiológica, o ideal é que a\ntemperatura média local, durante as fases\nde maturação e de colheita, seja igual\nou inferior a $22^{\\circ}C$.\nTais condições não\nsão facilmente encontradas em regiões\ntropicais. Em regiões com latitudes maiores\ndo que $24^{\\circ}$ S, as condições climáticas são\nmais propícias.\nCom base no texto, a região brasileira que\nmelhor se encaixa nas especificações dadas é a",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Centro-Oeste.",
+      "B": "Nordeste.",
+      "C": "Sudeste.",
+      "D": "Norte.",
+      "E": "Sul."
+    },
+    "correta": "E",
+    "categoria": "geografia",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 52
+  },
+  {
+    "id": 232053,
+    "texto": "Em uma barraca de feira, há estas frutas: jaca,\njabuticaba, morango e manga.\nElas podem ser\ngrandes ou pequenas, doces ou azedas. Sobre\nelas, pode constatar-se que:\n. toda jaca é grande;\n. algumas frutas pequenas são jabuticabas;\n. alguns morangos são azedos;\n. nenhuma fruta azeda é uma jabuticaba;\n. toda manga é doce; e\n. toda fruta grande é doce.\nCom base nessas informações, assinale a alternativa\ncorreta.",
+    "imagem_url": null,
+    "alternativas": {
+      "A": "Alguma fruta azeda é uma manga.",
+      "B": "Algum morango é pequeno.",
+      "C": "Toda fruta grande é um jaca.",
+      "D": "Alguma jabuticaba é azeda.",
+      "E": "Toda manga é grande."
+    },
+    "correta": "B",
+    "categoria": "raciocinio_logico",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 53
+  },
+  {
+    "id": 232054,
+    "texto": "Leia os quadrinhos.\nAnalisando os quadrinhos, pode concluir-se\ncorretamente que",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q54.png",
+    "alternativas": {
+      "A": "os termos \"fibras\", \"vitaminas\" e \"antioxidantes\"\nassociam propriedades positivas à ação de\ndescascar os alimentos.",
+      "B": "as interjeições \"criatura\", \"olhai\" e \"psiu\"\nexpressam a reação de ambos os personagens\ndiante de uma situação inesperada.",
+      "C": "o personagem usa de linguagem violenta para\nimpor sua vontade à mulher, opondo-se ao\ntema abordado no texto: equidade de gênero.",
+      "D": "o pronome \"essa\", no último quadrinho, é\nempregado segundo a norma culta, pois\naponta para a casca que está nas mãos do\ninterlocutor.",
+      "E": "a intromissão constante de um dos\npersonagens, apesar de causar irritação,\ntematiza um tópico relevante à sociedade: o\ndesperdício dos alimentos."
+    },
+    "correta": "E",
+    "categoria": "portugues",
+    "origem": "fatec",
+    "exame_id": "2º Sem/2023",
+    "exame_questao_num": 54
+  }
+]

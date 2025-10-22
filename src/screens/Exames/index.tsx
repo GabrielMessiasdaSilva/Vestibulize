@@ -5,11 +5,14 @@ import {
   TouchableOpacity,
   BackHandler,
   Alert,
+  Image,
+  ActivityIndicator,
 } from "react-native";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { styles } from "./styles";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { sortearPerguntas } from "../../utils/perguntasLoader";
+// import { sortearPerguntas } from "../../utils/perguntasLoader";
+import { carregarPerguntasProva } from "../../utils/perguntasLoader";
 import type { Pergunta } from "../../data/perguntasQuiz";
 import {
   useRoute,
@@ -19,23 +22,44 @@ import {
 import type { RouteProp, NavigationProp, EventArg } from "@react-navigation/native";
 import type { RootStackParamList } from "../../navigation/types";
 import { useTranslation } from "react-i18next";
+import { MathJaxSvg } from 'react-native-mathjax-html-to-svg';
+
+const PLACEHOLDER_PREFIX = "[SEU_PATH_IMAGENS]";
+
+function isValidImageUrl(url: string | null | undefined): boolean {
+  if (!url) {
+    return false;
+  }
+  if (url.startsWith(PLACEHOLDER_PREFIX)) {
+    return false;
+  }
+  return true;
+}
 
 export default function Exames() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
-  const [perguntaAtual, setPerguntaAtual] = useState(1);
-  const [respostaSelecionada, setRespostaSelecionada] = useState<string | null>(null);
-  const route = useRoute<RouteProp<RootStackParamList, "Quiz">>();
-  const fase = route.params.faseAtual;
-  const [perguntasFase, setPerguntasFase] = useState<Pergunta[]>([]);
+  const route = useRoute<RouteProp<RootStackParamList, "Exames">>();
+  const exameId = route.params.semestre;
   const tempoAtivado = route.params.tempoAtivado;
   const tempoTotal = route.params.tempoTotal;
+  const [perguntasProva, setPerguntasProva] = useState<Pergunta[]>([]);
+  const [perguntaAtualIdx, setPerguntaAtualIdx] = useState(0);
   const timerRef = React.useRef<NodeJS.Timeout | null>(null);
   const [acertos, setAcertos] = useState(0);
   const [tempoRestante, setTempoRestante] = useState(tempoTotal);
   const scrollRef = React.useRef<ScrollView>(null);
   const { t } = useTranslation();
-  const [highlightedWords, setHighlightedWords] = useState<string[]>([]);
-  const [highlightMode, setHighlightMode] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    const perguntas = carregarPerguntasProva(exameId);
+    setPerguntasProva(perguntas);
+    setPerguntaAtualIdx(0);
+    setAcertos(0);
+    setTempoRestante(tempoTotal);
+    setLoading(false);
+  }, [exameId, tempoTotal]);
 
   useFocusEffect(
     React.useCallback(() => {
@@ -46,7 +70,7 @@ export default function Exames() {
             if (prev <= 1) {
               clearInterval(timerRef.current!);
               timerRef.current = null;
-              navigation.navigate("Conquista", { acertos, faseConcluida: fase });
+              navigation.navigate("ExameConquista", { acertos });
               return 0;
             }
             return prev - 1;
@@ -60,43 +84,21 @@ export default function Exames() {
           timerRef.current = null;
         }
       };
-    }, [tempoAtivado, tempoRestante])
+    }, [tempoAtivado, tempoRestante, navigation, acertos])
   );
 
-  useEffect(() => {
-    const sorteadas: Pergunta[] = [
-      ...sortearPerguntas("matematica", 14),
-      ...sortearPerguntas("linguagens", 14),
-      ...sortearPerguntas("ciencias_natureza", 13),
-      ...sortearPerguntas("ciencias_humanas", 13),
-    ];
-
-    const embaralhadas = sorteadas.sort(() => Math.random() - 0.5);
-    setPerguntasFase(embaralhadas);
-  }, []);
-
-  const pergunta = perguntasFase[perguntaAtual - 1];
+  const pergunta = perguntasProva[perguntaAtualIdx];
   const respostaCorreta = pergunta?.correta;
-
-  function toggleHighlight(wordId: string) {
-    if (!highlightMode) return;
-    setHighlightedWords(prev =>
-      prev.includes(wordId)
-        ? prev.filter(w => w !== wordId)
-        : [...prev, wordId]
-    );
-  }
 
   function handleResposta(alternativa: string) {
     if (alternativa === respostaCorreta) {
       setAcertos(prev => prev + 1);
     }
-    // Passa imediatamente para a próxima pergunta
     setTimeout(() => {
-      if (perguntaAtual === perguntasFase.length) {
-        navigation.navigate("ExameConquista", { acertos});
+      if (perguntaAtualIdx === perguntasProva.length - 1) {
+        navigation.navigate("ExameConquista", { acertos });
       } else {
-        setPerguntaAtual(perguntaAtual + 1);
+        setPerguntaAtualIdx(prevIdx => prevIdx + 1);
         rolarParaTopo();
       }
     }, 200);
@@ -125,7 +127,6 @@ export default function Exames() {
     scrollRef.current?.scrollTo({ y: 0, animated: true });
   }
 
-  // Bloqueio de botão de voltar físico
   useFocusEffect(
     React.useCallback(() => {
       const onBackPress = () => {
@@ -151,12 +152,26 @@ export default function Exames() {
       return () => {
         backHandler.remove();
         unsubscribe();
+        if (timerRef.current) {
+          clearInterval(timerRef.current);
+          timerRef.current = null;
+        }
       };
-    }, [navigation])
+    }, [navigation, t])
   );
 
-  const totalPerguntas = perguntasFase.length;
-  const perguntaExibida = Math.min(perguntaAtual, totalPerguntas);
+  if (loading || !pergunta) {
+    return (
+      <View style={[styles.container]}>
+        <ActivityIndicator size="large" color="#00839A" />
+        <Text style={{ marginTop: 10 }}>Carregando prova...</Text>
+      </View>
+    );
+  }
+  const textoCompletoPergunta = `(FATEC ${pergunta.exame_id}) ${pergunta.texto}`;
+
+  const totalPerguntas = perguntasProva.length;
+  const perguntaExibida = totalPerguntas > 0 ? perguntaAtualIdx + 1 : 0;
 
   return (
     <View style={styles.container}>
@@ -190,20 +205,29 @@ export default function Exames() {
         <View style={styles.question}>
           {pergunta && (
             <View>
-              <Text style={[styles.questionText, { flexWrap: "wrap" }]}>
-                {`(FATEC ${pergunta.ano}) ${pergunta.texto}`.split(" ").map((word, index) => {
-                  const wordId = `${perguntaAtual}-${index}`;
-                  return (
-                    <Text
-                      key={index}
-                      onPress={() => toggleHighlight(wordId)}
-                      style={highlightedWords.includes(wordId) ? { backgroundColor: "yellow" } : {}}
-                    >
-                      {word}{" "}
-                    </Text>
-                  );
-                })}
-              </Text>
+              <MathJaxSvg
+                fontSize={styles.questionText.fontSize} // Pega o tamanho da fonte do seu estilo original
+                color={styles.questionText.color}       // Pega a cor do seu estilo original
+                fontCache={true}                        // Habilita cache de fontes (melhora performance)
+              >
+                {/* Passa a string completa como children */}
+                {textoCompletoPergunta}
+              </MathJaxSvg>
+
+              {pergunta.imagem_url && (
+                isValidImageUrl(pergunta.imagem_url) ? (
+                  <Image
+                    source={{ uri: pergunta.imagem_url }}
+                    style={styles.questionImage}
+                    resizeMode="contain"
+                  />
+                ) : (
+                  <View style={styles.imagePlaceholder}>
+                    <MaterialCommunityIcons name="image-off-outline" size={40} color="#AAA" />
+                    <Text style={styles.placeholderText}>Imagem indisponível</Text>
+                  </View>
+                )
+              )}
 
               {Object.entries(pergunta.alternativas).map(([letra, texto]) => (
                 <TouchableOpacity key={letra} onPress={() => handleResposta(letra)} style={styles.optionButton}>
@@ -214,10 +238,6 @@ export default function Exames() {
           )}
         </View>
       </ScrollView>
-
-      <TouchableOpacity style={styles.floatingPencil} onPress={() => setHighlightMode(prev => !prev)}>
-        <MaterialCommunityIcons name="pencil" size={28} color={highlightMode ? "#FFD700" : "#888"} />
-      </TouchableOpacity>
     </View>
   );
 }
