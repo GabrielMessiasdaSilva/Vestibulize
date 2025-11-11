@@ -334,13 +334,33 @@ export default function ProfileScreen() {
           <View style={styles.termsContent}>
             <Text style={styles.modalTitle}>Termos e Condições</Text>
             <ScrollView style={{ maxHeight: 300 }}>
-              <Text style={styles.termsText}>
-                Estes são os termos e condições de uso do aplicativo Vestibulize.
-                Ao utilizar o app, você concorda com nossas políticas de privacidade, uso de dados e regras de conduta.
-                Não compartilhe informações pessoais sensíveis. O uso indevido pode resultar em suspensão da conta.
-                Para dúvidas, entre em contato com o suporte.
-                {"\n\n"}
-                (Nossos termos de usos são : Primeiro termo, segundo termo, terceiro termo, quarto termo, quinto termo, sexto termo, sétimo termo, oitavo termo, nono termo, décimo termo e assim por diante... )
+            <Text style={styles.termsText}>
+  Estes são os Termos e Condições de Uso do aplicativo Vestibulize. Ao utilizar o app, você concorda com todas as diretrizes descritas abaixo, bem como com nossa Política de Privacidade.
+
+  {"\n\n"}
+  1. **Aceitação dos Termos**: Ao acessar ou utilizar o Vestibulize, você declara que leu, compreendeu e concorda com estes Termos de Uso.
+
+  2. **Cadastro e Segurança**: O usuário é responsável por manter a confidencialidade de suas credenciais de acesso. Não compartilhe informações pessoais sensíveis com terceiros.
+
+  3. **Uso Adequado**: É proibido utilizar o aplicativo para fins ilícitos, ofensivos ou que violem direitos de terceiros. O uso indevido pode resultar em suspensão ou exclusão da conta.
+
+  4. **Privacidade e Dados**: Os dados coletados são utilizados conforme nossa Política de Privacidade, visando melhorar a experiência do usuário. Não compartilhamos informações pessoais sem consentimento.
+
+  5. **Conteúdo do Usuário**: Ao enviar conteúdos (comentários, respostas, etc.), você garante que possui os direitos sobre eles e autoriza o uso pelo Vestibulize para fins de melhoria e divulgação.
+
+  6. **Propriedade Intelectual**: Todo o conteúdo do aplicativo, incluindo textos, imagens, gráficos e funcionalidades, é protegido por direitos autorais e não pode ser reproduzido sem autorização.
+
+  7. **Atualizações e Modificações**: Os Termos de Uso podem ser atualizados periodicamente. Recomendamos que o usuário revise esta seção regularmente.
+
+  8. **Limitação de Responsabilidade**: O Vestibulize não se responsabiliza por eventuais danos decorrentes do uso indevido do aplicativo ou por falhas técnicas.
+
+  9. **Encerramento de Conta**: O usuário pode solicitar o encerramento da conta a qualquer momento. O Vestibulize também pode encerrar contas que violem estes termos.
+
+  10. **Contato e Suporte**: Para dúvidas, sugestões ou problemas, entre em contato com nosso suporte através do e-mail ou canal oficial disponível no aplicativo.
+
+  {"\n\n"}
+  Ao continuar utilizando o Vestibulize, você confirma que está de acordo com todos os termos acima.
+
               </Text>
             </ScrollView>
             <TouchableOpacity style={styles.saveButton} onPress={() => setTermsVisible(false)}>
