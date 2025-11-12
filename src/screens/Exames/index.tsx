@@ -206,11 +206,10 @@ export default function Exames() {
           {pergunta && (
             <View>
               <MathJaxSvg
-                fontSize={styles.questionText.fontSize} // Pega o tamanho da fonte do seu estilo original
-                color={styles.questionText.color}       // Pega a cor do seu estilo original
-                fontCache={true}                        // Habilita cache de fontes (melhora performance)
+                fontSize={styles.questionText.fontSize}
+                color={styles.questionText.color}
+                fontCache={true}
               >
-                {/* Passa a string completa como children */}
                 {textoCompletoPergunta}
               </MathJaxSvg>
 
