@@ -665,7 +665,7 @@
   {
     "id": 232040,
     "texto": "Considere a imagem de uma embalagem\npara responder às questões de 39 a 41.\n\n(Imagem Sample Label for Frozen Lasagna e Figura Calorímetro de Combustão)\n\nQuestão 40\nEm uma tabela nutricional, como a apresentada,\na quantidade de energia expressa em calorias\né obtida, experimentalmente, utilizando-se um\nrecipiente denominado \"calorímetro de combustão\"\n(figura).\nPara que isso ocorra, uma certa amostra\ndo alimento (ou seja, uma massa) entra em\ncombustão dentro de uma cápsula fechada,\nimersa em um recipiente termicamente isolado, o\nqual contém um termômetro e uma determinada\nmassa de água pura.\nDurante a combustão há\ntransferência de energia para a água (calor).\nConsequentemente, observa-se a variação de\ntemperatura da água por meio dos dados do calor\nespecífico (c) da água, de sua massa (m), sendo\npossível prever a quantidade (Q) de energia\ntrocada.\nSuponha que, para a construção da tabela\nnutricional apresentada, o experimento foi\nmontado utilizando uma massa de água pura que\né igual à massa da porção do alimento da tabela.\nConsiderando as informações descritas e os dados\ncontidos na tabela nutricional, assinale a alternativa\nque apresenta, correta e aproximadamente, a\nvariação de temperatura ($\\Delta\\theta$), em °C, observada no\ntermômetro.\nLembre-se de que:\n$Q=m \\cdot c \\cdot \\Delta\\theta$\n$C_{H_{2}O}=1~cal/g \\cdot ^{\\circ}C$",
-    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q39.png",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q40.png",
     "alternativas": {
       "A": "1,50",
       "B": "1,23",
@@ -682,7 +682,7 @@
   {
     "id": 232041,
     "texto": "Considere a imagem de uma embalagem\npara responder às questões de 39 a 41.\n\n(Imagem Sample Label for Frozen Lasagna e Tabela de Elementos Químicos)\n\nQuestão 41\nA lasanha apresenta, em sua composição, os\ncátions sódio $(Na^{+})$, cálcio $(Ca^{2+})$, ferro $(Fe^{3+})$ e\npotássio $(K^{+})$.\nConsidere que\n\n(Tabela com Número Atômico Z e Número de massa A para Na, Ca, Fe, K)\n\nA respeito desses cátions, é correto afirmar que",
-    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q39.png",
+    "imagem_url": "[SEU_PATH_IMAGENS]/2023_s2_q41.png",
     "alternativas": {
       "A": "o número de elétrons do $Ca^{2+}$ é o mesmo do $K^{+}$.",
       "B": "o número de nêutrons do $Fe^{3+}$ é 29.",
