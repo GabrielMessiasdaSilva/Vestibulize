@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-
+const NAV_BAR_HEIGHT = 80;
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -131,11 +131,32 @@ export const styles = StyleSheet.create({
         alignItems: "center",
     },
 
-    questionImage: {
-        width: '100%',
-        height: 200,
-        marginTop: 10,
+    placeholderText: {
+        marginTop: 8,
+        color: '#AAA',
+        fontSize: 12,
+    },
+
+    centerContent: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: "#f7f8fa",
+    },
+    mathjaxContainer: {
+        backgroundColor: 'transparent',
         marginBottom: 10,
+    },
+
+    questionImage: {
+        width: '95%',
+        aspectRatio: 1.5,
+        alignSelf: 'center',
+        marginTop: 15,
+        marginBottom: 15,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#ddd',
     },
 
     imagePlaceholder: {
@@ -151,9 +172,60 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    placeholderText: {
-        marginTop: 8,
-        color: '#AAA',
-        fontSize: 12,
-    }
+
+    optionButtonSelected: {
+        backgroundColor: '#008e11ff',
+        borderColor: '#005a6a',
+    },
+
+    optionTextSelected: {
+        color: '#FFFFFF',
+        fontWeight: 'bold',
+    },
+
+    navContainer: {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: NAV_BAR_HEIGHT,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#FFFFFF',
+        borderTopWidth: 1,
+        borderTopColor: '#E0E0E0',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+    },
+
+    navButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#00839A',
+        paddingHorizontal: 20,
+        paddingVertical: 12,
+        borderRadius: 25,
+        elevation: 3,
+    },
+
+    navButtonText: {
+        color: '#FFFFFF',
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginHorizontal: 5,
+    },
+
+    navButtonDisabled: {
+        backgroundColor: '#E0E0E0',
+        elevation: 0,
+    },
+
+    finishButton: {
+        backgroundColor: '#B20000',
+    },
+
+    finishButtonText: {
+        color: '#FFFFFF',
+    },
 });
